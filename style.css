@@ -1,6 +1,54 @@
 @charset "UTF-8";
 
+:root {
+    --preto: #171717;
+    --roxo: #9100FE;
+    --ciano: #23f3e3;
+    --verde: #66ff59;
+    --rosa: #e3489d;
+}
+
 * {
     padding: 0;
     margin: 0;
+}
+
+.logos{
+    width: 40px;
+}
+
+
+header {
+    height: 200px;
+}
+
+section {
+    height: 300px;
+}
+
+.patrocinadores {
+    height: 200px;
+}
+
+/* 
+    Parte Correa
+*/
+
+.sub-titulo {
+    text-align: center;
+    color: var(--verde);
+    text-shadow: #171717 1px 1px;
+    font-size: 2em;
+}
+
+#copy {
+    color: white;
+}
+
+footer {
+    padding: 10px 0px;
+    background-color: var(--roxo);
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
 }
