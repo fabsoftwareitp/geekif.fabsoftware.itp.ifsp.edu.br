@@ -1,5 +1,8 @@
 @charset "UTF-8";
-
+@font-face {
+    font-family: 'Pixelada';
+    src: url(font/upheavtt.ttf);
+}
 :root {
     --preto: #171717;
     --roxo: #9100FE;
@@ -28,6 +31,34 @@ section {
 
 .patrocinadores {
     height: 200px;
+}
+/*Parte JP*/
+.Topo{
+    background-color: black;
+}
+.cabecalho{
+    justify-content: space-between;
+    display: flex;
+    max-width: auto;
+    padding: 5px;
+}
+
+.Barra_Utilidades{
+    background-color: #1717176b;
+    padding: 5px;
+    justify-content: space-between;
+    display: flex;
+    max-width: auto;
+}
+.Barra_Utilidades a{
+    text-decoration: none;
+    color: var(--roxo);
+    font-family: 'Pixelada';
+    font-size: 20px;
+}
+.Barra_Utilidades a:hover{
+    text-decoration:underline;
+    color: var(--ciano);
 }
 
 /* 
