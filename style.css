@@ -3,6 +3,10 @@
     font-family: 'Pixelada';
     src: url(src/fontes/upheavtt.ttf);
 }
+@font-face{
+    font-family: 'Pixel Fofo';
+    src: url(src/fontes/04B_30__.TTF);
+}
 
 :root {
     --preto: #171717;
