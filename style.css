@@ -1,4 +1,12 @@
 @charset "UTF-8";
+@font-face{
+    font-family: 'Pixelada';
+    src: url(src/fontes/upheavtt.ttf);
+}
+@font-face{
+    font-family: 'Pixel Fofo';
+    src: url(src/fontes/04B_30__.TTF);
+}
 :root {
     --preto: #171717;
     --roxo: #9100FE;
@@ -6,25 +14,18 @@
     --verde: #66ff59;
     --rosa: #e3489d;
 }
-
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 .logos{
     width: 40px;
 }
-
-
 header {
     height: 200px;
 }
-
-section {
-    height: 300px;
-}
-
 .patrocinadores {
     height: 200px;
 }
@@ -57,15 +58,14 @@ section {
     color: var(--ciano);
 }
 
-/* 
-    Parte Correa
-*/
 
+/* ------- Parte do Correa ------- */
 .sub-titulo {
     text-align: center;
     color: var(--verde);
-    text-shadow: #171717 1px 1px;
+    text-shadow: 3px 1px 3px var(--preto);
     font-size: 2em;
+    font-family: 'Pixelada';
 }
 
 #copy {
@@ -79,3 +79,93 @@ footer {
     display: flex;
     align-items: center;
 }
+/* ---------- ---------- */
+
+
+/* ------- Parte do Gab ------- */
+#atracoes{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding: 40px 0px;
+}
+#atracoes > .flip{
+    margin: 20px 0;
+}
+#atracoes > h2{
+    width: 100%;
+    margin: 10px 0;
+}
+
+.flip{
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+}
+.flip-inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+.flip:hover .flip-inner{
+    transform: rotateY(180deg);
+}
+.flip-front, .flip-back{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-sizing: border-box;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+}
+.flip-front{
+    color: black;
+    border: 1px solid #bbb;
+    align-items: center;
+    box-shadow: 1px 1px 5px 1px #bbb;
+}
+.flip-back{
+    color: var(--verde);
+    transform: rotateY(180deg);
+    position: relative;
+    border: 2px solid var(--preto);
+    background-color: var(--preto);
+    box-shadow: 1px 1px 10px 1px var(--preto);
+}
+.bg-image{
+    width: 100%;
+    height: 100%;
+    background-image: url(src/imagens/example.jpg);
+    background-size: cover;
+    filter:blur(5px);
+    border-radius: 10px;
+}
+.atr-text{
+    position:absolute;
+    z-index:2;
+}
+.atr-text p{
+    color: white;
+    margin:0 15%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.flip h2{
+    font-family: 'Pixelada';
+    font-size:1.8em;
+}
+.flip-back h2{
+    text-align: center;
+    text-shadow: 3px 1px 3px var(--preto);
+    margin:20px 0;
+}
+
+.flip-front h2{
+    text-shadow: 1px 1px 5px grey;
+}
+/* ---------- --------- */
