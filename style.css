@@ -7,6 +7,9 @@
     font-family: 'Pixel Fofo';
     src: url(src/fontes/04B_30__.TTF);
 }
+/* ---------- ---------- */
+
+/* ------- Geral ------- */
 :root {
     --preto: #171717;
     --roxo: #9100FE;
@@ -19,17 +22,18 @@
     margin: 0;
     box-sizing: border-box;
 }
+/* ---------- ---------- */
 
+/* ---------- ---------- */
 .logos{
     width: 40px;
-}
-header {
-    height: 200px;
 }
 .patrocinadores {
     height: 200px;
 }
-/*Parte JP*/
+/* ---------- ---------- */
+
+/* ---------- Parte do João Pedro ---------- */
 .Topo{
     background-color: black;
 }
@@ -52,12 +56,13 @@ header {
     color: var(--roxo);
     font-family: 'Pixelada';
     font-size: 20px;
+    transition: 0.3s;
 }
 .Barra_Utilidades a:hover{
     text-decoration:underline;
     color: var(--ciano);
 }
-
+/* ---------- ---------- */
 
 /* ------- Parte do Correa ------- */
 .sub-titulo {
@@ -70,6 +75,7 @@ header {
 
 #copy {
     color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 footer {
