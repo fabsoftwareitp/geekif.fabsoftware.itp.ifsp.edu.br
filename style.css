@@ -26,7 +26,8 @@
 
 /* ---------- ---------- */
 .logos{
-    width: 40px;
+    width: 50px;
+    margin-left: 20px;
 }
 .patrocinadores {
     height: 200px;
@@ -74,13 +75,13 @@
 }
 
 #copy {
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    color: var(--roxo);
+    font-family: 'Pixelada';
 }
 
 footer {
     padding: 10px 0px;
-    background-color: var(--roxo);
+    background-color: black;
     justify-content: space-around;
     display: flex;
     align-items: center;
