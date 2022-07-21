@@ -6,8 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Inicial</title>
     <link rel="stylesheet" href="style.css">
+
+    <script type="text/javascript">
+        function slide1(){
+        document.getElementById('id').src="src/imagens/banner1.jpg";
+        setTimeout("slide2()", 2000)
+        }
+        
+        function slide2(){
+        document.getElementById('id').src="src/imagens/banner2.jpg";
+        setTimeout("slide3()", 2000)
+        }
+        
+        function slide3(){
+        document.getElementById('id').src="src/imagens/banner3.jpg";
+        setTimeout("slide4()", 2000)
+        }
+
+        function slide4(){
+        document.getElementById('id').src="src/imagens/banner4.jpg";
+        setTimeout("slide1()", 2000)
+        }
+        </script>
 </head>
-<body>
+<body onLoad="slide1()">
     <header>
         <div class="Topo">
             <div class="cabecalho">
@@ -31,10 +53,8 @@
         </div>
     </header>
 
-    <section>
-        <!--
-            Andrey
-        --> 
+    <section id="banners">
+        <img id="id">
     </section>
 
     <section id="atracoes">
