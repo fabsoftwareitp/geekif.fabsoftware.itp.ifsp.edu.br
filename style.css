@@ -23,9 +23,11 @@
     box-sizing: border-box;
 }
 body{
+    /*
     background-image: url(src/imagens/background.jpg);
     background-size: cover;
     backdrop-filter: blur(10px);
+    */
 }
 /* ---------- ---------- */
 
