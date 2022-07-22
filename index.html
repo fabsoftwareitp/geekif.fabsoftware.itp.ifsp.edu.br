@@ -6,55 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Inicial</title>
     <link rel="stylesheet" href="style.css">
-
-    <script type="text/javascript">
-        function slide1(){
-        document.getElementById('id').src="src/imagens/banner1.jpg";
-        setTimeout("slide2()", 2000)
-        }
-        
-        function slide2(){
-        document.getElementById('id').src="src/imagens/banner2.jpg";
-        setTimeout("slide3()", 2000)
-        }
-        
-        function slide3(){
-        document.getElementById('id').src="src/imagens/banner3.jpg";
-        setTimeout("slide4()", 2000)
-        }
-
-        function slide4(){
-        document.getElementById('id').src="src/imagens/banner4.jpg";
-        setTimeout("slide1()", 2000)
-        }
-        </script>
 </head>
-<body onLoad="slide1()">
+<body>
     <header>
         <div class="Topo">
             <div class="cabecalho">
-                <img src="" alt="logo_if">
-                <img src="" alt="logo_evento">
-                <div class="redes_socisais">
-                    <a href="https://www.instagram.com/ifspitapetininga/" target="_blank"><img class="logos" src="src/imagens/instagram.png" alt="Instagram"></a>
-                    <a href="https://www.facebook.com/ifspitape" target="_blank"><img class="logos" src="src/imagens/facebook.png" alt="Facebook"></a>
+                <img src="src/imagens/logoif_branco.png" alt="logo_if">
+                <img src="src/imagens/logogeek.png" alt="logo_evento">
+                <div class="redes_sociais">
+                    <a href="https://www.instagram.com/ifspitapetininga" target="_blank">
+                        <img src="src/imagens/logoinstagram.png" alt="Instagram">
+                    </a>
+                    <a href="https://www.facebook.com/ifspitape" target="_blank">
+                        <img src="src/imagens/logofacebook.png" alt="Facebook">
+                    </a>
                 </div>
             </div>
-            <div class="Barra_Utilidades">
-                <a href="">Ingressos</a>
-                <a href="">Atrações</a>
-                <a href="">Torneios</a>
-                <a href="">Cosplays</a>
-                <a href="">Expositores</a>
-                <a href="">Programação</a>
-                <a href="">Como Chegar</a>
-                <a href="">Organização</a>
-            </div>
+            <nav>
+                <button id="mob">&#9776;</button>
+                <div class="Barra_Utilidades">
+                    <a href="">Ingressos</a>
+                    <a href="">Atrações</a>
+                    <a href="">Torneios</a>
+                    <a href="">Cosplays</a>
+                    <a href="">Expositores</a>
+                    <a href="">Programação</a>
+                    <a href="">Como Chegar</a>
+                    <a href="">Organização</a>
+                </div>
+            </nav>
         </div>
     </header>
 
     <section id="banners">
-        <img id="id">
+        <div class="slides animation">
+            <img src="src/imagens/banner1.jpg" alt="Banner 1">
+        </div>
+        <div class="slides animation">
+            <img src="src/imagens/banner2.jpg" alt="Banner 2">
+        </div>
+        <div class="slides animation">
+            <img src="src/imagens/banner3.jpg" alt="Banner 3">
+        </div>
+        <div class="slides animation">
+            <img src="src/imagens/banner4.jpg" alt="Banner 4">
+        </div>
     </section>
 
     <section id="atracoes">
@@ -190,14 +186,30 @@
         </div>
     </section>
     <footer>
-        <div>
-
-        </div>
         <h3 id="copy">GeekIF 2022 - All Rights Reserved | Todos Os Direitos Reservados</h3>
-        <div>
-            <a href="https://www.instagram.com/ifspitapetininga/" target="_blank"><img class="logos" src="src/imagens/instagram.png" alt="Instagram"></a>
-            <a href="https://www.facebook.com/ifspitape" target="_blank"><img class="logos" src="src/imagens/facebook.png" alt="Facebook"></a>
-        </div>
     </footer>
+    <script>
+        let slideIndex = 0
+        showSlides()
+
+        function showSlides(){
+            
+            let slides = document.getElementsByClassName('slides')
+
+            for(let i = 0; i < slides.length; i++){
+                slides[i].style.display = 'none'
+            }
+
+            slideIndex++
+
+            if(slideIndex > slides.length){
+                slideIndex = 1
+            }
+
+            slides[slideIndex-1].style.display = "block"
+
+            setTimeout(showSlides, 10000)
+        }
+    </script>
 </body>
 </html>
