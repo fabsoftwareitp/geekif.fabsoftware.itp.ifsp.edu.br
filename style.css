@@ -57,16 +57,12 @@ body{
 #logogeek img{
 	margin: auto;
 	margin-left: 5%;
-	height: 120px;
-  max-width: 100%;
-  max-height: 100%;
+    height: 10vw;
+    max-width: 100%;
 }
 #logoif img{
-	max-width: 100%;
-    max-height: 100%; 
-	height: 130px;
-	margin-right: 2%;
-		margin-left: 10%;
+    height: 10vw;
+    max-width: 100%;
 }
 .redes_sociais a{
 
@@ -76,8 +72,8 @@ body{
 	
 }
 .redes_sociais img{
-    width: 50%;
-    height: 50%;
+    width: 3vw;
+    height: 70%;
 	margin-top: 10px;
     margin-left: 45%;
 
@@ -122,18 +118,20 @@ body{
     text-align: center;
     color: var(--verde);
     text-shadow: 3px 1px 3px var(--preto);
-    font-size: 2em;
-    font-family: 'FonteLogo';
+    font-size: 3.5vw;
+    font-family: 'pixelada';
+    letter-spacing: 2px;
 }
 
 #copy {
     color: var(--roxo);
     font-family: 'Pixelada';
     margin: 10px 0;
+    text-align: center;
 }
 
 footer {
-    padding: 10px 0px;
+    padding: 10px 10px;
     background-color: black;
     justify-content: space-around;
     display: flex;
@@ -180,12 +178,12 @@ footer {
 
 .flip{
     background-color: transparent;
-    width: 300px;
-    height: 300px;
+    width: 25vw;
+    height: 25vw;
 }
 .flip-front img {
-	width: 300px;
-    height: 300px;
+	width: 25vw;
+    height: 25vw;
 	border-radius: 10px;
 	
 }
@@ -213,7 +211,7 @@ footer {
     color: black;
     border: 2px solid #bbb;
     align-items: center;
-    box-shadow: 0px 0px 5px 7px #bbb;
+    box-shadow: 0px 0px 11px 6px rgba(110, 110, 110, 0.575);
 }
 .flip-back{
     color: var(--verde);
@@ -240,11 +238,13 @@ footer {
     color: white;
     margin:0 5%;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.30vw;
 }
 
 .flip h2{
-    font-family: 'FonteLogo';
-    font-size:1.8em;
+    font-family: 'pixelada';
+    letter-spacing: 2px;
+    font-size: 2vw;
 	
 }
 .flip-back h2{
@@ -293,6 +293,7 @@ ul {
     width: 100%;
     margin: 0 auto;
     display: block;
+    
   }
 
   .list-menu {
@@ -300,7 +301,7 @@ ul {
     justify-content: space-between;
     width: 100%;
     background: #000;
-    box-shadow: 2px 9px 49px -17px rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 9px 49px -17px rgba(179, 179, 179, 0.3);
   }
 
   .item-menu {
