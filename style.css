@@ -79,21 +79,21 @@ body{
 
 }
 
-.Barra_Utilidades{
+.menu-content{
     background-color: #1717176b;
     padding: 10px;
     justify-content: space-evenly;
     display: flex;
     max-width: auto;
 }
-.Barra_Utilidades a{
+.menu-content a{
     text-decoration: none;
     color: var(--verde);
     font-family: 'Pixelada';
     font-size: 20px;
     transition: 0.3s;
 }
-.Barra_Utilidades a:hover{
+.menu-content a:hover{
     text-decoration:underline;
     color: var(--verde);
 }
@@ -104,14 +104,7 @@ body{
 }
 /* ---------- ---------- */
 
-.comochegar {
-	width: 100%;
-	min-height: 600px;
-	display: flex;
-	justify-content: center;
-	
-	
-}
+
 
 /* ------- Parte do Correa ------- */
 .sub-titulo {
@@ -123,6 +116,7 @@ body{
     letter-spacing: 2px;
 }
 
+
 #copy {
     color: var(--roxo);
     font-family: 'Pixelada';
@@ -130,6 +124,8 @@ body{
     text-align: center;
 }
 
+
+/*Rodapé e patrocinadores*/
 footer {
     padding: 10px 10px;
     background-color: black;
@@ -138,15 +134,41 @@ footer {
     align-items: center;
 	
 }
-.patrocinadores {
-	font-family: 'FonteLogo';
-	font-size: 16px;
-	margin-left:12%;
-	margin-top:5%;
-	color: #FFF;
-	height: 300px;
-    
+#copy {
+    color: var(--roxo);
+    font-family: 'Pixelada';
+    margin: 10px 0;
+	position:absolute;
 }
+
+.patrocinadores{
+    background-color: ;
+	margin-top: 2%;
+	padding: 1%;
+	font-family: 'Pixelada';
+	color: var(--verde);
+    text-shadow: 3px 1px 3px var(--preto);
+    font-size: 24px;
+    text-align:center;
+}
+.logospatrocinio img {
+	margin:0;
+	margin-left: 1%;
+	margin-top: 2%;
+	height: 130px;
+	max-width: 100%;
+	max-height: 100%;
+	border-radius:5%;
+}
+
+/*contador de visitas*/
+#sfce7uuzln5z85xmmueg2j66rybyd3mtxtz img{ 
+	display: flex;
+	position: relative; 
+	margin-right: 0;
+	padding-right:0;
+}
+
 /* ---------- ---------- */
 
 
@@ -281,7 +303,7 @@ footer {
     to {opacity: 1;}
 }
 
-
+/* Menu responsivo */
 ul {
   list-style: none;
   padding: 0;
@@ -323,7 +345,7 @@ ul {
 
   .item-menu .link-menu:hover {
 
-    color: #fff;
+    color: var(--verde);
   }
   
   .navegacao-mobile {
@@ -374,4 +396,70 @@ ul {
 }
 .input-menu-all:checked ~ .list-menu .link-menu  {
   text-align: left;
+}
+
+/* Container dos textos */
+.container{
+	background-color: #DCDCDC;
+	max-width: 75em;
+	margin-left:11%;
+	margin-right:10%;
+	align-items: center;
+	padding: 2% 0 5% 0;
+	border-radius: 5%;
+	
+}
+
+.container p{
+	text-align: justify;
+	font-family: ;
+	font-size: 18px;
+	text-indent: 1.5em;
+	margin: 2%;
+	line-height: 1.6;
+	
+}
+
+.comochegar {
+	
+	display: flex;
+	justify-content: center;	
+	
+}
+.campus img{
+	max-width: 40%;
+	margin: 1% 1% 2% 6%;
+	border-radius:5%;
+	
+}
+
+.palestrante img{
+
+	max-width: 200px;
+	max-height: 200px;
+	margin: 2% 1% 2% 2%;
+	border-radius:5%;
+	float: left;
+}
+
+.container h2{
+	text-align: center;
+}
+
+.container h3{
+	margin-left: 2%;
+}
+
+.container ul li{
+	margin-left: 3%;
+	list-style-type: circle;
+	list-style-position: inside;
+	line-height: 1.6;
+	font-size: 18px;
+}
+.container a:link, a:hover, a:visited{
+	text-decoration: none;
+	font-style:italic;
+	font-weight:bold;
+	color: black;
 }
