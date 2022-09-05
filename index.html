@@ -95,22 +95,31 @@
     <section id="banners">
 
 		<div class="slides animation">
-            <img src="src/imagens/geekif.jpg" alt="Geek-If">
+            <picture>
+                <source media="(max-width: 600px)" srcset="src/imagens/banner1-re.jpg">
+                <img src="src/imagens/banner1.jpg" alt="Geek-If">
+            </picture>
         </div>
 		<div class="slides animation">
             <img src="src/imagens/ingressos2.jpg" alt="Ingressos">
         </div>		
         <div class="slides animation">
-            <img src="src/imagens/torneios.jpg" alt="Torneios">
+            <picture>
+                <source media="(max-width: 600px)" srcset="src/imagens/torneios-re.jpg">
+                <img src="src/imagens/banner2.jpg" alt="Torneios">
+            </picture>
         </div>
         <div class="slides animation">
-            <img src="src/imagens/cosplay.jpg" alt="Cosplay">
+            <picture>
+                <source media="(max-width: 600px)" srcset="src/imagens/cosplay-re.jpg">
+                <img src="src/imagens/banner4.jpg" alt="Cosplay">
+            </picture>
         </div>
 
 		
     </section>
 
-	<div id="sub_atracoes"> <h2 class="sub-titulo">ATRAÇÕES</h2> </div>
+    <h2 class="sub-titulo">ATRAÇÕES</h2> 
     <section id="atracoes">
         
         <div class="flip">
@@ -244,9 +253,10 @@
         </div>
     </section>
 
+  
     <section>
+        <h2 class="sub-titulo">PATROCÍNIO</h2>
         <div class="patrocinadores">
-            <h2>PATROCÍNIO</h2>
                 <div class="logospatrocinio">
 					<img src = "src/imagens/patrocinio/skilled.jpg">
 					<img src = "src/imagens/patrocinio/plasticobolha.jpg">
@@ -258,8 +268,8 @@
 					<img src = "src/imagens/patrocinio/gviprojetos.jpg">
 				</div>
         </div>
-        <div class="patrocinadores">
-            <h2>APOIO</h2>
+        <h2 class="sub-titulo">APOIO</h2>
+        <div class="patrocinadores">  
            <div class="logospatrocinio">
 					<img src = "src/imagens/apoio/sec-educacao.jpg">
 					<img src = "src/imagens/apoio/mariecurie.jpg">
@@ -267,6 +277,8 @@
 				</div>
         </div>
     </section>
+
+     
     <footer>
         <h3 id="copy">GeekIF 2022 - All Rights Reserved | Todos Os Direitos Reservados</h3>
 
@@ -280,7 +292,7 @@
 		</noscript>
 	
     </footer>
-    
+
 
 	<script>
         let slideIndex = 0

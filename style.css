@@ -64,6 +64,8 @@ body{
     height: 10vw;
     max-width: 100%;
 }
+
+
 .redes_sociais a{
 
     color: transparent;
@@ -72,11 +74,11 @@ body{
 	
 }
 .redes_sociais img{
-    width: 3vw;
+    width: 5vw;
     height: 70%;
 	margin-top: 10px;
-    margin-left: 45%;
 
+    padding-left: 30px;
 }
 
 .menu-content{
@@ -91,11 +93,10 @@ body{
     color: var(--verde);
     font-family: 'Pixelada';
     font-size: 20px;
-    transition: 0.3s;
 }
 .menu-content a:hover{
     text-decoration:underline;
-    color: var(--verde);
+    color: var(--ciano);
 }
 
 #mob{
@@ -111,11 +112,11 @@ body{
     text-align: center;
     color: var(--verde);
     text-shadow: 3px 1px 3px var(--preto);
-    font-size: 3.5vw;
+    font-size: 4em;
     font-family: 'pixelada';
     letter-spacing: 2px;
+    margin-top: 50px;
 }
-
 
 #copy {
     color: var(--roxo);
@@ -142,19 +143,14 @@ footer {
 }
 
 .patrocinadores{
-    background-color: ;
-	margin-top: 2%;
 	padding: 1%;
-	font-family: 'Pixelada';
-	color: var(--verde);
-    text-shadow: 3px 1px 3px var(--preto);
-    font-size: 24px;
     text-align:center;
 }
+
 .logospatrocinio img {
 	margin:0;
 	margin-left: 1%;
-	margin-top: 2%;
+	margin-top: 1%;
 	height: 130px;
 	max-width: 100%;
 	max-height: 100%;
@@ -183,29 +179,32 @@ footer {
 	
 	
 }
+
 #atracoes > .flip{
     margin: 2% 1% ;
+}
+
+@media (max-width: 600px){
+    #atracoes > .flip {
+        margin: 4% 1% ;
+    }
+    .sub-titulo{
+        font-size: 3em;
+    }
 }
 #atracoes > h2{
    font-family: 'FonteLogo';
 	
 }
-#sub_atracoes{
-    background-color: ;
-	margin-top: 2%;
-	padding: 1%;
-	font-family: 'Pixelada';
-	font-size: 40px;
-}
 
 .flip{
     background-color: transparent;
-    width: 25vw;
-    height: 25vw;
+    width: 300px;
+    height: 300px;
 }
 .flip-front img {
-	width: 25vw;
-    height: 25vw;
+    width: 300px;
+    height: 300px;
 	border-radius: 10px;
 	
 }
@@ -333,19 +332,17 @@ ul {
     padding: 15px;
     color: #555;
     display: block;
-    transition: .4s;
     cursor: pointer;
     text-align: center;
 	text-decoration: none;
     
     font-family: 'Pixelada';
-    font-size: 20px;
-    transition: 0.3s;
+    font-size: 1.7em;
   }
 
   .item-menu .link-menu:hover {
 
-    color: var(--verde);
+    color: var(--ciano);
   }
   
   .navegacao-mobile {
@@ -384,7 +381,6 @@ ul {
     padding: 15px;
     color: var(--verde);
     display: block;
-    transition: .4s;
     cursor: pointer;
     text-align: center;
     text-decoration: none;
@@ -412,7 +408,6 @@ ul {
 
 .container p{
 	text-align: justify;
-	font-family: ;
 	font-size: 18px;
 	text-indent: 1.5em;
 	margin: 2%;
@@ -459,7 +454,6 @@ ul {
 }
 .container a:link, a:hover, a:visited{
 	text-decoration: none;
-	font-style:italic;
-	font-weight:bold;
 	color: black;
 }
+
