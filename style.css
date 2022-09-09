@@ -100,7 +100,7 @@ footer {
 	max-width: 75em;
 	margin: auto;
 	align-items: center;
-	padding: 2% 0 5% 0;
+	padding: 2% 2% 5% 0;
 	border-radius: 2%;
 }
 
@@ -151,6 +151,14 @@ footer {
 .container ul li{
 	margin-left: 3%;
 	list-style-type: circle;
+	list-style-position: inside;
+	line-height: 1.6;
+	font-size: 18px;
+	color: white;
+}
+
+.container ol li{
+	margin-left: 3%;
 	list-style-position: inside;
 	line-height: 1.6;
 	font-size: 18px;

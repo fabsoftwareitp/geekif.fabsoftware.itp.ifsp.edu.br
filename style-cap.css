@@ -6,6 +6,12 @@
     justify-content: space-around;
     justify-items: center;
 }
+.inscricao-geek2 {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+}
 
 #titulo-cap {
     color: rgb(255 224 0);
