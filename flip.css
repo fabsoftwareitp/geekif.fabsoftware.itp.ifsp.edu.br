@@ -80,13 +80,13 @@
     color: white;
     margin:0 5%;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.20vw;
+    font-size: 1em;
 }
 
 .flip h2{
     font-family: 'pixelada';
     letter-spacing: 2px;
-    font-size: 2vw;
+    font-size: 1.5em;
 	
 }
 .flip-back h2{
