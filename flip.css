@@ -5,7 +5,6 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
-    padding: 1% 4%;
 	margin: 0;
 }
 
@@ -123,7 +122,10 @@
     to {opacity: 1;}
 }
 
-@media (max-width: 600px){
+@media (max-width: 500px){
+    #atracoes {
+        padding: 0px;
+    }
     #atracoes > .flip {
         margin: 4% 1% ;
     }

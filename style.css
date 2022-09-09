@@ -20,7 +20,6 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
 }
 
 body{
@@ -168,4 +167,27 @@ footer {
 .container a:link, a:hover, a:visited{
 	text-decoration: none;
 	color: var(--roxo);
+}
+
+@media (max-width: 500px){
+	footer {
+		padding: 1% 1%;
+		background-color: black;
+		justify-content: space-around;
+		display: flex;
+		align-items: center;
+		margin-top:3%;
+		height: 100px;
+	}
+	#copy {
+		color: var(--roxo);
+		font-family: 'Pixelada';
+		text-align: center;
+	}
+	#contador{
+		display: flex;
+		position:absolute;
+		right: 35vw;
+		padding-top: 15%;
+	}
 }
