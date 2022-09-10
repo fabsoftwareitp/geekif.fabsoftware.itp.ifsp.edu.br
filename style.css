@@ -156,6 +156,40 @@ footer {
 	color: white;
 }
 
+.numeros-li ul li {
+	margin-left: 3%;
+	list-style-type: decimal;
+	list-style-position: inside;
+	line-height: 1.6;
+	font-size: 18px;
+	color: white;
+}
+
+.item {
+	color: var(--verde);
+	font-size: 1.3em;
+	font-weight: 600;
+}
+
+.sub-item ul li {
+	list-style-type: square;
+}
+
+#importante {
+	border: 1px solid white;
+	margin: 20px;
+	padding: 10px;
+}
+
+#importante h3 {
+	text-align: center;
+	padding-top: 15px;
+}
+
+#importante ul li {
+	list-style-type: lower-alpha;
+}
+
 .container ol li{
 	margin-left: 3%;
 	list-style-position: inside;
