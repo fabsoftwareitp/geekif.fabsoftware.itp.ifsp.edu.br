@@ -19,7 +19,7 @@
     justify-content: space-between;
     display: flex;
     max-width: auto;
-    padding: 20px;
+    padding: 15px;
 }
 #logogeek img{
 	margin: auto;
@@ -96,12 +96,12 @@
 }
 .item-menu .link-menu {
     padding: 15px;
-    color: var(--verde);
+    /*color: var(--verde);*/
     display: block;
     cursor: pointer;
     text-align: center;
-    text-decoration: none;
-    font-family: 'Pixelada';
+    /*text-decoration: none;
+    font-family: 'Pixelada';*/
 }
 .input-menu-all:checked ~ .list-menu {
     display: block;
@@ -113,8 +113,8 @@
 
 ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
+    /*padding: 0;
+    margin: 0;*/
 }
 
 @media (min-width: 991px) {
@@ -128,22 +128,22 @@ ul {
     .list-menu {
         display: flex!important;
         justify-content: space-between;
-        width: 100%;
+        /*width: 100%;
         background: #000;
-        box-shadow: 2px 9px 49px -17px rgba(179, 179, 179, 0.3);
+        box-shadow: 2px 9px 49px -17px rgba(179, 179, 179, 0.3);*/
     }
 
     .item-menu {
         flex: auto;
     }
     .item-menu .link-menu {
-        padding: 15px;
+        /*padding: 15px;
         display: block;
         cursor: pointer;
         text-align: center;
         text-decoration: none;
-        font-family: 'Pixelada';
-        font-size: 1.5em;
+        font-family: 'Pixelada';*/
+        font-size: 1em;
     }
 
     .item-menu .link-menu:hover {
@@ -173,6 +173,10 @@ ul {
         height: 70%;
         margin-top: 10px;
         padding-left: 30px;
+    }
+
+    .redes_sociais a{
+        display: block;
     }
 
     .navegacao-mobile {

@@ -12,10 +12,9 @@
     margin: 2% 1% ;
 }
 
-#atracoes > h2{
+/*#atracoes > h2{
    font-family: 'FonteLogo';
-	
-}
+}*/
 
 .flip{
     background-color: transparent;
@@ -73,26 +72,30 @@
 .atr-text{
     position:absolute;
 	text-align: justify;
-    z-index:2;
+    /*z-index:2;*/
 }
 .atr-text p{
     color: white;
     margin:0 5%;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1em;
+    /*font-size: 1em;*/
 }
 
 .flip h2{
     font-family: 'pixelada';
     letter-spacing: 2px;
     font-size: 1.5em;
-	
-}
-.flip-back h2{
     text-align: center;
     text-shadow: 3px 1px 3px var(--preto);
     margin:20px 0;
+	
 }
+
+/*.flip-back h2{
+    text-align: center;
+    text-shadow: 3px 1px 3px var(--preto);
+    margin:20px 0;
+}*/
 
 .flip-front h2{
     text-shadow: 1px 1px 5px grey;
@@ -109,7 +112,7 @@
     margin: auto;
 	margin-top: 2%;
     display:block;
-    border-radius: 0px;
+    /*border-radius: 0px;*/
 }
 
 .animation{

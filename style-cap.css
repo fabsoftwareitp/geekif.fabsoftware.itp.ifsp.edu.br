@@ -4,7 +4,8 @@
     position: relative;
     display: flex;
     justify-content: space-around;
-    justify-items: center;
+    margin-top: 20px;
+    /*justify-items: center;*/
 }
 .inscricao-geek2 {
     position: absolute;
@@ -32,9 +33,10 @@
     margin-top: 280px;
     font-family: 'FonteLogo';
     border-radius: 20px;
-    border-width: 0px;
+    /*border-width: 0px;*/
     transition: 0.4s;
     background-color: white;
+    text-decoration:none;
 }
 
 #botao-cap:hover {
@@ -48,7 +50,7 @@
     position: absolute;
     background-image: url(src/imagens/fundo-cap.jpg);
     background-size: 50%;
-    height: 300px;
+    height: 228px;
     width: 100%;
     margin-top: 100px;
     box-shadow: 1px 10px 1px rgb(151, 8, 240);
