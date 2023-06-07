@@ -4,320 +4,160 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="author" content="Geek IF Itapetininga">
-    <meta name="description" content="O Geek IF é um evento cultural pop voltado à temática geek e tem como objetivo celebrá-la com a população de Itapetininga e região, criando um espaço para interação, diversão e desenvolvimento social e cultural">
-  
-    <title>Geek IF Itapetininga</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="cabecalho.css">
-    <link rel="stylesheet" href="flip.css">
-    <link rel="stylesheet" href="style-cap.css">
-    <link rel="shortcut icon" type="imagem/x-icon" href="src/imagens/favicon64.ico"/>	
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/slide.css">
+    <link rel="stylesheet" href="/css/content.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <!-- HTML -->
+    <title>Geek IF</title>
 </head>
 <body>
-    <header>
-        <div class="Topo">
-            <div class="cabecalho"><!-- cabeçalho -->
-				<div id = "logoif"><!-- logo if -->
-                <a href="https://itp.ifsp.edu.br/" target="_blank">
-				<img src="src/imagens/logoif_branco.png" alt="logo_if"></a>
-				</div>
-
-				<div id = "logogeek"><!-- logo geek if -->
-				<a href="index.html">
-                <img src="src/imagens/logogeek.png" alt="logo_evento"></a>
-				</div>
-				
-                <div class="redes_sociais"><!-- redes sociais if -->
-                    <a href="https://www.instagram.com/ifspitapetininga" target="_blank">
-                        <img src="src/imagens/logoinstagram.png" alt="Instagram">
-                    </a>
-                    <a href="https://www.facebook.com/ifspitape" target="_blank">
-                        <img src="src/imagens/logofacebook.png" alt="Facebook">
-                    </a>
-					<a></a>
-				</div>
-            </div>
-
-			<div class="menu-content"><!-- menu -->
-				<label class="open-menu-all" for="open-menu-all">
-				<input class="input-menu-all" id="open-menu-all" type="checkbox" name="menu-open" />
-				
-				<div class="navegacao-mobile"><!-- risquinhos mobile -->
-					<span class="linha-menu"></span>
-					<span class="linha-menu"></span>
-					<span class="linha-menu"></span>
-				</div>
-				
-				<ul class="list-menu"><!-- itens do menu-->
-					<li class="item-menu">
-					  <a href="index.html" target="_self" class="link-menu">Home</a>
-					</li>
-					<li class="item-menu">
-					  <a href="paginas/oficinas.html" target="_self" class="link-menu">Oficinas</a>
-					</li>
-					<li class="item-menu">
-					  <a href="paginas/palestras.html" target="_self" class="link-menu">Palestras</a>
-					</li>
-					<li class="item-menu">
-					  <a href="paginas/magic.html" target="_self" class="link-menu">Magic</a>
-					</li>
-					<li class="item-menu">
-					  <a href="paginas/cosplay.html" target="_self" class="link-menu">Cosplay</a>
-					</li>
-					<li class="item-menu">
-					  <a href="paginas/justdance.html" target="_self" class="link-menu">Just Dance</a>
-					</li>
-					<li class="item-menu">
-					  <a href="paginas/breve.html" target="_self" class="link-menu">Programação</a>
-					</li>
-					<li class="item-menu">
-					  <a href="paginas/comochegar.html" target="_self" class="link-menu">Como Chegar</a>
-					</li>
-					<li class="item-menu">
-					  <a href="paginas/breve.html" target="_self" class="link-menu">Organização</a>
-					</li>
-				</ul>
-			    </label>
-            </div>
-        </div>
+    <!-- Cabeçalho/Menu -->
+    <header class="header">
+       <a href="" class="logo">Placeholder</a>
+       <nav class="nav">
+           <input type="checkbox" id="checkbox" class="checkbox">
+           <label for="checkbox" class="label-menu">Menu
+               <span class="hamburguer"></span></label>
+           <ul class="menu">
+                <li><a href="">Página Inicial</a></li>
+                <li><a href="">Oficinas</a></li>
+                <li><a href="">Palestras</a></li>
+                <li><a href="">Torneios</a></li>
+           </ul>
+       </nav>
     </header>
-
-    <section id="banners"><!-- slides -->
-
-		<div class="slides animation">
-            <picture>
-                <source media="(max-width: 600px)" srcset="src/imagens/banner1-re.jpg">
-                <img src="src/imagens/geekif.jpg" alt="Geek-If">
-            </picture>
+    <!-- Slider Principal -->
+    <section class="carousell">
+        <div class="img-list" id="img-list">
+            <img src="/imgs/Beia-Carvalho-Kroton-Folder-1080x600.jpg" alt="">
+            <img src="/imgs/Beia-Carvalho-Kroton-Folder-1080x600.jpg" alt="">
+            <img src="/imgs/Beia-Carvalho-Kroton-Folder-1080x600.jpg" alt="">
+            <img src="/imgs/Beia-Carvalho-Kroton-Folder-1080x600.jpg" alt="">
+            <img src="/imgs/Beia-Carvalho-Kroton-Folder-1080x600.jpg" alt="">
         </div>
-		<div class="slides animation">
-            <img src="src/imagens/ingressos2.jpg" alt="Ingressos">
-        </div>		
-        <div class="slides animation">
-            <picture>
-                <source media="(max-width: 600px)" srcset="src/imagens/torneios-re.jpg">
-                <img src="src/imagens/torneios.jpg" alt="Torneios">
-            </picture>
+        <div class="btn-section">
+            <div class="caro-btn" onclick="slideImg(0)"></div>
+            <div class="caro-btn" onclick="slideImg(1)"></div>
+            <div class="caro-btn" onclick="slideImg(2)"></div>
+            <div class="caro-btn" onclick="slideImg(3)"></div>
+            <div class="caro-btn" onclick="slideImg(4)"></div>
         </div>
-        <div class="slides animation">
-            <picture>
-                <source media="(max-width: 600px)" srcset="src/imagens/cosplay-re.jpg">
-                <img src="src/imagens/cosplay.jpg" alt="Cosplay">
-            </picture>
-        </div>
-
-		
     </section>
-
-    <h2 class="sub-titulo">ATRAÇÕES</h2><!-- conteúdo -->
-    <section id="atracoes">
-        
-        <div class="flip">
-            <div class="flip-inner">
-                <div class="flip-front">
-                    <img src = "src/imagens/banda-elisios.jpg">
+    <!-- Sobre o Eveneto -->
+    <section class="about-back">
+        <div class="about">
+            <h1>Sobre o Evento</h1>
+            <p>O evento foi top Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Repellat velit voluptate sint nostrum qui eaque. Nihil, tenetur reprehenderit 
+                quis molestias nesciunt fuga magnam culpa atque saepe soluta dolores ipsum nam.</p>
+            <p>O evento foi top Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Repellat velit voluptate sint nostrum qui eaque. Nihil, tenetur reprehenderit 
+                quis molestias nesciunt fuga magnam culpa atque saepe soluta dolores ipsum nam.</p>
+            <p>O evento foi top Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Repellat velit voluptate sint nostrum qui eaque. Nihil, tenetur reprehenderit 
+                quis molestias nesciunt fuga magnam culpa atque saepe soluta dolores ipsum nam.</p>
+        </div>
+    </section>
+    <!-- Slider Eventos -->
+    <section class="carousell-event">
+        <div class="img-list-event" id="img-list-event">
+            <div class="content-event">
+                <div class="content-text-event">
+                    <h3>Teste</h3>
+                    <p>Foda</p>
+                    <a href="/">Veja lá</a>
                 </div>
-                <div class="flip-back">
-                    <div class="bg-image"></div>
-                    <div class="atr-text">
-                        <h2>Banda Elísios</h2>
-                        <p>O principal foco da banda são as músicas de Anime, entre elas, muitas outras músicas que fazem sucesso entre o público Otaku, com um diferencial que só a Banda Elísios tem, fazendo sempre o melhor para trazer as músicas do j-rock e j-pop com a melhor qualidade que o público merece!</p>
-                    </div>
+                <img src="/imgs/Beia-Carvalho-Kroton-Folder-1080x600.jpg" alt="">
+            </div>
+            <div class="content-event">
+                <div class="content-text-event">
+                    <h3>Teste</h3>
+                    <p>Foda</p>
+                    <a href="/">Veja lá</a>
                 </div>
+                <img src="/imgs/Beia-Carvalho-Kroton-Folder-1080x600.jpg" alt="">
+            </div>
+            <div class="content-event">
+                <div class="content-text-event">
+                    <h3>Teste</h3>
+                    <p>Foda</p>
+                    <a href="/">Veja lá</a>
+                </div>
+                <img src="/imgs/Beia-Carvalho-Kroton-Folder-1080x600.jpg" alt="">
+            </div>
+            <div class="content-event">
+                <div class="content-text-event">
+                    <h3>Teste</h3>
+                    <p>Foda</p>
+                    <a href="/">Veja lá</a>
+                </div>
+                <img src="/imgs/Beia-Carvalho-Kroton-Folder-1080x600.jpg" alt="">
+            </div>
+            <div class="content-event">
+                <div class="content-text-event">
+                    <h3>Teste</h3>
+                    <p>Foda</p>
+                    <a href="/">Veja lá</a>
+                </div>
+                <img src="/imgs/Beia-Carvalho-Kroton-Folder-1080x600.jpg" alt="">
             </div>
         </div>
-		<div class="flip">
-            <div class="flip-inner">
-                <div class="flip-front">
-					<img src = "src/imagens/kungfu-frente.jpg">
-                    
-                </div>
-                <div class="flip-back">
-                    <div class="bg-image"></div>
-                    <div class="atr-text">
-                        <h2>Kung Fu</h2>
-                        <p>O Kung Fu Garra de Águia é uma arte milenar chinesa que se inspira na águia para executar seus movimentos, apresenta técnicas versáteis e movimentos suaves, permitindo a definição, tonificação e fortalecimento do corpo. A academia de Itapetininga é administrada pelo Mestre Benedito Ribeiro Neto e está há mais de 20 anos formando artistas marciais.</p>
-                    </div>
-                </div>
-            </div>
+        <div class="btn-section-event">
+            <div class="caro-btn-event" onclick="slideImgEvent(0)"></div>
+            <div class="caro-btn-event" onclick="slideImgEvent(1)"></div>
+            <div class="caro-btn-event" onclick="slideImgEvent(2)"></div>
+            <div class="caro-btn-event" onclick="slideImgEvent(3)"></div>
+            <div class="caro-btn-event" onclick="slideImgEvent(4)"></div>
         </div>
-		<div class="flip">
-            <div class="flip-inner">
-                <div class="flip-front">
-					<img src = "src/imagens/capoeira.jpg">
-                </div>
-                <div class="flip-back">
-                    <div class="bg-image"></div>
-                    <div class="atr-text">
-					<h2>Cordão de Ouro</h2>
-					<p>A Associação de Capoeira Cordão de Ouro foi fundada pelo Mestre Suassuna na década de 60 juntamente com Mestre Brasília. Os dois mestres decidiram usar o nome Cordão de Ouro, por se tratar de Besouro Cordão de Ouro, um capoeirista anterior à divisão de Angola. A Associação têm grupos em todo o mundo, em Itapetininga o grupo é comandado pelo Mestre Gordo e Professor Matheus. </p>
-                </div>
-                </div>
-            </div>
+        <div class="option">
+            <div class="prev" onclick="swipper(-1)">V</div>
+            <div class="next" onclick="swipper(+1)">V</div>
         </div>
-        <div class="flip">
-            <div class="flip-inner">
-                <div class="flip-front">
-                    <img src = "src/imagens/hapkido-frente.jpg">
-                </div>
-                <div class="flip-back">
-                    <div class="bg-image"></div>
-                    <div class="atr-text">
-                        <h2>Hapkido</h2>
-                        <p>O Hapkido é uma arte marcial coreana usada para defesa pessoal e tratamento do corpo, tem como foco a coordenação, união e harmonia. Seu preceito é que uma sociedade melhor e mais desenvolvida gera menos conflitos. A academia de Hapkido Contato Brasil é administrada pelo Mestre Marcos Silvério e está há mais de 30 anos formando artistas marciais.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="flip">
-            <div class="flip-inner">
-                <div class="flip-front">
-                    <img src = "src/imagens/nisshindaiko-frente.jpg">
-                </div>
-                <div class="flip-back">
-                    <div class="bg-image"></div>
-                    <div class="atr-text">
-                        <h2>Nisshin Daiko</h2>
-                        <p>O Taiko (tambor) é um instrumento da cultura japonesa que foi muito usado como meio de comunicação, em festivais, em guerras e no teatro. Sua prática melhora o condicionamento físico e a coordenação motora, além de agregar valores como disciplina, respeito e trabalho em grupo. O grupo Nisshin Daiko, divulga os valores culturais e éticos desta arte desde 2004.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="flip">
-            <div class="flip-inner">
-                <div class="flip-front">
-                    <img src = "src/imagens/daniel-frente.jpg">
-                </div>
-                <div class="flip-back">
-                    <div class="bg-image"></div>
-                    <div class="atr-text">
-                        <h2>Daniel Duarte</h2>
-                        <p>Professor de Piano formado pelo conservatório de Tatuí e técnico em música pela Etec de São Paulo. Fará um medley de aberturas de vários animes famosos com arranjos e adaptações próprias. Esperamos que possam curtir esse momento de pura nostalgia!</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-		<div class="flip">
-            <div class="flip-inner">
-                <div class="flip-front">
-                    <img src = "src/imagens/doutores-frente.jpg">
-                </div>
-                <div class="flip-back">
-                    <div class="bg-image"></div>
-                    <div class="atr-text">
-                        <h2>Doutores do Rock</h2>
-                        <p>Doutores do Rock é uma banda talentosa que toca estilos como Rock, Hard Rock e também Heavy Metal. A banda já tem 9 anos de formação e seus integrantes são todos professores e doutores em suas áreas do conhecimento, por isto, o nome da banda une suas duas paixões, ensino e rock’n’roll.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-		<div class="flip">
-            <div class="flip-inner">
-                <div class="flip-front">
-					<img src = "src/imagens/bandameiaboca.jpg">
-                    
-                </div>
-                <div class="flip-back">
-                    <div class="bg-image"></div>
-                    <div class="atr-text">
-                        <h2>Banda Meia Boca</h2>
-                        <p>Banda de rock com músicas autorais divertidas e cheias de trocadilhos. Criada em Itapetininga, em julho de 2021 por Ivan Fortunato, Ricksson Ferreira e Iury Nakaoshi. As primeiras composições foram inspiradas pela Casa Colaborativa mais charmosa do Mundo, o @cazul.o</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-		<div class="flip">
-            <div class="flip-inner">
-                <div class="flip-front">
-                    <img src = "src/imagens/herois_itape.jpg">
-                </div>
-                <div class="flip-back">
-                    <div class="bg-image"></div>
-                    <div class="atr-text">
-                        <h2>Heróis Itapê</h2>
-                        <p>A cidade de Itapetininga agora está a salvo com os Heróis Itapê, um grupo seleto de heróis que participa em festas e eventos, e que, além disto, levam alegria e esperança a hospitais e orfanatos.</p>
-                    </div>
-                </div>
+    </section>
+    <!-- Contato -->
+    <section class="contact-background">
+        <div class="contact-geo"><!-- Melhor com uma imagem mesmo-->
+            <div class="contact">
+                <h1>Entre em Contato!</h1>
+                <form action="/" method="post">
+                    <label for="name">Seu Nome:</label>
+                    <input type="text" name="name" placeholder="seu nome aqui" required>
+                    <label for="email">Seu Email:</label>
+                    <input type="email" name="email" placeholder="seu email aqui" required>
+                    <label for="message">Sua Mensagem:</label>
+                    <input type="message" name="message" placeholder="sua mensagem aqui" required>
+                    <button type="submit">Enviar</button>
+                </form>
             </div>
         </div>
     </section>
-
-    <section>
-        <div class="fundo-inc"></div>
-            <div class="inscricao-geek">
-                <h1 id="titulo-cap">PARTICIPE!</h1>
-                <img id="img-cap" src="src/imagens/cap-america.png" alt="capitao-america">
-                <a href="https://fabsoftware.itp.ifsp.edu.br/sge.stag/GeekIF" target="_blank" id="botao-cap">REALIZAR INSCRIÇÃO</a>
-            </div>
-    </section>
-
-    <section><!-- patrocínios e apoios -->
-        <h2 class="sub-titulo">PATROCÍNIO</h2>
-        <div class="patrocinadores">
-            <!--<div class="logospatrocinio">-->
-				<a href="https://www.instagram.com/skill.editapetininga/?igshid=YmMyMTA2M2Y%3D" target="_blank"><img src = "src/imagens/patrocinio/skilled.jpg"></a>
-    			<a href="https://www.instagram.com/maislegalqueplasticobolha/?igshid=YmMyMTA2M2Y%3D" target="_blank"><img src = "src/imagens/patrocinio/plasticobolha.jpg"></a>
-				<a href="https://www.instagram.com/lojageekse/?igshid=YmMyMTA2M2Y%3D" target="_blank"><img src = "src/imagens/patrocinio/geekse.jpg"></a>
-				<a href="https://www.instagram.com/persona_nerd/?igshid=YmMyMTA2M2Y%3D" target="_blank"><img src = "src/imagens/patrocinio/personanerd.jpg"></a>
-				<a href="https://www.instagram.com/lojasweetpotato/?igshid=YmMyMTA2M2Y%3D" target="_blank"><img src = "src/imagens/patrocinio/sweetpotato.jpg"></a>
-				<a href="https://www.instagram.com/victorduartestudio/?igshid=YmMyMTA2M2Y%3D" target="_blank"><img src = "src/imagens/patrocinio/victorduarte.jpg"></a>
-				<a href="https://www.instagram.com/costelariacharmosa/?igshid=YmMyMTA2M2Y%3D" target="_blank"><img src = "src/imagens/patrocinio/charmosa.jpg"></a>
-				<a href="https://www.instagram.com/wannyfantasiasitape/?igshid=YmMyMTA2M2Y%3D" target="_blank"><img src = "src/imagens/patrocinio/wanny.jpg"></a>
-				<a href="https://www.instagram.com/gviprojetos.planejados/?igshid=YmMyMTA2M2Y%3D" target="_blank"><img src = "src/imagens/patrocinio/gviprojetos.jpg"></a>
-			<!--</div>-->
+    <!-- Como Chegar -->
+    <section class="arrive">
+        <h1>Como Chegar</h1>
+        <p>Como chegar de maneira rápida e fácil 100% atualizada 2023 IF</p>
+        <div class="arrive-img">
+            <img src="/imgs/Beia-Carvalho-Kroton-Folder-1080x600.jpg" alt="">
+            <img src="/imgs/Beia-Carvalho-Kroton-Folder-1080x600.jpg" alt="">
         </div>
-        <h2 class="sub-titulo">APOIO</h2>
-        <div class="patrocinadores">  
-          <!--<div class="logospatrocinio">-->
-				<img src = "src/imagens/apoio/sec-educacao.jpg">
-				<img src = "src/imagens/apoio/mariecurie.jpg">
-				<img src = "src/imagens/apoio/rpg-itape.jpg">
-				<img src = "src/imagens/apoio/swordplay.jpg">
-			<!--</div>-->
-        </div>
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.293147190238!2d-48.02073778502155!3d-23.593817384666814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c5cbf41ebfcf31%3A0xa65e4fb6d75446bf!2sInstituto%20Federal%20de%20Educa%C3%A7%C3%A3o%2C%20Ci%C3%AAncia%20e%20Tecnologia%20de%20S%C3%A3o%20Paulo%2C%20Campus%20Itapetininga!5e0!3m2!1spt-BR!2sbr!4v1686163888450!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
-
-     
-    <footer><!-- rodapé -->
-        <h3 id="copy">GeekIF 2022 - All Rights Reserved | Todos Os Direitos Reservados</h3>
-		<!--<div id="contador">
-		<div id="sfce7uuzln5z85xmmueg2j66rybyd3mtxtz"></div> 
-		<script type="text/javascript" src="https://counter9.stat.ovh/private/counter.js?c=e7uuzln5z85xmmueg2j66rybyd3mtxtz&down=async" async></script> 
-		<br><a href="https://www.webcontadores.com"></a>
-		<noscript>
-			<a href="https://www.webcontadores.com" title="contador de visitas blogger">
-			<img src="https://counter9.stat.ovh/private/webcontadores.php?c=e7uuzln5z85xmmueg2j66rybyd3mtxtz" border="0" title="contador de visitas blogger" alt="contador de visitas blogger">
-			</a>
-		</noscript>
-		</div>-->
+    <!-- Rodapé -->
+    <footer class="footer">
+        <a href=""><img src="/imgs/oie_transparent.png" id="logo-if" alt="Logo If"></a>
+        <div class="social-media">
+            <a href="">
+                <img class="social-img" src="/imgs/fb_icon_325x325.png" alt="Facebook">
+            </a>
+            <a href="">
+                <img class="social-img" src="/imgs/Instagram-Icon.png" alt="Instagram">
+            </a>
+        </div>
+        <h3>Todos os Direitos Reservados©Geek IF</h3>
     </footer>
-
-    <!-- script do slide -->
-	<script>
-        let slideIndex = 0
-        showSlides()
-
-        function showSlides(){
-            
-            let slides = document.getElementsByClassName('slides')
-
-            for(let i = 0; i < slides.length; i++){
-                slides[i].style.display = 'none'
-            }
-
-            slideIndex++
-
-            if(slideIndex > slides.length){
-                slideIndex = 1
-            }
-
-            slides[slideIndex-1].style.display = "block"
-
-            setTimeout(showSlides, 5000)
-        }
-    </script>
-
+    <!-- JavaScript -->
+    <script src="/script/index.js"></script>
 </body>
 </html>

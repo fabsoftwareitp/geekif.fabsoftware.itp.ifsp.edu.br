@@ -1,0 +1,29 @@
+.footer {
+    background-color: purple;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.footer > a,
+.footer > div,
+.footer > h3{
+    padding: 10px;
+}
+
+.footer > h3 {
+    color: white;
+    font-size: 1.4rem;
+}
+
+#logo-if {
+    width: 15rem;
+}
+
+.social-img {
+    width: 6rem;
+    padding: 0 25px;
+}

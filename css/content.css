@@ -1,0 +1,108 @@
+/*Sobre o Evento*/
+.about {
+    width: 100%-4px;
+    text-align: center;
+    padding: 50px;
+    background-color: blue;
+}
+
+.about > h1 {
+    font-size: 2em;
+}
+
+.about > p {
+    font-size: 1.5em;
+}
+
+/*Contato*/
+.contact-geo {
+    background-color: pink;
+    margin: 0 auto;
+    width: 90%;
+    height: 400px;
+    transform: skew(20deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-background {
+    background-image: url("/imgs/Beia-Carvalho-Kroton-Folder-1080x600.jpg");
+}
+
+.contact {
+    width: 100%-4px;
+    text-align: center;
+    padding: 25px;
+    transform: skew(-20deg);
+}
+
+.contact > h1 {
+    font-size: 2em;
+}
+
+.contact > form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.contact > form > input {
+    width: 60vw;
+    border: 1px solid;
+    margin: 10px;
+}
+
+.contact > form > input,
+.contact > form > label,
+.contact > form > button {
+    font-size: 1.5em;
+}
+
+@media (max-width:600px) {
+    .contact-background {
+        height: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact-geo {
+        width: 100%;
+        transform: skew(0deg, 10deg);
+    }
+
+    .contact {
+        transform: skew(0deg, -10deg)
+    }
+}
+/*Como Chegar*/
+.arrive {
+    width: 100%-4px;
+    text-align: center;
+    padding: 50px;
+    background: linear-gradient(rgb(224, 251, 15) 0%, rgb(214, 20, 124) 100%);
+}
+
+.arrive > h1 {
+    font-size: 2em;
+}
+
+.arrive > p {
+    font-size: 1.5em;
+}
+
+.arrive-img {
+    display: flex;
+    justify-content: space-around;
+}
+
+.arrive-img img {
+    width: 30vw;
+}
+
+.map {
+    margin: 10px;
+    width: 80%;
+}
