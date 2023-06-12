@@ -20,15 +20,35 @@
        <nav class="nav">
            <input type="checkbox" id="checkbox" class="checkbox">
            <label for="checkbox" class="label-menu">Menu
-               <span class="hamburguer"></span></label>
+               <span class="hamburguer"></span>
+            </label>
            <ul class="menu">
                 <li><a href="">Página Inicial</a></li>
-                <li><a href="">Oficinas</a></li>
-                <li><a href="">Palestras</a></li>
-                <li><a href="">Torneios</a></li>
+                <li><input type="checkbox" id="checkbox-workshop" class="checkbox">
+                    <label for="checkbox-workshop" class="label-sub-menu">Oficinas</label>
+                    <ul class="sub-menu">
+                        <li><a href="">oficina 1</a></li>
+                        <li><a href="">oficina 2</a></li>
+                    </ul>
+                </li>
+                <li><input type="checkbox" id="checkbox-lecture" class="checkbox">
+                    <label for="checkbox-lecture" class="label-sub-menu">Palestras</label>
+                    <ul class="sub-menu">
+                        <li><a href="">palestra 1</a></li>
+                        <li><a href="">palestra 2</a></li>
+                    </ul>
+                </li>
+                <li><input type="checkbox" id="checkbox-tournament" class="checkbox">
+                    <label for="checkbox-tournament" class="label-sub-menu">Torneios</label>
+                    <ul class="sub-menu">
+                        <li><a href="">torneio 1</a></li>
+                        <li><a href="">torneio 2</a></li>
+                    </ul>
+                </li>
            </ul>
        </nav>
     </header>
+    <div class="header-back"></div>
     <!-- Slider Principal -->
     <section class="carousell">
         <div class="img-list" id="img-list">
@@ -119,7 +139,7 @@
     </section>
     <!-- Contato -->
     <section class="contact-background">
-        <div class="contact-geo"><!-- Melhor com uma imagem mesmo-->
+        <div class="contact-geo"><!-- É mais fácil fazer com uma imagem mesmo-->
             <div class="contact">
                 <h1>Entre em Contato!</h1>
                 <form action="/" method="post">

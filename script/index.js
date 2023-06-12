@@ -19,12 +19,12 @@ var imgListEvent = document.getElementById("img-list-event");
 var caroBtnsEvent = document.getElementsByClassName("caro-btn-event");
 
 var positionUit = -100;
-var posiAtu = 0; 
+var posiNow = 0; 
 
 function slideImgEvent(x) {
   var i;
-  posiAtu = x;
-  posiAtu = working(posiAtu);
+  posiNow = x;
+  posiNow = working(posiNow);
   for(i = 0; i < 5; i++) {
     caroBtnsEvent[i].classList.remove('active');
   }
@@ -35,20 +35,20 @@ function slideImgEvent(x) {
 
 function swipper(x) {
   var i;
-  posiAtu += x;
-  posiAtu = working(posiAtu);
+  posiNow += x;
+  posiNow = working(posiNow);
   for(i = 0; i < 5; i++) {
     caroBtnsEvent[i].classList.remove('active');
   }
-  caroBtnsEvent[posiAtu].classList.add('active');
-  position = (posiAtu) * positionUit;
+  caroBtnsEvent[posiNow].classList.add('active');
+  position = (posiNow) * positionUit;
   imgListEvent.style.left = position + "%";
 }
 
-function working(posiAtu){
-  if(posiAtu<0){
-    posiAtu = 0;
-  } else if (posiAtu>4){
-    posiAtu = 4;
-  } return posiAtu;
+function working(posiNow){
+  if(posiNow<0){
+    posiNow = 0;
+  } else if (posiNow>4){
+    posiNow = 4;
+  } return posiNow;
 }
