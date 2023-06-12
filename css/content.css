@@ -20,7 +20,7 @@
     margin: 0 auto;
     width: 90%;
     height: 400px;
-    transform: skew(20deg);
+    transform: skew(10deg);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -34,7 +34,7 @@
     width: 100%-4px;
     text-align: center;
     padding: 25px;
-    transform: skew(-20deg);
+    transform: skew(-10deg);
 }
 
 .contact > h1 {
