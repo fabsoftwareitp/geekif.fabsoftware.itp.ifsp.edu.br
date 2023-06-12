@@ -46,12 +46,12 @@
     cursor: pointer;
 }
 
-.carousell .caro-btn:first-child {
-    background-color: blue;
-}
-
 .carousell .caro-btn:hover {
     background-color: green;
+}
+
+.carousell .active{
+    background-color: red;
 }
 
 /*Slider Eventos*/
@@ -115,12 +115,12 @@
     cursor: pointer;
 }
 
-.carousell-event .caro-btn-event:first-child {
-    background-color: blue;
-}
-
 .carousell-event .caro-btn-event:hover {
     background-color: green;
+}
+
+.carousell-event .active{
+    background-color: red;
 }
 
 .prev,

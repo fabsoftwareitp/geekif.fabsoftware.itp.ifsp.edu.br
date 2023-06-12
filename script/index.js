@@ -4,14 +4,12 @@ var caroBtns = document.getElementsByClassName("caro-btn");
 
 var positionUit = -100;
 
-caroBtns[0].style.backgroundColor = "green";
-
 function slideImg(x) {
   var i;
   for(i = 0; i < 5; i++) {
-    caroBtns[i].style.backgroundColor = "blue";
+    caroBtns[i].classList.remove('active');
   }
-  caroBtns[x].style.backgroundColor = "green";
+  caroBtns[x].classList.add('active');
   position = x * positionUit;
   imgList.style.left = position + "%";
 }
@@ -21,32 +19,28 @@ var imgListEvent = document.getElementById("img-list-event");
 var caroBtnsEvent = document.getElementsByClassName("caro-btn-event");
 
 var positionUit = -100;
-var posiAtu = 0;
-
-caroBtnsEvent[0].style.backgroundColor = "green";
+var posiAtu = 0; 
 
 function slideImgEvent(x) {
   var i;
   posiAtu = x;
   posiAtu = working(posiAtu);
   for(i = 0; i < 5; i++) {
-    caroBtnsEvent[i].style.backgroundColor = "blue";
+    caroBtnsEvent[i].classList.remove('active');
   }
-  caroBtnsEvent[x].style.backgroundColor = "green";
+  caroBtnsEvent[x].classList.add('active');
   position = x * positionUit;
   imgListEvent.style.left = position + "%";
 }
 
 function swipper(x) {
   var i;
-  console.log(posiAtu);
   posiAtu += x;
   posiAtu = working(posiAtu);
-  console.log(posiAtu);
   for(i = 0; i < 5; i++) {
-    caroBtnsEvent[i].style.backgroundColor = "blue";
+    caroBtnsEvent[i].classList.remove('active');
   }
-  caroBtnsEvent[posiAtu].style.backgroundColor = "green";
+  caroBtnsEvent[posiAtu].classList.add('active');
   position = (posiAtu) * positionUit;
   imgListEvent.style.left = position + "%";
 }
