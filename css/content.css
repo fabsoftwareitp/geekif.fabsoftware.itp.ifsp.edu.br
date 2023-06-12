@@ -60,6 +60,10 @@
     font-size: 1.5em;
 }
 
+.contact button {
+    cursor: pointer;
+}
+
 @media (max-width:600px) {
     .contact-background {
         height: 500px;

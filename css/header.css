@@ -38,7 +38,8 @@
 }
 
 .menu > li > label {
-    cursor: pointer;
+    cursor: pointer; 
+    user-select: none;
 }
 
 .label-menu, .checkbox {
