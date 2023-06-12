@@ -4,6 +4,8 @@ var caroBtns = document.getElementsByClassName("caro-btn");
 
 var positionUit = -100;
 
+caroBtns[0].style.backgroundColor = "green";
+
 function slideImg(x) {
   var i;
   for(i = 0; i < 5; i++) {
@@ -20,6 +22,8 @@ var caroBtnsEvent = document.getElementsByClassName("caro-btn-event");
 
 var positionUit = -100;
 var posiAtu = 0;
+
+caroBtnsEvent[0].style.backgroundColor = "green";
 
 function slideImgEvent(x) {
   var i;

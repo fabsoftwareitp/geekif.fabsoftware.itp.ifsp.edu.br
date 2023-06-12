@@ -3,9 +3,12 @@
     align-items: center;
     justify-content: space-between;
     height: 6rem;
-    padding: 1.5rem;
+    padding: 1rem;
     flex-direction: column;
     background-color: orange;
+    z-index: 2;
+    position: fixed;
+    width: 100vw;
 }
 
 .logo {
@@ -17,6 +20,7 @@
     list-style: none;
     display: flex;
     gap: 1rem;
+    position: relative;
 }
 
 .menu a {
@@ -33,12 +37,13 @@
 @media (max-width: 600px) {
     .header {
         flex-direction: row;
+        height: 5rem;
     }
     
     .menu {
         display: block;
         position: absolute;
-        top: 6rem;
+        top: 5rem;
         left: 0;
         text-align: center;
         width: 100%;
