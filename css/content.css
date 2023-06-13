@@ -63,6 +63,7 @@
 
 .contact button {
     cursor: pointer;
+    padding: 5px;
 }
 
 @media (max-width:600px) {
@@ -81,6 +82,10 @@
     .contact {
         transform: skew(0deg, -10deg)
     }
+
+    .contact > form > input  {
+    font-size: 1.3em;
+}
 }
 
 /* Como Chegar */
