@@ -151,18 +151,26 @@
     .prev {
         display: block;
         position: absolute;
-        color: white;
         top: 50%;
-        left: 1rem;
-        transform: rotate(90deg);
+        left: 2vw;
+    }
+
+    .prev svg {
+        width: 35px;
+        height: 35px;
+        fill: white;
     }
     
     .next {
         display: block;
         position: absolute;
-        color: white;
         top: 50%;
-        right: 1rem;
-        transform: rotate(-90deg);
+        right: 2vw;
+    }
+
+    .next svg {
+        width: 35px;
+        height: 35px;
+        fill: white;
     }
 }
