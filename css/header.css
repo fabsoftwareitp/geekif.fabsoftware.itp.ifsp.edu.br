@@ -29,7 +29,7 @@
     position: relative;
 }
 
-.menu li {
+.menu > li {
     font-size: 1.5rem;
     display: block;
     padding: 1rem;
@@ -61,7 +61,7 @@
     background-color: red;
 }
 
-.sub-menu li {
+.sub-menu > li {
     padding: 1rem 0;
     margin-inline: 1rem;
     border-bottom: 0.0625rem solid rgba(0, 0, 0, 0.16);
@@ -118,7 +118,7 @@
         background-color: red;
     }
 
-    .menu li {
+    .menu > li {
         padding: 1rem 0; 
         border-bottom: 0.0625rem solid rgba(0, 0, 0, 0.16);
         border-top: 0.0625rem;

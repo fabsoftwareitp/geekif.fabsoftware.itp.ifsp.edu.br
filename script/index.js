@@ -52,3 +52,40 @@ function working(posiNow){
     posiNow = 4;
   } return posiNow;
 }
+
+//Enviar Email
+const form = document.getElementById('form');
+
+async function submitForm(event) {
+    event.preventDefault();
+
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+
+    await sendEmail(name, email, message);
+}
+
+async function sendEmail(name, email, message) {
+    try {
+        const connction = await fetch("https://formsubmit.co/ajax/vitor.cavalheiro@aluno.ifsp.edu.br", {
+            method: "POST",
+            headers: { 
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: JSON.stringify({
+                name: name,
+                email: email,
+                message: message
+            })
+        })
+    
+        const convertedConnection = await connction.json();
+        alert('Email enviado com sucesso');
+    } catch (e) {
+      alert('ERROR: Email não foi enviado');
+    }
+}
+
+form.addEventListener("submit", event => submitForm(event));

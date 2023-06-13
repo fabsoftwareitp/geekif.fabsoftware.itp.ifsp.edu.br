@@ -1,4 +1,4 @@
-/*Slider Principal*/
+/* Slider Principal */
 .img-list > img {
     width: 770px;
 }
@@ -23,7 +23,7 @@
     transition: 500ms;
 }
 
-.carousell .img-list img {
+.carousell .img-list > img {
     float: left;
     width: calc(100% / 5);
     height: 100%;
@@ -58,7 +58,7 @@
     background-color: red;
 }
 
-/*Slider Eventos*/
+/* Slider Eventos */
 .img-list-event > img {
     width: 770px;
 }
@@ -79,6 +79,7 @@
 }
 
 .content-text-event {
+    font-size: 1.3rem;
     width: 40%;
 }
 
@@ -136,6 +137,15 @@
     .content-event {
         flex-direction: column-reverse;
         height: 85%;
+    }
+
+    .content-text-event {
+        padding-top: 25px;
+    }
+
+    .carousell-event .img-list-event img {
+        width: 70%;
+        border-radius: 10%;
     }
 
     .prev {

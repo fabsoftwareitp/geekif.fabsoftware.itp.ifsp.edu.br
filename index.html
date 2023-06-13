@@ -7,7 +7,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/header.css">
-    <link rel="stylesheet" href="/css/slide.css">
+    <link rel="stylesheet" href="/css/slider.css">
     <link rel="stylesheet" href="/css/content.css">
     <link rel="stylesheet" href="/css/footer.css">
     <!-- HTML -->
@@ -16,14 +16,14 @@
 <body>
     <!-- Cabeçalho/Menu -->
     <header class="header">
-       <a href="" class="logo">Placeholder</a>
+       <a href="/" class="logo">Placeholder</a>
        <nav class="nav">
            <input type="checkbox" id="checkbox" class="checkbox">
            <label for="checkbox" class="label-menu">Menu
                <span class="hamburguer"></span>
             </label>
            <ul class="menu">
-                <li><a href="">Página Inicial</a></li>
+                <li><a href="/">Página Inicial</a></li>
                 <li><input type="checkbox" id="checkbox-workshop" class="checkbox">
                     <label for="checkbox-workshop" class="label-sub-menu">Oficinas</label>
                     <ul class="sub-menu">
@@ -139,16 +139,16 @@
     </section>
     <!-- Contato -->
     <section class="contact-background">
-        <div class="contact-geo"><!-- É mais fácil fazer com uma imagem mesmo-->
+        <div class="contact-geo"><!-- É mais fácil fazer com uma imagem mesmo -->
             <div class="contact">
                 <h1>Entre em Contato!</h1>
-                <form action="/" method="post">
+                <form action="/" method="post" id="form">
                     <label for="name">Seu Nome:</label>
-                    <input type="text" name="name" placeholder="seu nome aqui" required>
+                    <input type="text" name="name" id="name" placeholder="seu nome aqui" required>
                     <label for="email">Seu Email:</label>
-                    <input type="email" name="email" placeholder="seu email aqui" required>
+                    <input type="email" name="email" id="email" placeholder="seu email aqui" required>
                     <label for="message">Sua Mensagem:</label>
-                    <input type="message" name="message" placeholder="sua mensagem aqui" required>
+                    <input type="message" name="message" id="message" placeholder="sua mensagem aqui" required>
                     <button type="submit">Enviar</button>
                 </form>
             </div>
@@ -166,13 +166,15 @@
     </section>
     <!-- Rodapé -->
     <footer class="footer">
-        <a href=""><img src="/imgs/oie_transparent.png" id="logo-if" alt="Logo If"></a>
+        <a href="https://itp.ifsp.edu.br/" target="_blank">
+            <img src="/imgs/oie_transparent.png" id="logo-if" alt="Instituto Federal Logo">
+        </a>
         <div class="social-media">
-            <a href="">
-                <img class="social-img" src="/imgs/fb_icon_325x325.png" alt="Facebook">
+            <a href="https://www.facebook.com/ifspitape/" target="_blank">
+                <img class="social-img" src="/imgs/fb_icon_325x325.png" alt="Facebook Logo">
             </a>
-            <a href="">
-                <img class="social-img" src="/imgs/Instagram-Icon.png" alt="Instagram">
+            <a href="https://www.instagram.com/ifspitapetininga/" target="_blank">
+                <img class="social-img" src="/imgs/Instagram-Icon.png" alt="Instagram Logo">
             </a>
         </div>
         <h3>Todos os Direitos Reservados©Geek IF</h3>
