@@ -3,7 +3,23 @@
 @import url("/css/slider.css");
 @import url("/css/content.css");
 @import url("/css/footer.css");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;700;800&family=Lilita+One&display=swap");
 
-/*:root {
-
-}*/
+:root {
+  --blue: #248AFF;
+  --dark-blue: #2169BB;
+  --light-blue: #63ABFF;
+  --purple: #9d1ce6;
+  --dark-purple: #7c2fa8;
+  --ligth-purple: #BC7BE1;
+  --pink: #ff2bb8;
+  --dark-pink: #B92186;
+  --light-pink: #FC71CD;
+  --yellow: #ffe138;
+  --dark-yellow: #E0C946;
+  --ligth-yellow: #FFE96A;
+  --black: #000;
+  --black-hover: #212121;
+  --black-focus: #323232;
+  --white: #FFF;
+}

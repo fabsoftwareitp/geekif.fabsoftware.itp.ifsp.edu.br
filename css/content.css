@@ -1,133 +1,163 @@
 /* Sobre o Evento */
 .about {
-    width: 100%-4px;
-    text-align: center;
-    padding: 50px;
-    background-color: blue;
+  width: 100%-4px;
+  text-align: center;
+  padding: 50px;
+  background-color: var(--pink);
 }
 
-.about > h1 {
-    font-size: 2rem;
-    padding-bottom: 15px;
+.about h1 {
+  font-size: 1.4rem;
+  padding-bottom: 15px;
+  font-family: "Lilita One", cursive;
+  color: var(--yellow);
 }
 
 .about > p {
-    font-size: 1.5rem;
+  font-size: 1.2rem;
+  font-family: "Inter", sans-serif;
+  color: var(--white);
 }
 
 /* Contato */
 .contact-geo {
-    background-color: pink;
-    margin: 0 auto;
-    width: 90%;
-    height: 400px;
-    transform: skew(10deg);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background-color: var(--pink);
+  margin: 0 auto;
+  width: 90%;
+  height: 400px;
+  transform: skew(10deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .contact-background {
-    background-image: url("/imgs/Beia-Carvalho-Kroton-Folder-1080x600.jpg");
+  background-image: url("/imgs/Beia-Carvalho-Kroton-Folder-1080x600.jpg");
 }
 
 .contact {
-    width: 100%-4px;
-    text-align: center;
-    padding: 25px;
-    transform: skew(-10deg);
+  width: 100%-4px;
+  text-align: center;
+  padding: 25px;
+  transform: skew(-10deg);
 }
 
 .contact > h1 {
-    font-size: 2rem;
+  font-size: 1.4rem;
+  font-family: "Lilita One", cursive;
+  color: var(--yellow)
 }
 
 .contact > form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
 }
 
 .contact > form > input {
-    width: 60vw;
-    border: 1px solid;
-    margin: 10px;
+  width: 60vw;
+  border: 1px solid var(--light-pink);
+  border-radius: 5px;
+  margin: 10px;
+  padding: 5px;
+  background-color: var(--light-pink);
+  color: var(--pink);
+}
+
+.contact > form > input::placeholder {
+  color: var(--pink);
+}
+
+.contact > form > input:focus {
+  outline: 1px solid var(--dark-pink);
+}
+
+.contact > form > label {
+  color: var(--dark-pink);
 }
 
 .contact > form > input,
 .contact > form > label,
 .contact > form > button {
-    font-size: 1.5rem;
+  font-size: 1.2rem;
+  font-family: "Inter", sans-serif;
 }
 
 .contact button {
-    cursor: pointer;
-    padding: 5px;
+  cursor: pointer;
+  padding: 5px;
+  margin-top: 5px;
+  border-radius: 5px;
+  background-color: var(--blue);
+  color: var(--white);
 }
 
-@media (max-width:600px) {
-    .contact-background {
-        height: 500px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+@media (max-width: 600px) {
+  .contact-background {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-    .contact-geo {
-        width: 100%;
-        transform: skew(0deg, 10deg);
-    }
+  .contact-geo {
+    width: 100%;
+    transform: skew(0deg, 10deg);
+  }
 
-    .contact {
-        transform: skew(0deg, -10deg)
-    }
+  .contact {
+    transform: skew(0deg, -10deg);
+  }
 
-    .contact > form > input  {
+  .contact > form > input {
     font-size: 1.3rem;
-}
+  }
 }
 
 /* Como Chegar */
 .arrive {
-    width: 100%-4px;
-    text-align: center;
-    padding: 50px;
-    background: linear-gradient(rgb(224, 251, 15) 0%, rgb(214, 20, 124) 100%);
+  width: 100%-4px;
+  text-align: center;
+  padding: 50px;
+  background: linear-gradient(var(--yellow), var(--pink));
 }
 
 .arrive > h1 {
-    font-size: 2rem;
+  font-size: 1.4rem;
+  font-family: "Lilita One", cursive;
+  color: var(--pink);
 }
 
 .arrive > p {
-    font-size: 1.5rem;
-    padding: 15px;
+  font-size: 1.2rem;
+  font-family: "Inter", sans-serif;
+  padding: 15px;
 }
 
 .arrive-img {
-    display: flex;
-    justify-content: space-around;
-    padding: 0px 3vw 10px 3vw;
+  display: flex;
+  justify-content: space-around;
+  padding: 0px 3vw 10px 3vw;
 }
 
 .arrive-img > img {
-    width: 30vw;
+  width: 30vw;
 }
 
 .map {
-    margin: 10px;
-    width: 80%;
+  margin: 10px;
+  width: 80%;
 }
 
 @media (max-width: 600px) {
-    .arrive-img {
-        flex-direction: column;
-        align-items: center;
-    }
+  .arrive-img {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .arrive-img > img {
-        padding: 5px;
-        width: 60vw;
-    }
+  .arrive-img > img {
+    padding: 5px;
+    width: 60vw;
+  }
 }
