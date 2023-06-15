@@ -89,3 +89,16 @@ async function sendEmail(name, email, message) {
 }
 
 form.addEventListener("submit", event => submitForm(event));
+
+//Limite de Sub Menus
+var radio = document.getElementsByClassName('limited');
+let checkBefore = 3
+
+function oneMenu(x){
+  console.log(x);
+  if(checkBefore == x){
+    radio[x].checked = false;
+    checkBefore = 3;
+  }
+  checkBefore = x;
+}
