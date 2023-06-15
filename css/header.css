@@ -50,7 +50,7 @@
     display: block;
     position: relative;
     text-align: center;
-    top: 1rem;
+    top: 7px;
     width: 8rem;
     height: 0;
     z-index: 1;
@@ -106,7 +106,7 @@
     }
 
     .logo {
-        width: 175px;
+        width: 45vw;
     }
     
     /* Menu Principal */
