@@ -95,10 +95,11 @@ var radio = document.getElementsByClassName('limited');
 let checkBefore = 3
 
 function oneMenu(x){
-  console.log(x);
   if(checkBefore == x){
     radio[x].checked = false;
     checkBefore = 3;
+  }else {
+    radio[x].checked = true;
+    checkBefore = x;
   }
-  checkBefore = x;
 }
