@@ -83,12 +83,12 @@
 
 .content-event h1 {
   font-family: "Lilita One", cursive;
-  font-size: 1.4rem;
+  font-size: 2.3rem;
 }
 
 .content-event p,
 .content-event a {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-family: "Inter", sans-serif;
   margin: 20px;
 }
@@ -161,32 +161,28 @@
   }
 
   .carousell-event .img-list-event img {
-    width: 70%;
-    border-radius: 10%;
+    width: 100%;
   }
 
-  .prev {
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 2vw;
-  }
-
-  .prev svg {
-    width: 35px;
-    height: 35px;
-  }
-
+  .prev,
   .next {
     display: block;
     position: absolute;
-    top: 50%;
-    right: 2vw;
+    top: 55%;
   }
 
+  .prev svg,
   .next svg {
     width: 35px;
     height: 35px;
+  }
+
+  .prev {
+    left: 2vw;
+  }
+
+  .next {
+    right: 2vw;
   }
 
   .carousell .caro-btn:hover,

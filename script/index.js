@@ -5,7 +5,6 @@ var caroBtns = document.getElementsByClassName("caro-btn");
 var positionUit = -100;
 
 function slideImg(x) {
-  var i;
   for (i = 0; i < 5; i++) {
     caroBtns[i].classList.remove("active");
   }
