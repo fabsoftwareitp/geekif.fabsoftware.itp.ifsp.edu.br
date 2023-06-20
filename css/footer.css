@@ -20,17 +20,32 @@
     font-family: 'Lilita One', cursive;
 }
 
-#logo-if {
+.directors {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.directors:last-child {
     width: 15rem;
 }
 
+.logos {
+    width: 17rem;
+}
+
 .social-img {
-    width: 6rem;
+    width: 7rem;
     padding: 0 25px;
 }
 
 @media (max-width: 600px) {
     .footer > h1 {
         font-size: 1.2rem;
+    }
+
+    .directors {
+        flex-direction: column;
+        gap: 1rem;
     }
 }
