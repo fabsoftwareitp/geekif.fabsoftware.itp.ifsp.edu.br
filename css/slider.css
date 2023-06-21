@@ -88,14 +88,18 @@
 
 .content-event p,
 .content-event a {
-  font-size: 1.3rem;
   font-family: "Inter", sans-serif;
   margin: 20px;
 }
 
+.content-event p {
+  font-size: 1.3rem;
+}
+
 .content-event a {
     background-color: var(--blue);
-    padding: 5px;
+    padding: 10px;
+    font-size: 1rem;
     border-radius: 5px;
     color: var(--white);
 }
