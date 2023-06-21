@@ -69,7 +69,7 @@ async function submitForm(event) {
 async function sendEmail(name, email, message) {
   try {
     const connction = await fetch(
-      "https://formsubmit.co/ajax/vitor.cavalheiro@aluno.ifsp.edu.br",
+      "https://formsubmit.co/ajax/seuEmailHer",
       {
         method: "POST",
         headers: {

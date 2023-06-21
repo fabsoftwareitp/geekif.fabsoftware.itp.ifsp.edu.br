@@ -131,34 +131,13 @@
 }
 
 .arrive > p {
+  line-height: 1.7rem;
   font-size: 1.3rem;
   font-family: "Inter", sans-serif;
   padding: 15px;
 }
 
-.arrive-img {
-  display: flex;
-  justify-content: space-around;
-  padding: 0px 3vw 10px 3vw;
-}
-
-.arrive-img > img {
-  width: 30vw;
-}
-
 .map {
   margin: 10px;
-  width: 80%;
-}
-
-@media (max-width: 600px) {
-  .arrive-img {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .arrive-img > img {
-    padding: 5px;
-    width: 60vw;
-  }
+  width: 100%;
 }
