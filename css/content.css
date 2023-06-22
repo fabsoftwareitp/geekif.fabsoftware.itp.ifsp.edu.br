@@ -66,6 +66,28 @@
   }
 }
 
+@media (max-width: 400px) {
+  .banner-content {
+    padding: 0;
+  }
+
+  .banner-content h1:first-child {
+    font-size: 2rem;
+  }
+
+  .banner-content h1 {
+    padding: 15px;
+    text-align: center;
+    font-size: 1.3rem;
+    padding-top: 25px;
+    text-shadow: 0.15rem 0.15rem var(--blue), 0.25rem 0.25rem var(--pink);
+  }
+
+  .banner-content h1:last-child {
+    font-size: 0.8rem;
+  }
+}
+
 /* Sobre o Evento */
 .about {
   width: 100%-4px;
