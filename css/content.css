@@ -1,3 +1,71 @@
+/* Banner Principal */
+.banner {
+  background-image: url(/imgs/Geek2-dark.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /*filter: brightness(0.2);*/
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.banner > img {
+  height: 60vh;
+  padding: 15px;
+}
+
+.banner-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+}
+
+.banner-content h1:first-child {
+  font-size: 8rem;
+}
+
+.banner-content h1 {
+  font-size: 4rem;
+  font-family: "Lilita One", cursive;
+  color: var(--yellow);
+  padding: 25px;
+  text-shadow: 0.2rem 0.2rem var(--blue), 0.4rem 0.4rem var(--pink);
+}
+
+.banner-content h1:last-child {
+  font-size: 2rem;
+}
+
+@media (max-width: 900px) {
+  .banner {
+    height: 40vh;
+  }
+
+  .banner > img {
+    height: 39vh;
+    align-self: center;
+  }
+
+  .banner-content h1:first-child {
+    font-size: 2.5rem;
+  }
+
+  .banner-content h1 {
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    padding-top: 25px;
+    text-shadow: 0.15rem 0.15rem var(--blue), 0.25rem 0.25rem var(--pink);
+  }
+
+  .banner-content h1:last-child {
+    font-size: 1rem;
+  }
+}
+
 /* Sobre o Evento */
 .about {
   width: 100%-4px;
@@ -34,6 +102,8 @@
 
 .contact-background {
   background-image: url("/imgs/Geek1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .contact {
@@ -87,7 +157,7 @@
 
 .contact button {
   cursor: pointer;
-  padding: 5px;
+  padding: 10px;
   margin-top: 5px;
   border-radius: 5px;
   background-color: var(--blue);

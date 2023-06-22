@@ -89,28 +89,35 @@
   border-radius: 0;
 }
 
-/* Sub Menu Torneio */
+/* Sub Menu Campeonato */
 #checkbox-tournament:checked ~ .sub-menu {
-  height: 114px;
-  visibility: visible;
-  overflow-y: hidden;
-}
-
-/* Sub Menu Palestra */
-#checkbox-lecture:checked ~ .sub-menu {
-  height: 114px;
+  height: 15rem;
   visibility: visible;
   overflow-y: hidden;
 }
 
 /* Sub Menu Oficina */
 #checkbox-workshop:checked ~ .sub-menu {
-  height: 114px;
+  height: 22.5rem;
   visibility: visible;
   overflow-y: hidden;
 }
 
-@media (max-width: 600px) {
+/* Sub Menu Show */
+#checkbox-show:checked ~ .sub-menu {
+  height: 13.5rem;
+  visibility: visible;
+  overflow-y: hidden;
+}
+
+/* Sub Menu Sala de Jogos */
+#checkbox-games:checked ~ .sub-menu {
+  height: 13.5rem;
+  visibility: visible;
+  overflow-y: hidden;
+}
+
+@media (max-width: 900px) {
   .header {
     flex-direction: row;
     height: 5rem;
@@ -193,6 +200,26 @@
   #checkbox:checked ~ .label-menu .hamburguer::after {
     transform: rotate(-135deg);
     top: -0.5375rem;
+  }
+
+  /* Sub Menu Campeonato */
+  #checkbox-tournament:checked ~ .sub-menu {
+    height: 10.5rem;
+  } 
+
+  /* Sub Menu Oficina */
+  #checkbox-workshop:checked ~ .sub-menu {
+    height: 21.5rem;
+  }
+
+  /* Sub Menu Show */
+  #checkbox-show:checked ~ .sub-menu {
+    height: 11rem;
+  }
+
+  /* Sub Menu Sala de Jogos */
+  #checkbox-games:checked ~ .sub-menu {
+    height: 11rem;
   }
 
   /* Sub Menu */

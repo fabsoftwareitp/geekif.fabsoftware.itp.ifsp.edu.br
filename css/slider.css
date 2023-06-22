@@ -162,7 +162,7 @@
   }
 
   .content-text-event {
-    padding-top: 25px;
+    padding-top: 15px;
   }
 
   .carousell-event .img-list-event img {
@@ -193,5 +193,25 @@
   .carousell .caro-btn:hover,
   .carousell-event .caro-btn-event:hover {
     background-color: var(--pink);
+  }
+
+  .content-text-event {
+    height: 55%;
+    width: 100%;
+  }
+  
+  .content-event h1 {
+    font-size: 1.8rem;
+  }
+  
+  .content-event p,
+  .content-event a {
+    font-family: "Inter", sans-serif;
+    margin: 10px;
+  }
+  
+  .content-event p {
+    line-height: 1.3rem;
+    font-size: 1rem;
   }
 }

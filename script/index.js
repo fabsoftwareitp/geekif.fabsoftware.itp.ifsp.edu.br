@@ -95,12 +95,12 @@ form.addEventListener("submit", (event) => submitForm(event));
 
 //Limite de Sub Menus
 var radio = document.getElementsByClassName("limited");
-let checkBefore = 3;
+let checkBefore = 4;
 
 function oneMenu(x) {
   if (checkBefore == x) {
     radio[x].checked = false;
-    checkBefore = 3;
+    checkBefore = 4;
   } else {
     radio[x].checked = true;
     checkBefore = x;
