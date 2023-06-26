@@ -99,7 +99,8 @@ async function sendEmail(name, email, message) {
       }
     )
 
-    const convertedConnection = await connction.json();
+    const convertedConnection1 = await connection1.json();
+    const convertedConnection2 = await connection2.json();
     alert("Email enviado com sucesso");
   } catch (e) {
     alert("ERROR: Email não foi enviado");

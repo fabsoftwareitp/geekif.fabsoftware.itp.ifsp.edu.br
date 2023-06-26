@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/main.css">
+  <!-- HTML -->
+  <title>Geek IF</title>
+</head>
+<body>
+  <!-- Cabeçalho/Menu -->
+  <header class="header">
+    <a href="/"><img class="logo" src="/imgs/geek_if.png"></a>
+    <nav class="nav">
+        <input type="checkbox" id="checkbox" class="checkbox">
+        <label for="checkbox" class="label-menu">
+            <span class="hamburguer"></span>
+         </label>
+        <ul class="menu">
+             <li><a href="../index.html">Página Inicial</a></li>
+             <li><input type="radio" id="checkbox-workshop" class="checkbox limited" name="limited" onclick="oneMenu(0)">
+                 <label for="checkbox-workshop" class="label-sub-menu">Oficinas</label>
+                 <ul class="sub-menu">
+                     <!-- <li><a href="/pages/shortly.html">Desenho</a></li> -->
+                     <li><a href="/pages/shortly.html">Artes Marciais</a></li>
+                     <li><a href="/pages/shortly.html">Escrita Criativa</a></li>
+                     <!-- <li><a href="/pages/shortly.html">Ilustração</a></li>
+                     <li><a href="/pages/shortly.html">Origami</a></li>
+                     <li><a href="/pages/shortly.html">Stencil</a></li> -->
+                     <li><a href="/pages/shortly.html">Swordplay</a></li>
+                 </ul>
+             </li>
+             <li><input type="radio" id="checkbox-tournament" class="checkbox limited" name="limited" onclick="oneMenu(1)">
+              <label for="checkbox-tournament" class="label-sub-menu">Campeonatos</label>
+              <ul class="sub-menu">
+                  <li><a href="/pages/shortly.html">Cosplay Adulto</a></li>
+                  <li><a href="/pages/shortly.html">Cosplay Infantil</a></li>
+                  <li><a href="/pages/shortly.html">Just Dance</a></li>
+              </ul>
+          </li>
+             <li><input type="radio" id="checkbox-show" class="checkbox limited" name="limited" onclick="oneMenu(2)">
+                 <label for="checkbox-show" class="label-sub-menu">Shows</label>
+                 <ul class="sub-menu">
+                     <li><a href="/pages/shortly.html">Doutores do Rock</a></li>
+                     <li><a href="/pages/shortly.html">Meia Boca</a></li>
+                     <li><a href="/pages/shortly.html">Elísios</a></li>
+                 </ul>
+             </li>
+             <li><input type="radio" id="checkbox-games" class="checkbox limited" name="limited" onclick="oneMenu(3)">
+                 <label for="checkbox-games" class="label-sub-menu">Sala de Jogos</label>
+                 <ul class="sub-menu sub-menu-games">
+                     <li><a href="/pages/shortly.html">Magic The Gathering</a></li>
+                     <li><a href="/pages/shortly.html">Tabuleiro</a></li>
+                     <li><a href="/pages/shortly.html">RPG</a></li>
+                     <li><a href="/pages/shortly.html">Pokemon</a></li>
+                 </ul>
+             </li>
+             <li><a href="/pages/shortly.html">Fotos 2022</a></li>
+             <li><a href="/pages/shortly.html">Seja um Patrocinador</a></li>
+        </ul>
+    </nav>
+ </header>
+ <div class="header-back"></div>
+ <!-- Em Breve -->
+ <section class="to-soon">
+    <h1>Em Breve Mais Novidades!</h1>
+ </section>
+ <!-- Rodapé -->
+ <footer class="footer">
+  <div class="directors">
+      <div>
+          <h1>Realização</h1>
+          <a href="https://itp.ifsp.edu.br/" target="_blank">
+              <img class="logo-if" src="/imgs/instituto_federal_cores.png" id="logo-if" alt="Instituto Federal Logo">
+          </a>
+      </div>
+      <div>
+          <h1>Apoio</h1>
+          <div>
+              <a href="https://www.saopaulo.sp.gov.br/" target="_blank">
+                  <img class="logo-sp"src="/imgs/governo-sp.png" alt="Governo de São Paulo Logo">
+              </a>
+              <a href="https://www.proac.sp.gov.br/" target="_blank">
+                  <img class="logo-proac" src="/imgs/proac.png" alt="Proac Logo">
+              </a>
+          </div>
+      </div>
+      <!-- <div>
+          <h1>Patrocínio</h1>
+      </div> -->
+  </div>
+  <div class="social-media">
+      <a href="https://www.facebook.com/ifspitape/" target="_blank">
+          <img class="social-img" src="/imgs/fb_icon_325x325.png" alt="Facebook Logo">
+      </a>
+      <a href="https://www.instagram.com/ifspitapetininga/" target="_blank">
+          <img class="social-img" src="/imgs/Instagram-Icon.png" alt="Instagram Logo">
+      </a>
+  </div>
+  <h1>Todos os Direitos Reservados©Geek IF</h1>
+</footer>
+<!-- JavaScript -->
+<script>
+  var radio = document.getElementsByClassName("limited");
+  let checkBefore = 4;
+
+  function oneMenu(x) {
+    if (checkBefore == x) {
+      radio[x].checked = false;
+      checkBefore = 4;
+    } else {
+      radio[x].checked = true;
+      checkBefore = x;
+    }
+  }
+</script>
+</body>
+</html>

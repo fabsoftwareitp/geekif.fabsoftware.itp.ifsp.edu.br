@@ -1,6 +1,6 @@
 /* Banner Principal */
 .banner {
-  background-image: url(/imgs/Geek2-dark.jpg);
+  background-image: url(/imgs/Geek1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -137,20 +137,20 @@
   transform: skew(10deg);
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; 
 }
 
 .contact-background {
   background-image: url("/imgs/Geek1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 500px;
+  height: 600px;
 }
 
 .contact {
   width: 100%-4px;
   text-align: center;
-  padding: 25px;
+  padding: 50px;
   transform: skew(-10deg);
 }
 
@@ -268,4 +268,28 @@
 .map {
   margin: 10px;
   width: 100%;
+}
+
+/* Em Breve */
+.to-soon {
+  width: 100%;
+  height: 60vh;
+  background: linear-gradient(var(--yellow), var(--pink));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.to-soon > h1 {
+  font-size: 6rem;
+  font-family: "Lilita One", cursive;
+  color: var(--yellow);
+  text-shadow: 0.2rem 0.2rem var(--blue), 0.4rem 0.4rem var(--pink);
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .to-soon > h1 {
+    font-size: 3rem;
+  }
 }
