@@ -24,7 +24,7 @@ function slideImgEvent(x) {
   var i;
   posiNow = x;
   posiNow = working(posiNow);
-  for (i = 0; i < 5; i++) {
+  for (i = 0; i < 4; i++) {
     caroBtnsEvent[i].classList.remove("active");
   }
   caroBtnsEvent[x].classList.add("active");
@@ -36,7 +36,7 @@ function swipper(x) {
   var i;
   posiNow += x;
   posiNow = working(posiNow);
-  for (i = 0; i < 5; i++) {
+  for (i = 0; i < 4; i++) {
     caroBtnsEvent[i].classList.remove("active");
   }
   caroBtnsEvent[posiNow].classList.add("active");
@@ -47,8 +47,8 @@ function swipper(x) {
 function working(posiNow) {
   if (posiNow < 0) {
     posiNow = 0;
-  } else if (posiNow > 4) {
-    posiNow = 4;
+  } else if (posiNow > 3) {
+    posiNow = 3;
   }
   return posiNow;
 }
@@ -68,8 +68,8 @@ async function submitForm(event) {
 
 async function sendEmail(name, email, message) {
   try {
-    const connction = await fetch(
-      "https://formsubmit.co/ajax/seuEmailHer",
+    const connection1 = await fetch(
+      "https://formsubmit.co/ajax/elinewelter@ifsp.edu.br",
       {
         method: "POST",
         headers: {
@@ -83,6 +83,21 @@ async function sendEmail(name, email, message) {
         }),
       }
     );
+    const connection2 = await fetch(
+      "https://formsubmit.co/ajax/gabriela.moura@ifsp.edu.br",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          name: name,
+          email: email,
+          message: message,
+        }),
+      }
+    )
 
     const convertedConnection = await connction.json();
     alert("Email enviado com sucesso");

@@ -15,7 +15,7 @@
 }
 
 .footer > h1 {
-    color: white;
+    color: var(--white);
     font-size: 1.4rem;
     font-family: 'Lilita One', cursive;
 }
@@ -23,7 +23,29 @@
 .directors {
     display: flex;
     align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 3rem;
+}
+
+.directors > div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.directors > div > div {
+    display: flex;
+    width: 35rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.directors > div > h1 {
+    color: var(--white);
+    font-size: 2rem;
+    font-family: 'Lilita One', cursive;
+    margin-bottom: 1rem;
 }
 
 a > .logo-sp {
@@ -56,5 +78,33 @@ a > .logo-if {
 
     a > .logo-proac {
         width: 17rem;
+    }
+
+    .directors > div > div {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 0;
+        gap: 1rem;
+    }
+}
+
+@media (max-height: 800px) {
+    .menu > li {
+        padding: 1rem 0.5rem;
+    }
+}
+
+@media (max-height: 600px) {
+    .menu > li {
+        padding: 0rem 0.5rem;
+    }
+
+    .sub-menu {
+        top: 1.7rem;
+    }
+
+    .sub-menu-games {
+        top: 0.4rem;
     }
 }
