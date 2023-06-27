@@ -251,3 +251,24 @@
     margin-top: 5px;
   }
 }
+
+@media (max-height: 600px) {
+  .menu a,
+  .menu li label {
+    font-size: 1.3rem;
+    padding: 0;
+  }
+
+  .menu {
+    gap: 0;
+  }
+
+  .menu > li,
+  .sub-menu {
+    width: 8rem;
+  }
+
+  .menu > li:last-child {
+    width: 12rem;
+  }
+}
