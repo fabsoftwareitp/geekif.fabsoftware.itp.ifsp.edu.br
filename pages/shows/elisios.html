@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/main.css">
+    <!-- HTML -->
+    <title>Geek IF</title>
+</head>
+<body>
+    <!-- Cabeçalho/Menu -->
+    <header class="header">
+       <a href="/"><img class="logo" src="/imgs/geek_if.png"></a>
+       <nav class="nav">
+           <input type="checkbox" id="checkbox" class="checkbox">
+           <label for="checkbox" class="label-menu">
+               <span class="hamburguer"></span>
+            </label>
+            <ul class="menu">
+                <li><a href="/">Página Inicial</a></li>
+                <li><input type="radio" id="checkbox-workshop" class="checkbox limited" name="limited" onclick="oneMenu(0)">
+                    <label for="checkbox-workshop" class="label-sub-menu">Oficinas</label>
+                    <ul class="sub-menu">
+                        <li><a href="../oficinas/artesmarciais.html">Artes Marciais</a></li>
+                        <li><a href="../oficinas/escritacriativa.html">Escrita Criativa</a></li>
+                        <li><a href="../oficinas/swordplay.html">Swordplay</a></li>
+                    </ul>
+                </li>
+                <li><input type="radio" id="checkbox-tournament" class="checkbox limited" name="limited" onclick="oneMenu(1)">
+                    <label for="checkbox-tournament" class="label-sub-menu">Campeonatos</label>
+                    <ul class="sub-menu">
+                        <li><a href="../campeonatos/cosplayadulto.html">Cosplay Adulto</a></li>
+                        <li><a href="../campeonatos/cosplayinfantil.html">Cosplay Infantil</a></li>
+                        <li><a href="../campeonatos/justdance.html">Just Dance</a></li>
+                    </ul>
+                </li>
+                <li><input type="radio" id="checkbox-show" class="checkbox limited" name="limited" onclick="oneMenu(2)">
+                    <label for="checkbox-show" class="label-sub-menu">Shows</label>
+                    <ul class="sub-menu">
+                        <li><a href="doutoresdorock.html">Doutores do Rock</a></li>
+                        <li><a href="meiaboca.html">Meia Boca</a></li>
+                        <li><a href="#">Elísios</a></li>
+                    </ul>
+                </li>
+                <li><input type="radio" id="checkbox-games" class="checkbox limited" name="limited" onclick="oneMenu(3)">
+                    <label for="checkbox-games" class="label-sub-menu">Sala de Jogos</label>
+                    <ul class="sub-menu sub-menu-games">
+                        <li><a href="../salasdejogos/magic.html">Magic The Gathering</a></li>
+                        <li><a href="../salasdejogos/tabuleiro.html">Tabuleiro</a></li>
+                        <li><a href="../salasdejogos/rpg.html">RPG</a></li>
+                        <li><a href="../salasdejogos/pokemon.html">Pokemon</a></li>
+                    </ul>
+                </li>
+                <li><a href="/pages/galery.html">Fotos 2022</a></li>
+                <li><a href="/pages/shortly.html">Seja um Patrocinador</a></li>
+           </ul>
+       </nav>
+    </header>
+    <div class="header-back"></div>
+    <!-- Sobre o Evento -->
+    <section class="about">
+        <h1>Campeonato de Cosplay - Categoria Adulto</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae praesentium veniam quidem libero itaque quia aliquam velit cupiditate eaque eveniet sed labore molestiae, quaerat esse aspernatur tempore? Fuga, doloremque facilis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam culpa dicta eum quibusdam reiciendis aliquam, rerum possimus dignissimos dolorum natus molestiae in maxime temporibus nesciunt ullam doloremque libero reprehenderit saepe!</p>
+    </section>
+    <!-- Fotos -->
+    <section class="pages-photos">
+        <div class="photos">
+            <div class="photo-set">
+                <div class="photo-image">
+                    <img src="/imgs/galery/Geek_cosplay1.jpg" alt="Cosplay 1">
+                </div>
+                <div class="photo-image">
+                    <img src="/imgs/galery/Geek_cosplay3.jpg" alt="Cosplay 2">
+                </div>
+            </div>
+            <div class="photo-set">
+                <div class="photo-image">
+                    <img src="/imgs/galery/Geek_cosplay4.jpg" alt="Cosplay 3">
+                </div>
+                <div class="photo-image">
+                    <img src="/imgs/galery/Geek_cosplay10.jpg" alt="Cosplay 4">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="directors">
+            <div>
+                <h1>Realização</h1>
+                <a href="https://itp.ifsp.edu.br/" target="_blank">
+                    <img class="logo-if" src="/imgs/instituto_federal_cores.png" id="logo-if" alt="Instituto Federal Logo">
+                </a>
+            </div>
+            <div>
+                <h1>Apoio</h1>
+                <div>
+                    <a href="https://www.saopaulo.sp.gov.br/" target="_blank">
+                        <img class="logo-sp"src="/imgs/governo-sp.png" alt="Governo de São Paulo Logo">
+                    </a>
+                    <a href="https://www.proac.sp.gov.br/" target="_blank">
+                        <img class="logo-proac" src="/imgs/proac.png" alt="Proac Logo">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="social-media">
+            <a href="https://www.facebook.com/ifspitape/" target="_blank">
+                <img class="social-img" src="/imgs/fb_icon_325x325.png" alt="Facebook Logo">
+            </a>
+            <a href="https://www.instagram.com/ifspitapetininga/" target="_blank">
+                <img class="social-img" src="/imgs/Instagram-Icon.png" alt="Instagram Logo">
+            </a>
+        </div>
+        <h1>Todos os Direitos Reservados © Geek IF</h1>
+    </footer>
+    <!-- JavaScript -->
+    <script src="/script/index.js"></script>
+</body>
+</html>

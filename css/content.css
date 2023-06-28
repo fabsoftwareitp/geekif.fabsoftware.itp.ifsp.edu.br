@@ -119,6 +119,8 @@
   padding-bottom: 15px;
   font-family: "Lilita One", cursive;
   color: var(--yellow);
+  text-shadow: 3px 3px var(--purple);
+  text-transform: uppercase;
 }
 
 .about > p {
@@ -157,7 +159,9 @@
 .contact > h1 {
   font-size: 2.3rem;
   font-family: "Lilita One", cursive;
-  color: var(--yellow)
+  color: var(--yellow);
+  text-shadow: 3px 3px var(--purple);
+  text-transform: uppercase;
 }
 
 .contact > form {
@@ -256,6 +260,8 @@
   font-size: 2.3rem;
   font-family: "Lilita One", cursive;
   color: var(--pink);
+  text-shadow: 3px 3px var(--blue);
+  text-transform: uppercase;
 }
 
 .arrive > p {
@@ -333,5 +339,45 @@
 
   .gallery-imgv {
     height: 25vw;
+  }
+}
+
+/* Fotos das páginas */
+.pages-photos{
+  background-image: linear-gradient(var(--pink), var(--yellow));
+  padding: 25px;
+}
+
+.photos{
+  padding:5% 15%;
+  display:flex;
+  flex-flow:row wrap;
+  gap:200px;
+}
+
+.photo-set{
+  display:flex;
+  justify-content:space-between;
+  width:100%;
+}
+
+.photo-image > img{
+  max-height:75vh;
+  border:10px solid var(--black);
+  border-radius: 12px;;
+  box-shadow:5px 5px black;
+}
+
+@media (max-width: 1300px){
+  .photos{
+    flex-flow:column nowrap;
+    align-items:center;
+    gap:100px;
+  }
+
+  .photo-set{
+    flex-flow:column nowrap;
+    align-items:center;
+    gap:100px;
   }
 }
