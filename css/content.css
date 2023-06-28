@@ -365,9 +365,9 @@
 .photo-image > img{
   max-height:75vh;
   max-width:30vw;
-  border:10px solid var(--black);
+  border:10px solid var(--white);
   border-radius: 12px;;
-  box-shadow:5px 5px black;
+  box-shadow:5px 5px var(--white);
 }
 
 @media (max-width: 1300px){

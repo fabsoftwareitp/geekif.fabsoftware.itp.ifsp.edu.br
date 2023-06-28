@@ -62,7 +62,7 @@
     <!-- Sobre o Evento -->
     <section class="about">
         <h1>Oficina de Escrita Criativa</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae praesentium veniam quidem libero itaque quia aliquam velit cupiditate eaque eveniet sed labore molestiae, quaerat esse aspernatur tempore? Fuga, doloremque facilis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam culpa dicta eum quibusdam reiciendis aliquam, rerum possimus dignissimos dolorum natus molestiae in maxime temporibus nesciunt ullam doloremque libero reprehenderit saepe!</p>
+        <p>Em breve novidades!</p>
     </section>
     <!-- Fotos -->
     <section class="pages-photos">
@@ -117,6 +117,19 @@
         <h1>Todos os Direitos Reservados © Geek IF</h1>
     </footer>
     <!-- JavaScript -->
-    <script src="/script/index.js"></script>
+    <script>
+        var radio = document.getElementsByClassName("limited");
+        let checkBefore = 4;
+      
+        function oneMenu(x) {
+          if (checkBefore == x) {
+            radio[x].checked = false;
+            checkBefore = 4;
+          } else {
+            radio[x].checked = true;
+            checkBefore = x;
+          }
+        }
+      </script>
 </body>
 </html>

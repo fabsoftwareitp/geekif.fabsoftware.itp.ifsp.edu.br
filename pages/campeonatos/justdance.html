@@ -61,8 +61,9 @@
     <div class="header-back"></div>
     <!-- Sobre o Evento -->
     <section class="about">
-        <h1>Campeonato de Cosplay - Categoria Adulto</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae praesentium veniam quidem libero itaque quia aliquam velit cupiditate eaque eveniet sed labore molestiae, quaerat esse aspernatur tempore? Fuga, doloremque facilis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam culpa dicta eum quibusdam reiciendis aliquam, rerum possimus dignissimos dolorum natus molestiae in maxime temporibus nesciunt ullam doloremque libero reprehenderit saepe!</p>
+        <h1>Campeonato de Just Dance</h1>
+        <p>Just Dance é um jogo eletrônico de música desenvolvido pela Ubisoft Milan e Ubisoft Paris e publicado pela Ubisoft em 2009. Devido ao grande sucesso do jogo, todos os anos a Ubisoft lança uma nova versão do jogo.</p>
+        <p>Depois de selecionar uma música, um dançarino ou dançarina é apresentado na tela, bem como uma exposição ocasional de pictogramas que representam poses específicas. Os jogadores são julgados numa escala de classificação de acordo com a precisão dos seus movimentos em comparação com os do dançarino ou da dançarina na tela e recebem pontos. Just Dance pode ser jogado por até quatro jogadores ao mesmo tempo.</p>
     </section>
     <!-- Fotos -->
     <section class="pages-photos">
@@ -117,6 +118,19 @@
         <h1>Todos os Direitos Reservados © Geek IF</h1>
     </footer>
     <!-- JavaScript -->
-    <script src="/script/index.js"></script>
+    <script>
+        var radio = document.getElementsByClassName("limited");
+        let checkBefore = 4;
+      
+        function oneMenu(x) {
+          if (checkBefore == x) {
+            radio[x].checked = false;
+            checkBefore = 4;
+          } else {
+            radio[x].checked = true;
+            checkBefore = x;
+          }
+        }
+      </script>
 </body>
 </html>

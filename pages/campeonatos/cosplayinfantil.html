@@ -62,7 +62,7 @@
     <!-- Sobre o Evento -->
     <section class="about">
         <h1>Campeonato de Cosplay - Categoria Infantil</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae praesentium veniam quidem libero itaque quia aliquam velit cupiditate eaque eveniet sed labore molestiae, quaerat esse aspernatur tempore? Fuga, doloremque facilis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam culpa dicta eum quibusdam reiciendis aliquam, rerum possimus dignissimos dolorum natus molestiae in maxime temporibus nesciunt ullam doloremque libero reprehenderit saepe!</p>
+        <p>Cosplay é um termo em inglês formado pela junção das palavras costume (fantasia) e roleplay (brincadeira ou interpretação). É uma atividade muito comum entre os fãs de histórias em quadrinhos, filmes, jogos e animes. Consiste em fantasiar-se como seu personagem favorito. Com o passar dos anos os cosplays foram se popularizando e hoje são uma atividade essencial nesses eventos geek. Possuindo categoria adulto e infantil</p>
     </section>
     <!-- Fotos -->
     <section class="pages-photos">
@@ -117,6 +117,19 @@
         <h1>Todos os Direitos Reservados © Geek IF</h1>
     </footer>
     <!-- JavaScript -->
-    <script src="/script/index.js"></script>
+    <script>
+        var radio = document.getElementsByClassName("limited");
+        let checkBefore = 4;
+      
+        function oneMenu(x) {
+          if (checkBefore == x) {
+            radio[x].checked = false;
+            checkBefore = 4;
+          } else {
+            radio[x].checked = true;
+            checkBefore = x;
+          }
+        }
+      </script>
 </body>
 </html>
