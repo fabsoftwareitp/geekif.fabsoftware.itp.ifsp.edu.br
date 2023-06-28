@@ -358,11 +358,13 @@
 .photo-set{
   display:flex;
   justify-content:space-between;
+  align-items:center;
   width:100%;
 }
 
 .photo-image > img{
   max-height:75vh;
+  max-width:30vw;
   border:10px solid var(--black);
   border-radius: 12px;;
   box-shadow:5px 5px black;
@@ -379,5 +381,9 @@
     flex-flow:column nowrap;
     align-items:center;
     gap:100px;
+  }
+
+  .photo-image > img{
+    max-width: 70vw;
   }
 }
