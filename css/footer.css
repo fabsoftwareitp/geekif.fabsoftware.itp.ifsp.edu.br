@@ -76,6 +76,7 @@ a > .logo-if {
         gap: 1rem;
     }
 
+    a > .logo-sp,
     a > .logo-proac {
         width: 17rem;
     }
@@ -86,6 +87,13 @@ a > .logo-if {
         flex-direction: column;
         width: 0;
         gap: 1rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .footer,
+    .footer > div {
+        padding: 0;
     }
 }
 

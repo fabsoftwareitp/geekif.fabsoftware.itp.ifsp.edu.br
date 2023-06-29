@@ -156,13 +156,19 @@
 }
 
 @media (max-width: 600px) {
+  .carousell-event {
+    height: 475px;
+  }
+  
   .content-event {
     flex-direction: column-reverse;
     height: 85%;
   }
 
   .content-text-event {
-    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px;
   }
 
   .carousell-event .img-list-event img {
@@ -196,7 +202,7 @@
   }
 
   .content-text-event {
-    height: 55%;
+    height: 45%;
     width: 100%;
   }
   
@@ -213,5 +219,9 @@
   .content-event p {
     line-height: 1.3rem;
     font-size: 1rem;
+  }
+
+  .carousell-event .img-list-event img {
+    height: 55%;
   }
 }
