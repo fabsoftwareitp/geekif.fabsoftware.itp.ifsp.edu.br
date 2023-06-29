@@ -49,7 +49,7 @@
 }
 
 a > .logo-sp {
-    width: 18rem;
+    width: 20rem;
 }
 
 a > .logo-proac {
@@ -76,7 +76,6 @@ a > .logo-if {
         gap: 1rem;
     }
 
-    a > .logo-sp,
     a > .logo-proac {
         width: 17rem;
     }

@@ -221,6 +221,16 @@
   color: var(--white);
 }
 
+@media (max-width: 900px) {
+  .contact-geo {
+    transform: skew(7deg);
+  }
+
+  .contact {
+    transform: skew(-7deg);
+  }
+}
+
 @media (max-width: 600px) {
   .contact-background {
     height: 600px;
