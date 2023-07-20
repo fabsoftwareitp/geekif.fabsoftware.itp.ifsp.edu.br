@@ -36,9 +36,14 @@
 
 .directors > div > div {
     display: flex;
-    width: 35rem;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.directors > div > div > a {
+    display: flex;
+    justify-content: center;
 }
 
 .directors > div > h1 {
@@ -48,8 +53,20 @@
     margin-bottom: 1rem;
 }
 
+.directors a {
+    margin: 5px;
+}
+
+a > .logo-sup {
+    width: 10rem;
+}
+
+a > .logo-skilled {
+    width: 15rem;
+}
+
 a > .logo-sp {
-    width: 20rem;
+    width: 17rem;
 }
 
 a > .logo-proac {
@@ -60,6 +77,22 @@ a > .logo-if {
     width: 17rem;
 }
 
+a > .logo-sant {
+    width: 15rem;
+}
+
+a > .logo-dna {
+    width: 10rem;
+}
+
+a > .logo-pat {
+    width: 20rem;
+}
+
+a > .logo-rom {
+    width: 25rem;
+}
+
 .social-img {
     width: 7rem;
     padding: 0 25px;
@@ -67,7 +100,7 @@ a > .logo-if {
 
 @media (max-width: 900px) {
     .footer > h1 {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         text-align: center;
     }
 
@@ -76,14 +109,23 @@ a > .logo-if {
         gap: 1rem;
     }
 
+    .directors > div {
+        margin: 1rem;
+    }
+
     a > .logo-proac {
         width: 17rem;
     }
 
+    a > .logo-sup {
+        width: 13rem;
+    }
+
+    a > .logo-rom {
+        width: 20rem;
+    }
+
     .directors > div > div {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
         width: 0;
         gap: 1rem;
     }
@@ -95,8 +137,22 @@ a > .logo-if {
         padding: 0;
     }
 
+    .directors > div,
+    .directors a {
+        margin: 0;
+    }
+
     a > .logo-sp {
         width: 17rem;
+    }
+
+    a > .logo-proac {
+        width: 13rem;
+    }
+
+    a > .logo-rom,
+    a > .logo-pat {
+        width: 15rem;
     }
 }
 

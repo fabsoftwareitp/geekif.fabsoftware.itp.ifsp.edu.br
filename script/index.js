@@ -24,7 +24,7 @@ function slideImgEvent(x) {
   var i;
   posiNow = x;
   posiNow = working(posiNow);
-  for (i = 0; i < 4; i++) {
+  for (i = 0; i < 5; i++) {
     caroBtnsEvent[i].classList.remove("active");
   }
   caroBtnsEvent[x].classList.add("active");
@@ -36,7 +36,7 @@ function swipper(x) {
   var i;
   posiNow += x;
   posiNow = working(posiNow);
-  for (i = 0; i < 4; i++) {
+  for (i = 0; i < 5; i++) {
     caroBtnsEvent[i].classList.remove("active");
   }
   caroBtnsEvent[posiNow].classList.add("active");

@@ -96,7 +96,7 @@
 
 /* Sub Menu Oficina */
 #checkbox-workshop:checked ~ .sub-menu {
-  height: 14rem;
+  height: 21rem;
   visibility: visible;
   overflow-y: hidden;
 }
@@ -217,7 +217,7 @@
 
   /* Sub Menu Oficina */
   #checkbox-workshop:checked ~ .sub-menu {
-    height: 11rem;
+    height: 18rem;
   }
 
   /* Sub Menu Campeonato */
