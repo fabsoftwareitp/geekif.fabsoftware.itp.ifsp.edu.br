@@ -94,6 +94,10 @@ a > .logo-if {
     .footer > div {
         padding: 0;
     }
+
+    a > .logo-sp {
+        width: 17rem;
+    }
 }
 
 @media (max-height: 800px) {
