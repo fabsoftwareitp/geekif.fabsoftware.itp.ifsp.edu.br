@@ -47,6 +47,46 @@ function swipper(x) {
 function working(posiNow) {
   if (posiNow < 0) {
     posiNow = 0;
+  } else if (posiNow > 4) {
+    posiNow = 4;
+  }
+  return posiNow;
+}
+
+//Slider Alimentação
+var imgListOng = document.getElementById("img-list-ong");
+var caroBtnsOng = document.getElementsByClassName("caro-btn-ong");
+
+var positionUit = -100;
+var posiNow = 0;
+
+function slideImgOng(x) {
+  var i;
+  posiNow = x;
+  posiNow = working(posiNow);
+  for (i = 0; i < 4; i++) {
+    caroBtnsOng[i].classList.remove("active");
+  }
+  caroBtnsOng[x].classList.add("active");
+  position = x * positionUit;
+  imgListOng.style.left = position + "%";
+}
+
+function swipperOng(x) {
+  var i;
+  posiNow += x;
+  posiNow = workingOng(posiNow);
+  for (i = 0; i < 4; i++) {
+    caroBtnsOng[i].classList.remove("active");
+  }
+  caroBtnsOng[posiNow].classList.add("active");
+  position = posiNow * positionUit;
+  imgListOng.style.left = position + "%";
+}
+
+function workingOng(posiNow) {
+  if (posiNow < 0) {
+    posiNow = 0;
   } else if (posiNow > 3) {
     posiNow = 3;
   }
