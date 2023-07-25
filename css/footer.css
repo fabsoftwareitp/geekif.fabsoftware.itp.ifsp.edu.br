@@ -150,23 +150,3 @@ a > .logo-rom {
         width: 15rem;
     }
 }
-
-@media (max-height: 800px) {
-    .menu > li {
-        padding: 1rem 0.5rem;
-    }
-}
-
-@media (max-height: 600px) {
-    .menu > li {
-        padding: 0rem 0.5rem;
-    }
-
-    .sub-menu {
-        top: 1.7rem;
-    }
-
-    .sub-menu-games {
-        top: 0.4rem;
-    }
-}

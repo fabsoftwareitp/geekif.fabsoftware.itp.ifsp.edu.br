@@ -155,7 +155,6 @@
   }
 
   .menu > li {
-    padding: 1rem 0;
     border-top: 0.0625rem;
     border-radius: 0;
     width: 100%;
@@ -252,6 +251,12 @@
   }
 }
 
+@media (max-height: 800px) {
+  .menu > li {
+      padding: 1rem 0rem;
+  }
+}
+
 @media (max-height: 600px) {
   .menu a,
   .menu li label {
@@ -266,6 +271,18 @@
   .menu > li,
   .sub-menu {
     width: 8rem;
+  }
+
+  .menu > li {
+    padding: 0rem 0.5rem;
+  }
+
+  .sub-menu {
+      top: 1.7rem;
+  }
+
+  .sub-menu-games {
+      top: 0.4rem;
   }
 
   .menu > li:last-child {

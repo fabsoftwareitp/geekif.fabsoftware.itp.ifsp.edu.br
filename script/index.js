@@ -64,7 +64,7 @@ function slideImgOng(x) {
   var i;
   posiNow = x;
   posiNow = working(posiNow);
-  for (i = 0; i < 4; i++) {
+  for (i = 0; i < 8; i++) {
     caroBtnsOng[i].classList.remove("active");
   }
   caroBtnsOng[x].classList.add("active");
@@ -76,7 +76,7 @@ function swipperOng(x) {
   var i;
   posiNow += x;
   posiNow = workingOng(posiNow);
-  for (i = 0; i < 4; i++) {
+  for (i = 0; i < 8; i++) {
     caroBtnsOng[i].classList.remove("active");
   }
   caroBtnsOng[posiNow].classList.add("active");
@@ -87,8 +87,8 @@ function swipperOng(x) {
 function workingOng(posiNow) {
   if (posiNow < 0) {
     posiNow = 0;
-  } else if (posiNow > 3) {
-    posiNow = 3;
+  } else if (posiNow > 7) {
+    posiNow = 7;
   }
   return posiNow;
 }
