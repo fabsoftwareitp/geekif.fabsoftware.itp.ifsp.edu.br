@@ -1,176 +1,585 @@
 /* Slider Principal */
 .img-list > img {
-    width: 770px;
+  width: 770px;
 }
 
 .carousell {
-    position: relative;
-    height: 470px;
-    overflow: hidden;
-    background-color: red;
+  position: relative;
+  height: 470px;
+  overflow: hidden;
 }
 
 .carousell::before {
-    width: 6rem;
+  width: 6rem;
 }
 
 .carousell .img-list {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: calc(100% * 5);
-    height: 100%;
-    transition: 500ms;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100% * 5);
+  height: 100%;
+  transition: 500ms;
 }
 
 .carousell .img-list > img {
-    float: left;
-    width: calc(100% / 5);
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
+  float: left;
+  width: calc(100% / 5);
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .carousell .btn-section {
-    position: absolute;
-    display: flex;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index:1;
-    width: fit-content;
+  position: absolute;
+  display: flex;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  width: fit-content;
 }
 
 .carousell .caro-btn {
-    width: 25px;
-    height: 5px;
-    margin: 0 4px;
-    background-color: blue;
-    transition: 300ms;
-    cursor: pointer;
+  width: 25px;
+  height: 5px;
+  margin: 0 4px;
+  background-color: var(--black);
+  transition: 300ms;
+  cursor: pointer;
 }
 
 .carousell .caro-btn:hover {
-    background-color: green;
+  background-color: var(--dark-pink);
 }
 
-.carousell .active{
-    background-color: red;
+.carousell .active {
+  background-color: var(--pink);
 }
 
 /* Slider Eventos */
 .img-list-event > img {
-    width: 770px;
+  width: 770px;
 }
 
 .carousell-event {
-    position: relative;
-    height: 400px;
-    overflow: hidden;
-    background-color: red;
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+  background-color: var(--yellow);
 }
 
 .content-event {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    text-align: center;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
 }
 
 .content-text-event {
-    font-size: 1.3rem;
-    width: 40%;
+  width: 40%;
+}
+
+.content-event h1 {
+  font-family: "Lilita One", cursive;
+  font-size: 2.3rem;
+}
+
+.content-event p,
+.content-event a {
+  font-family: "Inter", sans-serif;
+  margin: 20px;
+}
+
+.content-event p {
+  line-height: 1.7rem;
+  font-size: 1.3rem;
+}
+
+.content-event a {
+    background-color: var(--blue);
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    color: var(--white);
 }
 
 .carousell-event .img-list-event {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 500%;
-    height: 100%;
-    transition: 500ms;
-    display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 500%;
+  height: 100%;
+  transition: 500ms;
+  display: flex;
 }
 
 .carousell-event .img-list-event img {
-    float: left;
-    width: 60%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
+  float: left;
+  width: 60%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .carousell-event .btn-section-event {
-    position: absolute;
-    display: flex;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
-    width: fit-content;
+  position: absolute;
+  display: flex;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  width: fit-content;
 }
 
 .carousell-event .caro-btn-event {
-    width: 25px;
-    height: 5px;
-    margin: 0 4px;
-    background-color: blue;
-    transition: 300ms;
-    cursor: pointer;
+  width: 25px;
+  height: 5px;
+  margin: 0 4px;
+  background-color: var(--black);
+  transition: 300ms;
+  cursor: pointer;
 }
 
 .carousell-event .caro-btn-event:hover {
-    background-color: green;
+  background-color: var(--dark-pink);
 }
 
-.carousell-event .active{
-    background-color: red;
+.carousell-event .active {
+  background-color: var(--pink);
 }
 
 .prev,
 .next {
-    display: none;
+  display: none;
 }
 
 @media (max-width: 600px) {
-    .content-event {
-        flex-direction: column-reverse;
-        height: 85%;
-    }
+  .carousell-event {
+    height: 475px;
+  }
+  
+  .content-event {
+    flex-direction: column-reverse;
+    height: 85%;
+  }
 
-    .content-text-event {
-        padding-top: 25px;
-    }
+  .content-text-event {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px;
+  }
 
-    .carousell-event .img-list-event img {
-        width: 70%;
-        border-radius: 10%;
-    }
+  .carousell-event .img-list-event img {
+    width: 100%;
+  }
 
-    .prev {
-        display: block;
-        position: absolute;
-        top: 50%;
-        left: 2vw;
-    }
+  .prev,
+  .next {
+    display: block;
+    position: absolute;
+    top: 55%;
+  }
 
-    .prev svg {
-        width: 35px;
-        height: 35px;
-        fill: white;
-    }
-    
-    .next {
-        display: block;
-        position: absolute;
-        top: 50%;
-        right: 2vw;
-    }
+  .prev svg,
+  .next svg {
+    width: 35px;
+    height: 35px;
+  }
 
-    .next svg {
-        width: 35px;
-        height: 35px;
-        fill: white;
-    }
+  .prev {
+    left: 2vw;
+  }
+
+  .next {
+    right: 2vw;
+  }
+
+  .carousell .caro-btn:hover,
+  .carousell-event .caro-btn-event:hover {
+    background-color: var(--pink);
+  }
+
+  .content-text-event {
+    height: 45%;
+    width: 100%;
+  }
+  
+  .content-event h1 {
+    font-size: 1.8rem;
+  }
+  
+  .content-event p,
+  .content-event a {
+    font-family: "Inter", sans-serif;
+    margin: 10px;
+  }
+  
+  .content-event p {
+    line-height: 1.3rem;
+    font-size: 1rem;
+  }
+
+  .carousell-event .img-list-event img {
+    height: 55%;
+  }
 }
+
+/* Slider ONG igual ao Primeiro*/
+.img-list-ong > img {
+  width: 770px;
+}
+
+.carousell-ong {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+  background-color: var(--yellow);
+}
+
+.content-ong {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.content-text-ong {
+  width: 40%;
+}
+
+.content-ong h1 {
+  font-family: "Lilita One", cursive;
+  font-size: 2.3rem;
+}
+
+.content-ong p,
+.content-ong a {
+  font-family: "Inter", sans-serif;
+  margin: 20px;
+}
+
+.content-ong p {
+  line-height: 1.7rem;
+  font-size: 1.3rem;
+}
+
+.content-ong a {
+    background-color: var(--blue);
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    color: var(--white);
+}
+
+.carousell-ong .img-list-ong {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 800%;
+  height: 100%;
+  transition: 500ms;
+  display: flex;
+}
+
+.carousell-ong .img-list-ong img {
+  float: left;
+  width: 60%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.carousell-ong .btn-section-ong {
+  position: absolute;
+  display: flex;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  width: fit-content;
+}
+
+.carousell-ong .caro-btn-ong {
+  width: 25px;
+  height: 5px;
+  margin: 0 4px;
+  background-color: var(--black);
+  transition: 300ms;
+  cursor: pointer;
+}
+
+.carousell-ong .caro-btn-ong:hover {
+  background-color: var(--dark-pink);
+}
+
+.carousell-ong .active {
+  background-color: var(--pink);
+}
+
+.prev,
+.next {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .carousell-ong {
+    height: 475px;
+  }
+  
+  .content-ong {
+    flex-direction: column-reverse;
+    height: 85%;
+  }
+
+  .content-text-ong {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px;
+  }
+
+  .carousell-ong .img-list-ong img {
+    width: 100%;
+  }
+
+  .prev,
+  .next {
+    display: block;
+    position: absolute;
+    top: 55%;
+  }
+
+  .prev svg,
+  .next svg {
+    width: 35px;
+    height: 35px;
+  }
+
+  .prev {
+    left: 2vw;
+  }
+
+  .next {
+    right: 2vw;
+  }
+
+  .carousell .caro-btn:hover,
+  .carousell-ong .caro-btn-ong:hover {
+    background-color: var(--pink);
+  }
+
+  .content-text-ong {
+    height: 45%;
+    width: 100%;
+  }
+  
+  .content-ong h1 {
+    font-size: 1.8rem;
+  }
+  
+  .content-ong p,
+  .content-ong a {
+    font-family: "Inter", sans-serif;
+    margin: 10px;
+  }
+  
+  .content-ong p {
+    line-height: 1.3rem;
+    font-size: 1rem;
+  }
+
+  .carousell-ong .img-list-ong img {
+    height: 55%;
+  }
+}
+
+/* Slider ONG */
+/* .img-list-ong  img {
+  height: 50%;
+}
+
+.carousell-ong {
+  position: relative;
+  height: 600px;
+  overflow: hidden;
+  background-color: var(--dark-yellow);
+}
+
+.content-ong {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 80%;
+  margin: 0 4%;
+  text-align: center;
+}
+
+.content-ong-card {
+  background-color: var(--yellow);
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  border-radius: 25px;
+  margin: 50px;
+}
+
+.content-text-ong {
+  width: 100%;
+  margin-top: 25px;
+}
+
+.content-ong h1 {
+  font-family: "Lilita One", cursive;
+  font-size: 2.3rem;
+}
+
+.content-ong p,
+.content-ong a {
+  font-family: "Inter", sans-serif;
+  margin: 20px;
+}
+
+.content-ong p {
+  line-height: 1.7rem;
+  font-size: 1.3rem;
+}
+
+.content-ong a {
+    background-color: var(--blue);
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    color: var(--white);
+}
+
+.carousell-ong .img-list-ong {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400%;
+  height: 100%;
+  transition: 500ms;
+  display: flex;
+  align-items: center;
+}
+
+.carousell-ong .img-list-ong img {
+  float: left;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 5%;
+}
+
+.carousell-ong .btn-section-ong {
+  position: absolute;
+  display: flex;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  width: fit-content;
+}
+
+.carousell-ong .caro-btn-ong {
+  width: 25px;
+  height: 5px;
+  margin: 0 4px;
+  background-color: var(--black);
+  transition: 300ms;
+  cursor: pointer;
+}
+
+.carousell-ong .caro-btn-ong:hover {
+  background-color: var(--dark-pink);
+}
+
+.carousell-ong .active {
+  background-color: var(--pink);
+}
+
+.prev-ong,
+.next-ong {
+  display: block;
+  position: absolute;
+  top: 50%;
+}
+
+.prev-ong svg,
+.next-ong svg {
+  width: 50px;
+  height: 50px;
+}
+
+.prev-ong {
+  left: 2vw;
+}
+
+.next-ong {
+  right: 2vw;
+}
+
+@media (max-width: 600px) {
+  .carousell-ong {
+    height: 475px;
+  }
+  
+  .content-ong {
+    height: 80%;
+    margin: 1.3%;
+  }
+
+  .content-ong-card {
+    margin: 10px;
+  }
+
+  .content-text-ong {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px;
+  }
+
+  .carousell-ong .img-list-ong img {
+    width: 100%;
+  }
+
+  .carousell .caro-btn:hover,
+  .carousell-ong .caro-btn-ong:hover {
+    background-color: var(--pink);
+  }
+
+  .content-text-ong {
+    height: 45%;
+    width: 100%;
+  }
+  
+  .content-ong h1 {
+    font-size: 1.5rem;
+  }
+  
+  .content-ong p,
+  .content-ong a {
+    font-family: "Inter", sans-serif;
+    margin: 10px;
+  }
+  
+  .content-ong p {
+    line-height: 1.3rem;
+    font-size: 1rem;
+  }
+
+  .carousell-ong .img-list-ong img {
+    height: 55%;
+  }
+
+  .prev-ong svg,
+  .next-ong svg {
+    width: 35px;
+    height: 35px;
+  }
+} */

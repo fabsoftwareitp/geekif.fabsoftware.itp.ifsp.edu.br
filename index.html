@@ -5,58 +5,86 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS -->
-    <link rel="stylesheet" href="/css/reset.css">
-    <link rel="stylesheet" href="/css/header.css">
-    <link rel="stylesheet" href="/css/slider.css">
-    <link rel="stylesheet" href="/css/content.css">
-    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <!-- Logo Página -->
+    <link rel="icon" type="image/x-icon" href="/imgs/favicon.ico">
     <!-- HTML -->
     <title>Geek IF</title>
 </head>
 <body>
     <!-- Cabeçalho/Menu -->
     <header class="header">
-       <a href="/" class="logo">Placeholder</a>
+       <a href="/"><img class="logo" src="/imgs/geek_if.png"></a>
        <nav class="nav">
            <input type="checkbox" id="checkbox" class="checkbox">
-           <label for="checkbox" class="label-menu">Menu
+           <label for="checkbox" class="label-menu">
                <span class="hamburguer"></span>
             </label>
            <ul class="menu">
                 <li><a href="/">Página Inicial</a></li>
-                <li><input type="checkbox" id="checkbox-workshop" class="checkbox">
+                <li><input type="radio" id="checkbox-workshop" class="checkbox limited" name="limited" onclick="oneMenu(0)">
                     <label for="checkbox-workshop" class="label-sub-menu">Oficinas</label>
                     <ul class="sub-menu">
-                        <li><a href="">oficina 1</a></li>
-                        <li><a href="">oficina 2</a></li>
+                        <li><a href="/pages/oficinas/desenho.html">Desenho</a></li>
+                        <li><a href="/pages/oficinas/artesmarciais.html">Artes Marciais</a></li>
+                        <li><a href="/pages/oficinas/escritacriativa.html">Escrita Criativa</a></li>
+                        <!-- <li><a href="/pages/shortly.html">Ilustração</a></li> -->
+                        <li><a href="/pages/oficinas/origami.html">Origami</a></li>
+                        <!-- <li><a href="/pages/shortly.html">Stencil</a></li> -->
+                        <li><a href="/pages/oficinas/swordplay.html">Swordplay</a></li>
                     </ul>
                 </li>
-                <li><input type="checkbox" id="checkbox-lecture" class="checkbox">
-                    <label for="checkbox-lecture" class="label-sub-menu">Palestras</label>
+                <li><input type="radio" id="checkbox-tournament" class="checkbox limited" name="limited" onclick="oneMenu(1)">
+                    <label for="checkbox-tournament" class="label-sub-menu">Campeonatos</label>
                     <ul class="sub-menu">
-                        <li><a href="">palestra 1</a></li>
-                        <li><a href="">palestra 2</a></li>
+                        <li><a href="/pages/campeonatos/cosplayadulto.html">Cosplay Adulto</a></li>
+                        <li><a href="/pages/campeonatos/cosplayinfantil.html">Cosplay Infantil</a></li>
+                        <li><a href="/pages/campeonatos/justdance.html">Just Dance</a></li>
                     </ul>
                 </li>
-                <li><input type="checkbox" id="checkbox-tournament" class="checkbox">
-                    <label for="checkbox-tournament" class="label-sub-menu">Torneios</label>
+                <li><input type="radio" id="checkbox-show" class="checkbox limited" name="limited" onclick="oneMenu(2)">
+                    <label for="checkbox-show" class="label-sub-menu">Shows</label>
                     <ul class="sub-menu">
-                        <li><a href="">torneio 1</a></li>
-                        <li><a href="">torneio 2</a></li>
+                        <li><a href="/pages/shows/doutoresdorock.html">Doutores do Rock</a></li>
+                        <li><a href="/pages/shows/meiaboca.html">Meia Boca</a></li>
+                        <li><a href="/pages/shows/elisios.html">Elísios</a></li>
                     </ul>
                 </li>
+                <li><input type="radio" id="checkbox-games" class="checkbox limited" name="limited" onclick="oneMenu(3)">
+                    <label for="checkbox-games" class="label-sub-menu">Sala de Jogos</label>
+                    <ul class="sub-menu sub-menu-games">
+                        <li><a href="/pages/salasdejogos/magic.html">Magic The Gathering</a></li>
+                        <li><a href="/pages/salasdejogos/tabuleiro.html">Tabuleiro</a></li>
+                        <li><a href="/pages/salasdejogos/rpg.html">RPG</a></li>
+                        <li><a href="/pages/salasdejogos/pokemon.html">Pokemon</a></li>
+                    </ul>
+                </li>
+                <li><a href="/pages/galery.html">Fotos 2022</a></li>
+                <li><a href="/pages/shortly.html">Seja um Patrocinador</a></li>
            </ul>
        </nav>
     </header>
     <div class="header-back"></div>
+    <!-- Página Inicial-->
+    <section class="banner">
+        <div>
+            <img src="/imgs/woody-rasterizado.png" loading="lazy">
+            <div class="banner-content">
+                <h1>GEEK-IF</h1>
+                <h1>02 DE SETEMBRO</h1>
+                <h1>10:00 às 20:00</h1>
+                <h1>ENTRADA: 1L DE LEITE OU 1 BRINQUEDO</h1>
+            </div>
+        </div>
+    </section>
     <!-- Slider Principal -->
-    <section class="carousell">
+    <!-- <section class="carousell">
         <div class="img-list" id="img-list">
-            <img src="/imgs/Beia-Carvalho-Kroton-Folder-1080x600.jpg" alt="">
-            <img src="/imgs/Beia-Carvalho-Kroton-Folder-1080x600.jpg" alt="">
-            <img src="/imgs/Beia-Carvalho-Kroton-Folder-1080x600.jpg" alt="">
-            <img src="/imgs/Beia-Carvalho-Kroton-Folder-1080x600.jpg" alt="">
-            <img src="/imgs/Beia-Carvalho-Kroton-Folder-1080x600.jpg" alt="">
+            <img src="/imgs/Geek1.jpg" alt="">
+            <img src="/imgs/Geek2.jpg" alt="">
+            <img src="/imgs/Geek3.jpg" alt="">
+            <img src="/imgs/Geek4.jpg" alt="">
+            <img src="/imgs/Geek5.jpg" alt="">
         </div>
         <div class="btn-section">
             <div class="caro-btn active" onclick="slideImg(0)"></div>
@@ -65,62 +93,79 @@
             <div class="caro-btn" onclick="slideImg(3)"></div>
             <div class="caro-btn" onclick="slideImg(4)"></div>
         </div>
-    </section>
+    </section> -->
     <!-- Sobre o Eveneto -->
     <section class="about">
         <h1>Sobre o Evento</h1>
-        <p>O evento foi top Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Repellat velit voluptate sint nostrum qui eaque. Nihil, tenetur reprehenderit 
-            quis molestias nesciunt fuga magnam culpa atque saepe soluta dolores ipsum nam.</p>
-        <p>O evento foi top Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Repellat velit voluptate sint nostrum qui eaque. Nihil, tenetur reprehenderit 
-            quis molestias nesciunt fuga magnam culpa atque saepe soluta dolores ipsum nam.</p>
-        <p>O evento foi top Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Repellat velit voluptate sint nostrum qui eaque. Nihil, tenetur reprehenderit 
-            quis molestias nesciunt fuga magnam culpa atque saepe soluta dolores ipsum nam.</p>
+        <p>O Geek-IF é um evento cultural, gratuito e aberto ao público de todas as idades, 
+            idealizado pelos professores Eline Welter e Renato Franchi, pensado para o público 
+            que gosta de música, desenho, dança, arte em geral, conteúdos relacionados a filmes 
+            de super heróis, ficção científica, animes, desenhos animados e revistas em quadrinhos. 
+            O evento visa abrir espaço às pessoas que têm interesse na temática para expressar e 
+            disseminar a cultura geek em Itapetininga e região, contando com diversas apresentações 
+            musicais, oficinas de desenho em quadrinhos, competições de Cosplay e Just Dance, jogos 
+            de tabuleiro, entre outros.</p>
+        <p>Sua primeira edição foi realizada em 2022 e contou com mais de 1000 pessoas, sendo estes, 
+            alunos e a comunidade e, neste ano de 2023 o evento ocorrerá no dia 02 de setembro, contando 
+            com muitas atrações e atividades, além de uma praça de alimentação bem variada. Então, vem pro
+            GEEK-IF.</p>
     </section>
     <!-- Slider Eventos -->
     <section class="carousell-event">
         <div class="img-list-event" id="img-list-event">
             <div class="content-event">
                 <div class="content-text-event">
-                    <h3>Teste</h3>
-                    <p>Foda</p>
-                    <a href="/">Veja lá</a>
+                    <h1>Campeonatos</h1>
+                    <p>Cosplay Adulto</p>
+                    <p>Cosplay Infantil</p>
+                    <p>Just Dance</p>
+                    <!-- <a href="/">Veja lá</a> -->
                 </div>
-                <img src="/imgs/Beia-Carvalho-Kroton-Folder-1080x600.jpg" alt="">
+                <img src="/imgs/Geek6.jpg" alt="" loading="lazy">
             </div>
             <div class="content-event">
                 <div class="content-text-event">
-                    <h3>Teste</h3>
-                    <p>Foda</p>
-                    <a href="/">Veja lá</a>
+                    <h1>Oficinas</h1>
+                    <!-- <p>Desenho</p> -->
+                    <p>Artes Marciais</p>
+                    <p>Swordplay</p>
+                    <p>Escrita Criativa</p>
+                    <!-- <p>Ilustração</p> -->
+                    <!-- <a href="/">Veja lá</a> -->
                 </div>
-                <img src="/imgs/Beia-Carvalho-Kroton-Folder-1080x600.jpg" alt="">
+                <img src="/imgs/Geek8.jpg" alt="" loading="lazy">
             </div>
             <div class="content-event">
                 <div class="content-text-event">
-                    <h3>Teste</h3>
-                    <p>Foda</p>
-                    <a href="/">Veja lá</a>
+                    <h1>Oficinas</h1>
+                    <p>Origami</p>
+                    <p>Desenho</p>
+                    <!-- <p>Stencil</p>
+                    <p>Swordplay</p> -->
+                    <!-- <a href="/">Veja lá</a> -->
                 </div>
-                <img src="/imgs/Beia-Carvalho-Kroton-Folder-1080x600.jpg" alt="">
+                <img src="/imgs/Geek7.jpg" alt="" loading="lazy">
             </div>
             <div class="content-event">
                 <div class="content-text-event">
-                    <h3>Teste</h3>
-                    <p>Foda</p>
-                    <a href="/">Veja lá</a>
+                    <h1>Shows</h1>
+                    <p>Doutores do Rock</p>
+                    <p>Meia Boca</p>
+                    <p>Elísios</p>
+                    <!-- <a href="/">Veja lá</a> -->
                 </div>
-                <img src="/imgs/Beia-Carvalho-Kroton-Folder-1080x600.jpg" alt="">
+                <img src="/imgs/Geek9.jpg" alt="" loading="lazy">
             </div>
             <div class="content-event">
                 <div class="content-text-event">
-                    <h3>Teste</h3>
-                    <p>Foda</p>
-                    <a href="/">Veja lá</a>
+                    <h1>Sala de Jogos</h1>
+                    <p>Magic The Gathering</p>
+                    <p>Tabuleiro</p>
+                    <p>RPG</p>
+                    <p>Pokemon</p>
+                    <!-- <a href="/">Veja lá</a> -->
                 </div>
-                <img src="/imgs/Beia-Carvalho-Kroton-Folder-1080x600.jpg" alt="">
+                <img src="/imgs/Geek3.jpg" alt="" loading="lazy">
             </div>
         </div>
         <div class="btn-section-event">
@@ -133,9 +178,175 @@
         <div class="prev" onclick="swipper(-1)"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M321.94 98L158.82 237.78a24 24 0 000 36.44L321.94 414c15.57 13.34 39.62 2.28 39.62-18.22v-279.6c0-20.5-24.05-31.56-39.62-18.18z"/><path xmlns="http://www.w3.org/2000/svg" d="M321.94 98L158.82 237.78a24 24 0 000 36.44L321.94 414c15.57 13.34 39.62 2.28 39.62-18.22v-279.6c0-20.5-24.05-31.56-39.62-18.18z"/></svg></div>
         <div class="next" onclick="swipper(+1)"><svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M190.06 414l163.12-139.78a24 24 0 000-36.44L190.06 98c-15.57-13.34-39.62-2.28-39.62 18.22v279.6c0 20.5 24.05 31.56 39.62 18.18z"/><path xmlns="http://www.w3.org/2000/svg" d="M190.06 414l163.12-139.78a24 24 0 000-36.44L190.06 98c-15.57-13.34-39.62-2.28-39.62 18.22v279.6c0 20.5 24.05 31.56 39.62 18.18z"/></svg></div>
     </section>
+    <!-- Slider ONG Igual ao Primeiro -->
+    <section class="carousell-ong">
+        <div class="img-list-ong" id="img-list-ong">
+            <div class="content-ong">
+                <div class="content-text-ong">
+                    <h1>Apae</h1>
+                    <p>Sobre</p>
+                    <!-- <a href="/">Veja lá</a> -->
+                </div>
+                <img src="/imgs/ONGs/Apae.jpg" alt="" loading="lazy">
+            </div>
+            <div class="content-ong">
+                <div class="content-text-ong">
+                    <h1>Geapa</h1>
+                    <p>Sobre</p>
+                    <!-- <a href="/">Veja lá</a> -->
+                </div>
+                <img src="/imgs/ONGs/Geapa.jpg" alt="" loading="lazy">
+            </div>
+            <div class="content-ong">
+                <div class="content-text-ong">
+                    <h1>Instituto Geração</h1>
+                    <p>Sobre</p>
+                    <!-- <a href="/">Veja lá</a> -->
+                </div>
+                <img src="/imgs/ONGs/Instituto Geração.png" alt="" loading="lazy">
+            </div>
+            <div class="content-ong">
+                <div class="content-text-ong">
+                    <h1>Mia Dotty</h1>
+                    <p>Sobre</p>
+                    <!-- <a href="/">Veja lá</a> -->
+                </div>
+                <img src="/imgs/ONGs/Mia dotty.jpg" alt="" loading="lazy">
+            </div>
+            <div class="content-ong">
+                <div class="content-text-ong">
+                    <h1>Nosso Lar</h1>
+                    <p>Sobre</p>
+                    <!-- <a href="/">Veja lá</a> -->
+                </div>
+                <img src="/imgs/ONGs/Nosso lar.jpg" alt="" loading="lazy">
+            </div>
+            <div class="content-ong">
+                <div class="content-text-ong">
+                    <h1>Sos Itapetininga</h1>
+                    <p>Sobre</p>
+                    <!-- <a href="/">Veja lá</a> -->
+                </div>
+                <img src="/imgs/ONGs/Sos Itapetininga.png" alt="" loading="lazy">
+            </div>
+            <div class="content-ong">
+                <div class="content-text-ong">
+                    <h1>Taiko</h1>
+                    <p>Sobre</p>
+                    <!-- <a href="/">Veja lá</a> -->
+                </div>
+                <img src="/imgs/ONGs/Taiko.jpg" alt="" loading="lazy">
+            </div>
+            <div class="content-ong">
+                <div class="content-text-ong">
+                    <h1>Uipa</h1>
+                    <p>Sobre</p>
+                    <!-- <a href="/">Veja lá</a> -->
+                </div>
+                <img src="/imgs/ONGs/Uipa-logo.jpg" alt="" loading="lazy">
+            </div>
+        </div>
+        <div class="btn-section-ong">
+            <div class="caro-btn-ong active" onclick="slideImgOng(0)"></div>
+            <div class="caro-btn-ong" onclick="slideImgOng(1)"></div>
+            <div class="caro-btn-ong" onclick="slideImgOng(2)"></div>
+            <div class="caro-btn-ong" onclick="slideImgOng(3)"></div>
+            <div class="caro-btn-ong" onclick="slideImgOng(4)"></div>
+            <div class="caro-btn-ong" onclick="slideImgOng(5)"></div>
+            <div class="caro-btn-ong" onclick="slideImgOng(6)"></div>
+            <div class="caro-btn-ong" onclick="slideImgOng(7)"></div>
+        </div>
+        <div class="prev" onclick="swipperOng(-1)"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M321.94 98L158.82 237.78a24 24 0 000 36.44L321.94 414c15.57 13.34 39.62 2.28 39.62-18.22v-279.6c0-20.5-24.05-31.56-39.62-18.18z"/><path xmlns="http://www.w3.org/2000/svg" d="M321.94 98L158.82 237.78a24 24 0 000 36.44L321.94 414c15.57 13.34 39.62 2.28 39.62-18.22v-279.6c0-20.5-24.05-31.56-39.62-18.18z"/></svg></div>
+        <div class="next" onclick="swipperOng(+1)"><svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M190.06 414l163.12-139.78a24 24 0 000-36.44L190.06 98c-15.57-13.34-39.62-2.28-39.62 18.22v279.6c0 20.5 24.05 31.56 39.62 18.18z"/><path xmlns="http://www.w3.org/2000/svg" d="M190.06 414l163.12-139.78a24 24 0 000-36.44L190.06 98c-15.57-13.34-39.62-2.28-39.62 18.22v279.6c0 20.5 24.05 31.56 39.62 18.18z"/></svg></div>
+    </section>
+    <!-- Slider ONG -->
+    <!-- <section class="carousell-ong">
+        <div class="img-list-ong" id="img-list-ong">
+            <div class="content-ong">
+                <div class="content-ong-card">
+                    <img src="/imgs/ONGs/Apae.jpg" alt="">
+                    <div class="content-text-ong">
+                        <h1>Apae</h1>
+                        <p>sobre</p>
+                        <a href="/">Veja lá</a>
+                    </div>
+                </div>
+                <div class="content-ong-card">
+                    <img src="/imgs/ONGs/Geapa.jpg" alt="">
+                    <div class="content-text-ong">
+                        <h1>Geapa</h1>
+                        <p>sobre</p>
+                        <a href="/">Veja lá</a>
+                    </div>
+                </div>
+            </div>
+            <div class="content-ong">
+                <div class="content-ong-card">
+                    <img src="/imgs/ONGs/Instituto Geração.png" alt="">
+                    <div class="content-text-ong">
+                        <h1>Instituto Geração</h1>
+                        <p>sobre</p>
+                        <a href="/">Veja lá</a>
+                    </div>
+                </div>
+                <div class="content-ong-card">
+                    <img src="/imgs/ONGs/Mia dotty.jpg" alt="">
+                    <div class="content-text-ong">
+                        <h1>Mia Dotty</h1>
+                        <p>sobre</p>
+                        <a href="/">Veja lá</a>
+                    </div>
+                </div>
+            </div>
+            <div class="content-ong">
+                <div class="content-ong-card">
+                    <img src="/imgs/ONGs/Nosso lar.jpg" alt="">
+                    <div class="content-text-ong">
+                        <h1>Nosso lar</h1>
+                        <p>sobre</p>
+                        <a href="/">Veja lá</a>
+                    </div>
+                </div>
+                <div class="content-ong-card">
+                    <img src="/imgs/ONGs/Sos Itapetininga.png" alt="">
+                    <div class="content-text-ong">
+                        <h1>Sos Itapetininga</h1>
+                        <p>sobre</p>
+                        <a href="/">Veja lá</a>
+                    </div>
+                </div>
+            </div>
+            <div class="content-ong">
+                <div class="content-ong-card">
+                    <img src="/imgs/ONGs/Taiko.jpg" alt="">
+                    <div class="content-text-ong">
+                        <h1>Taiko</h1>
+                        <p>sobre</p>
+                        <a href="/">Veja lá</a>
+                    </div>
+                </div>
+                <div class="content-ong-card">
+                    <img src="/imgs/ONGs/Uipa-logo.jpg" alt="">
+                    <div class="content-text-ong">
+                        <h1>Uipa</h1>
+                        <p>sobre</p>
+                        <a href="/">Veja lá</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="btn-section-ong">
+            <div class="caro-btn-ong active" onclick="slideImgOng(0)"></div>
+            <div class="caro-btn-ong" onclick="slideImgOng(1)"></div>
+            <div class="caro-btn-ong" onclick="slideImgOng(2)"></div>
+            <div class="caro-btn-ong" onclick="slideImgOng(3)"></div>
+        </div>
+        <div class="prev-ong" onclick="swipperOng(-1)"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M321.94 98L158.82 237.78a24 24 0 000 36.44L321.94 414c15.57 13.34 39.62 2.28 39.62-18.22v-279.6c0-20.5-24.05-31.56-39.62-18.18z"/><path xmlns="http://www.w3.org/2000/svg" d="M321.94 98L158.82 237.78a24 24 0 000 36.44L321.94 414c15.57 13.34 39.62 2.28 39.62-18.22v-279.6c0-20.5-24.05-31.56-39.62-18.18z"/></svg></div>
+        <div class="next-ong" onclick="swipperOng(+1)"><svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M190.06 414l163.12-139.78a24 24 0 000-36.44L190.06 98c-15.57-13.34-39.62-2.28-39.62 18.22v279.6c0 20.5 24.05 31.56 39.62 18.18z"/><path xmlns="http://www.w3.org/2000/svg" d="M190.06 414l163.12-139.78a24 24 0 000-36.44L190.06 98c-15.57-13.34-39.62-2.28-39.62 18.22v279.6c0 20.5 24.05 31.56 39.62 18.18z"/></svg></div>
+    </section> -->
     <!-- Contato -->
     <section class="contact-background">
-        <div class="contact-geo"><!-- É mais fácil fazer com uma imagem mesmo -->
+        <div class="contact-geo"><!-- É mais fácil fazer com uma imagem-->
             <div class="contact">
                 <h1>Entre em Contato!</h1>
                 <form action="/" method="post" id="form">
@@ -144,7 +355,8 @@
                     <label for="email">Seu Email:</label>
                     <input type="email" name="email" id="email" placeholder="seu email aqui" required>
                     <label for="message">Sua Mensagem:</label>
-                    <input type="message" name="message" id="message" placeholder="sua mensagem aqui" required>
+                    <textarea cols="175" rows="6" id="message" name="message" placeholder="sua mensagem aqui"></textarea>
+                    <!-- <textarea name="message" id="message" placeholder="sua mensagem aqui" required></textarea> -->
                     <button type="submit">Enviar</button>
                 </form>
             </div>
@@ -153,19 +365,70 @@
     <!-- Como Chegar -->
     <section class="arrive">
         <h1>Como Chegar</h1>
-        <p>Como chegar de maneira rápida e fácil 100% atualizada 2023 IF</p>
-        <div class="arrive-img">
-            <img src="/imgs/Beia-Carvalho-Kroton-Folder-1080x600.jpg" alt="">
-            <img src="/imgs/Beia-Carvalho-Kroton-Folder-1080x600.jpg" alt="">
-        </div>
+        <p>Endereço: Av. João Olímpio de Oliveira, 1561 - Vila Asem, Itapetininga - SP, 18202-000</p>
         <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.293147190238!2d-48.02073778502155!3d-23.593817384666814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c5cbf41ebfcf31%3A0xa65e4fb6d75446bf!2sInstituto%20Federal%20de%20Educa%C3%A7%C3%A3o%2C%20Ci%C3%AAncia%20e%20Tecnologia%20de%20S%C3%A3o%20Paulo%2C%20Campus%20Itapetininga!5e0!3m2!1spt-BR!2sbr!4v1686163888450!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
     <!-- Rodapé -->
     <footer class="footer">
-        <a href="https://itp.ifsp.edu.br/" target="_blank">
-            <img src="/imgs/oie_transparent.png" id="logo-if" alt="Instituto Federal Logo">
-        </a>
+        <div class="directors">
+            <div>
+                <h1>Realização</h1>
+                <a href="https://itp.ifsp.edu.br/" target="_blank">
+                    <img class="logo-if" src="/imgs/logo-if-horizontal-rasterizada.png" id="logo-if" alt="Instituto Federal Logo">
+                </a>
+            </div>
+            <div>
+                <h1>Apoio</h1>
+                <div>
+                    <a href="https://www.saopaulo.sp.gov.br/" target="_blank">
+                        <img class="logo-sp" src="/imgs/footer/governo-sp.png" alt="Governo de São Paulo Logo" loading="lazy">
+                    </a>
+                    <a href="https://www.proac.sp.gov.br/" target="_blank">
+                        <img class="logo-proac" src="/imgs/footer/proac.png" alt="Proac Logo" loading="lazy">
+                    </a>
+                    <a href="" target="_blank">
+                        <img class="logo-skilled" src="/imgs/footer/Skilled.png" alt="Skilled Logo" loading="lazy">
+                    </a>
+                    <a href="" target="_blank">
+                        <img class="logo-sup" src="/imgs/footer/Victor Duarte.png" alt="Victor Duarte Logo" loading="lazy">
+                    </a>
+                    <a href="" target="_blank">
+                        <img class="logo-sup" src="/imgs/footer/wolfenrir.jpg" alt="Wolfenrir Logo" loading="lazy">
+                    </a>
+                    <a href="" target="_blank">
+                        <img class="logo-sup" src="/imgs/footer/Sweet Potato.jpeg" alt="Sweet Potato Logo" loading="lazy">
+                    </a>
+                    <a href="" target="_blank">
+                        <img class="logo-sup" src="/imgs/footer/rpg.jpg" alt="RPG Itapetininga Logo" loading="lazy">
+                    </a>
+                    <a href="" target="_blank">
+                        <img class="logo-sup" src="/imgs/footer/Kawaiirumi.jpeg" alt="Kawaiirumi Logo" loading="lazy">
+                    </a>
+                    <a href="" target="_blank">
+                        <img class="logo-sup" src="/imgs/footer/Cazulo.jpg" alt="Cazulo Logo" loading="lazy">
+                    </a>
+                </div>
+            </div>
+            <div>
+                <h1>Patrocínio</h1>
+                <div>
+                    <a href="" target="_blank">
+                        <img class="logo-sant" src="/imgs/footer/Café Santo André.png" alt="Café Santo André Logo" loading="lazy">
+                    </a>
+                    <a href="" target="_blank">
+                        <img class="logo-dna" src="/imgs/footer/dna_3_card.png" alt="DNA 3 Card Logo" loading="lazy">
+                    </a>
+                    <a href="" target="_blank">
+                        <img class="logo-pat" src="/imgs/footer/logo paulispan contorno branco e sem fundo.png" alt="Paulispan Logo" loading="lazy">
+                    </a>
+                    <a href="" target="_blank">
+                        <img class="logo-rom" src="/imgs/footer/Romtec.png" alt="Romtec Logo" loading="lazy">
+                    </a>
+                </div>
+            </div>
+        </div>
         <div class="social-media">
+            <h1>Redes Sociais</h1>
             <a href="https://www.facebook.com/ifspitape/" target="_blank">
                 <img class="social-img" src="/imgs/fb_icon_325x325.png" alt="Facebook Logo">
             </a>
@@ -173,7 +436,7 @@
                 <img class="social-img" src="/imgs/Instagram-Icon.png" alt="Instagram Logo">
             </a>
         </div>
-        <h3>Todos os Direitos Reservados©Geek IF</h3>
+        <h1>Todos os Direitos Reservados © Geek IF</h1>
     </footer>
     <!-- JavaScript -->
     <script src="/script/index.js"></script>

@@ -1,190 +1,291 @@
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 6rem;
-    padding: 1rem;
-    flex-direction: column;
-    background-color: orange;
-    z-index: 2;
-    position: fixed;
-    width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 7.5rem;
+  padding: 1rem;
+  flex-direction: column;
+  background-color: var(--purple);
+  z-index: 2;
+  position: fixed;
+  width: 100vw;
 }
 
 .header-back {
-    width: 100%;
-    height: 6rem;
+  width: 100%;
+  height: 7.5rem;
 }
 
 .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
+  width: 200px;
 }
 
 /* Menu Principal */
 .menu {
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-    position: relative;
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  position: relative;
 }
 
 .menu > li {
-    font-size: 1.5rem;
-    display: block;
-    padding: 1rem;
-    border-radius: 0.5rem;
-    text-align: center;
+  font-size: 1.5rem;
+  display: block;
+  padding: 1rem 0rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  width: 10rem;
+}
+
+.menu > li:last-child {
+  width: 14rem;
 }
 
 .menu > li > label {
-    cursor: pointer; 
-    user-select: none;
+  cursor: pointer;
+  user-select: none;
+  font-family: "Lilita One", cursive;
+  font-size: 1.4rem;
+  color: var(--yellow);
 }
 
-.label-menu, .checkbox {
-    display: none;
+.menu > li > label:hover,
+.menu > li > input:checked ~ label {
+  color: var(--white);
+}
+
+.menu a {
+  font-family: "Lilita One", cursive;
+  font-size: 1.4rem;
+  color: var(--yellow);
+}
+
+.menu a:hover {
+  color: var(--white);
+}
+
+.label-menu,
+.checkbox {
+  display: none;
 }
 
 /* Sub Menus */
 .sub-menu {
-    display: block;
-    position: relative;
+  display: block;
+  position: relative;
+  text-align: center;
+  top: 0.9rem;
+  width: 10rem;
+  height: 0;
+  z-index: 1;
+  visibility: hidden;
+  overflow-y: hidden;
+  transition: 0.5s;
+  background-color: var(--dark-purple);
+}
+
+.sub-menu > label {
+  cursor: pointer;
+}
+
+.sub-menu > li {
+  padding: 1rem 0;
+  margin-inline: 1rem;
+  border-radius: 0;
+}
+
+/* Sub Menu Oficina */
+#checkbox-workshop:checked ~ .sub-menu {
+  height: 21rem;
+  visibility: visible;
+  overflow-y: hidden;
+}
+
+/* Sub Menu Campeonato */
+#checkbox-tournament:checked ~ .sub-menu {
+  height: 14rem;
+  visibility: visible;
+  overflow-y: hidden;
+}
+
+/* Sub Menu Show */
+#checkbox-show:checked ~ .sub-menu {
+  height: 12.5rem;
+  visibility: visible;
+  overflow-y: hidden;
+}
+
+/* Sub Menu Sala de Jogos */
+#checkbox-games:checked ~ .sub-menu {
+  height: 15.5rem;
+  visibility: visible;
+  overflow-y: hidden;
+}
+
+@media (max-width: 900px) {
+  .header {
+    flex-direction: row;
+    height: 5rem;
+  }
+
+  .header-back {
+    height: 5rem;
+  }
+
+  .logo {
+    width: 45vw;
+  }
+
+  /* Menu Principal */
+  .menu {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 5rem;
+    left: 0;
     text-align: center;
-    top: 1rem;
-    width: 8rem;
+    width: 100%;
     height: 0;
     z-index: 1;
     visibility: hidden;
     overflow-y: hidden;
     transition: 0.5s;
-    background-color: red;
-}
+    background-color: var(--dark-purple);
+  }
 
-.sub-menu > li {
-    padding: 1rem 0;
-    margin-inline: 1rem;
-    border-bottom: 0.0625rem solid rgba(0, 0, 0, 0.16);
+  .menu > li {
+    border-top: 0.0625rem;
     border-radius: 0;
-}
+    width: 100%;
+  }
 
-/* Sub Menu Torneio */
-#checkbox-tournament:checked ~ .sub-menu {
-    height: 114px;
+  .menu a,
+  .menu li label {
+    font-size: 1.6rem;
+  }
+
+  .label-menu {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+  }
+
+  .hamburguer {
+    border-top: 0.3rem solid var(--white);
+    color: var(--white);
+    width: 2rem;
+  }
+
+  .hamburguer::before,
+  .hamburguer::after {
+    border-top: 0.3rem solid var(--white);
+    color: var(--white);
+    content: " ";
+    display: block;
+    width: 2rem;
+    height: 0.125rem;
+    background: currentColor;
+    margin-top: 0.3125rem;
+    position: relative;
+    transition: 0.3s;
+  }
+
+  #checkbox:checked ~ .menu {
+    height: 50vh;
     visibility: visible;
-    overflow-y: hidden;
-    background-color: red;
+    overflow-y: auto;
+    background-color: var(--dark-purple);
+  }
+
+  #checkbox:checked ~ .label-menu .hamburguer {
+    border-top-color: transparent;
+  }
+
+  #checkbox:checked ~ .label-menu .hamburguer::before {
+    transform: rotate(135deg);
+  }
+
+  #checkbox:checked ~ .label-menu .hamburguer::after {
+    transform: rotate(-135deg);
+    top: -0.5375rem;
+  }
+
+  /* Sub Menu Oficina */
+  #checkbox-workshop:checked ~ .sub-menu {
+    height: 18rem;
+  }
+
+  /* Sub Menu Campeonato */
+  #checkbox-tournament:checked ~ .sub-menu {
+    height: 10.5rem;
+  } 
+  /* Sub Menu Show */
+  #checkbox-show:checked ~ .sub-menu {
+    height: 11rem;
+  }
+
+  /* Sub Menu Sala de Jogos */
+  #checkbox-games:checked ~ .sub-menu {
+    height: 15rem;
+  }
+
+  /* Sub Menu */
+  .sub-menu {
+    top: 0rem;
+    position: relative;
+    width: 100%;
+  }
+
+  .sub-menu > li {
+    border-bottom: 0;
+    background-color: var(--purple);
+    margin: 0px;
+  }
+
+  .sub-menu > li:first-child {
+    margin-top: 5px;
+  }
 }
 
-/* Sub Menu Palestra */
-#checkbox-lecture:checked ~ .sub-menu {
-    height: 114px;
-    visibility: visible;
-    overflow-y: hidden;
-    background-color: red;
+@media (max-height: 800px) {
+  .menu > li {
+      padding: 1rem 0rem;
+  }
 }
 
-/* Sub Menu Oficina */
-#checkbox-workshop:checked ~ .sub-menu {
-    height: 114px;
-    visibility: visible;
-    overflow-y: hidden;
-    background-color: red;
-}
+@media (max-height: 600px) {
+  .menu a,
+  .menu li label {
+    font-size: 1.3rem;
+    padding: 0;
+  }
 
-@media (max-width: 600px) {
-    .header {
-        flex-direction: row;
-        height: 5rem;
-    }
+  .menu {
+    gap: 0;
+  }
 
-    .header-back {
-        height: 5rem;
-    }
-    
-    /* Menu Principal */
-    .menu {
-        display: block;
-        position: absolute;
-        top: 5rem;
-        left: 0;
-        text-align: center;
-        width: 100%;
-        height: 0;
-        z-index: 1;
-        visibility: hidden;
-        overflow-y: hidden;
-        transition: 0.5s;
-        background-color: red;
-    }
+  .menu > li,
+  .sub-menu {
+    width: 8rem;
+  }
 
-    .menu > li {
-        padding: 1rem 0; 
-        border-bottom: 0.0625rem solid rgba(0, 0, 0, 0.16);
-        border-top: 0.0625rem;
-        border-radius: 0;
-    }
+  .menu > li {
+    padding: 0rem 0.5rem;
+  }
 
-    .label-menu {
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-        padding-block: 1rem;
-        cursor: pointer;
-        font-size: 1.5rem;
-    }
+  .sub-menu {
+      top: 1.7rem;
+  }
 
-    .hamburguer {
-        border-top: 0.125rem solid;
-        width: 1.25rem;
-    }
+  .sub-menu-games {
+      top: 0.4rem;
+  }
 
-    .hamburguer::before, .hamburguer::after {
-        content: " ";
-        display: block;
-        width: 1.25rem;
-        height: 0.125rem;
-        background: currentColor;
-        margin-top: 0.3125rem;
-        position: relative;
-        transition: 0.3s;
-    }
-
-    #checkbox:checked ~ .menu {
-        height: 50vh;
-        visibility: visible;
-        overflow-y: auto;
-        background-color: red;
-    }
-
-    #checkbox:checked ~ .label-menu .hamburguer {
-        border-top-color: transparent;
-    }
-
-    #checkbox:checked ~ .label-menu .hamburguer::before {
-        transform: rotate(135deg);
-    }
-
-    #checkbox:checked ~ .label-menu .hamburguer::after {
-        transform: rotate(-135deg);
-        top: -0.4375rem;
-    }
-
-    /* Sub Menu */
-    .sub-menu {
-        top: 0rem;
-        position: relative;
-        width: 100%;
-    }
-
-    .sub-menu > li {
-        border-bottom: 0;
-        background-color: rgb(195, 40, 40);
-        margin: 0px;
-    }
-
-    .sub-menu > li:first-child {
-        border-bottom: 0.0625rem solid rgba(0, 0, 0, 0.16);
-        margin-top: 5px;
-    }
+  .menu > li:last-child {
+    width: 12rem;
+  }
 }

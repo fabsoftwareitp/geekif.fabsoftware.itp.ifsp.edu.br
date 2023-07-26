@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/main.css">
+    <!-- Logo Página -->
+    <link rel="icon" type="image/x-icon" href="/imgs/favicon.ico">
+    <!-- HTML -->
+    <title>Geek IF</title>
+</head>
+<body>
+    <!-- Cabeçalho/Menu -->
+    <header class="header">
+       <a href="/"><img class="logo" src="/imgs/geek_if.png"></a>
+       <nav class="nav">
+           <input type="checkbox" id="checkbox" class="checkbox">
+           <label for="checkbox" class="label-menu">
+               <span class="hamburguer"></span>
+            </label>
+           <ul class="menu">
+                <li><a href="/">Página Inicial</a></li>
+                <li><input type="radio" id="checkbox-workshop" class="checkbox limited" name="limited" onclick="oneMenu(0)">
+                    <label for="checkbox-workshop" class="label-sub-menu">Oficinas</label>
+                    <ul class="sub-menu">
+                        <li><a href="/pages/oficinas/desenho.html">Desenho</a></li>
+                        <li><a href="/pages/oficinas/artesmarciais.html">Artes Marciais</a></li>
+                        <li><a href="/pages/oficinas/escritacriativa.html">Escrita Criativa</a></li>
+                        <li><a href="/pages/oficinas/origami.html">Origami</a></li>
+                        <li><a href="/pages/oficinas/swordplay.html">Swordplay</a></li>
+                    </ul>
+                </li>
+                <li><input type="radio" id="checkbox-tournament" class="checkbox limited" name="limited" onclick="oneMenu(1)">
+                    <label for="checkbox-tournament" class="label-sub-menu">Campeonatos</label>
+                    <ul class="sub-menu">
+                        <li><a href="/pages/campeonatos/cosplayadulto.html">Cosplay Adulto</a></li>
+                        <li><a href="/pages/campeonatos/cosplayinfantil.html">Cosplay Infantil</a></li>
+                        <li><a href="/pages/campeonatos/justdance.html">Just Dance</a></li>
+                    </ul>
+                </li>
+                <li><input type="radio" id="checkbox-show" class="checkbox limited" name="limited" onclick="oneMenu(2)">
+                    <label for="checkbox-show" class="label-sub-menu">Shows</label>
+                    <ul class="sub-menu">
+                        <li><a href="/pages/shows/doutoresdorock.html">Doutores do Rock</a></li>
+                        <li><a href="/pages/shows/meiaboca.html">Meia Boca</a></li>
+                        <li><a href="/pages/shows/elisios.html">Elísios</a></li>
+                    </ul>
+                </li>
+                <li><input type="radio" id="checkbox-games" class="checkbox limited" name="limited" onclick="oneMenu(3)">
+                    <label for="checkbox-games" class="label-sub-menu">Sala de Jogos</label>
+                    <ul class="sub-menu sub-menu-games">
+                        <li><a href="/pages/salasdejogos/magic.html">Magic The Gathering</a></li>
+                        <li><a href="/pages/salasdejogos/tabuleiro.html">Tabuleiro</a></li>
+                        <li><a href="/pages/salasdejogos/rpg.html">RPG</a></li>
+                        <li><a href="/pages/salasdejogos/pokemon.html">Pokemon</a></li>
+                    </ul>
+                </li>
+                <li><a href="/pages/galery.html">Fotos 2022</a></li>
+                <li><a href="/pages/shortly.html">Seja um Patrocinador</a></li>
+           </ul>
+       </nav>
+    </header>
+    <div class="header-back"></div>
+    <!-- Sobre o Evento -->
+    <section class="back-gradient">
+        <div class="about-attractions">
+            <h1>Desenho</h1>
+            <p>Em breve novidades!</p>
+        </div>
+        <!-- Fotos -->
+        <!-- <div class="pages-photos">
+            <div class="photos">
+                <div class="photo-set">
+                    <div class="photo-image">
+                        <img src="/imgs/galery/Geek_cosplay1.jpg" alt="Cosplay 1">
+                    </div>
+                    <div class="photo-image">
+                        <img src="/imgs/galery/Geek_cosplay3.jpg" alt="Cosplay 2">
+                    </div>
+                </div>
+                <div class="photo-set">
+                    <div class="photo-image">
+                        <img src="/imgs/galery/Geek_cosplay4.jpg" alt="Cosplay 3">
+                    </div>
+                    <div class="photo-image">
+                        <img src="/imgs/galery/Geek_cosplay10.jpg" alt="Cosplay 4">
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </section>
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="directors">
+            <div>
+                <h1>Realização</h1>
+                <a href="https://itp.ifsp.edu.br/" target="_blank">
+                    <img class="logo-if" src="/imgs/logo-if-horizontal-rasterizada.png" id="logo-if" alt="Instituto Federal Logo">
+                </a>
+            </div>
+            <div>
+                <h1>Apoio</h1>
+                <div>
+                    <a href="https://www.saopaulo.sp.gov.br/" target="_blank">
+                        <img class="logo-sp" src="/imgs/footer/governo-sp.png" alt="Governo de São Paulo Logo">
+                    </a>
+                    <a href="https://www.proac.sp.gov.br/" target="_blank">
+                        <img class="logo-proac" src="/imgs/footer/proac.png" alt="Proac Logo">
+                    </a>
+                    <a href="" target="_blank">
+                        <img class="logo-skilled" src="/imgs/footer/Skilled.png" alt="Skilled Logo">
+                    </a>
+                    <a href="" target="_blank">
+                        <img class="logo-sup" src="/imgs/footer/Victor Duarte.png" alt="Victor Duarte Logo">
+                    </a>
+                    <a href="" target="_blank">
+                        <img class="logo-sup" src="/imgs/footer/wolfenrir.jpg" alt="Wolfenrir Logo">
+                    </a>
+                    <a href="" target="_blank">
+                        <img class="logo-sup" src="/imgs/footer/Sweet Potato.jpeg" alt="Sweet Potato Logo">
+                    </a>
+                    <a href="" target="_blank">
+                        <img class="logo-sup" src="/imgs/footer/rpg.jpg" alt="RPG Itapetininga Logo">
+                    </a>
+                    <a href="" target="_blank">
+                        <img class="logo-sup" src="/imgs/footer/Kawaiirumi.jpeg" alt="Kawaiirumi Logo">
+                    </a>
+                    <a href="" target="_blank">
+                        <img class="logo-sup" src="/imgs/footer/Cazulo.jpg" alt="Cazulo Logo">
+                    </a>
+                </div>
+            </div>
+            <div>
+                <h1>Patrocínio</h1>
+                <div>
+                    <a href="" target="_blank">
+                        <img class="logo-sant" src="/imgs/footer/Café Santo André.png" alt="Café Santo André Logo">
+                    </a>
+                    <a href="" target="_blank">
+                        <img class="logo-dna" src="/imgs/footer/dna_3_card.png" alt="DNA 3 Card Logo">
+                    </a>
+                    <a href="" target="_blank">
+                        <img class="logo-pat" src="/imgs/footer/logo paulispan contorno branco e sem fundo.png" alt="Paulispan Logo">
+                    </a>
+                    <a href="" target="_blank">
+                        <img class="logo-rom" src="/imgs/footer/Romtec.png" alt="Romtec Logo">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="social-media">
+            <h1>Redes Sociais</h1>
+            <a href="https://www.facebook.com/ifspitape/" target="_blank">
+                <img class="social-img" src="/imgs/fb_icon_325x325.png" alt="Facebook Logo">
+            </a>
+            <a href="https://www.instagram.com/ifspitapetininga/" target="_blank">
+                <img class="social-img" src="/imgs/Instagram-Icon.png" alt="Instagram Logo">
+            </a>
+        </div>
+        <h1>Todos os Direitos Reservados © Geek IF</h1>
+    </footer>
+    <!-- JavaScript -->
+    <script>
+        var radio = document.getElementsByClassName("limited");
+        let checkBefore = 4;
+      
+        function oneMenu(x) {
+          if (checkBefore == x) {
+            radio[x].checked = false;
+            checkBefore = 4;
+          } else {
+            radio[x].checked = true;
+            checkBefore = x;
+          }
+        }
+      </script>
+</body>
+</html>

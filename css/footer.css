@@ -1,5 +1,5 @@
 .footer {
-    background-color: purple;
+    background-color: var(--purple);
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -10,26 +10,143 @@
 
 .footer > a,
 .footer > div,
-.footer > h3{
+.footer h1{
     padding: 10px;
 }
 
-.footer > h3 {
-    color: white;
-    font-size: 1.4rem;
+.footer h1 {
+    color: var(--white);
+    font-size: 2rem;
+    font-family: 'Lilita One', cursive;
+    text-align: center;
+    margin-bottom: 1rem;
 }
 
-#logo-if {
+.directors {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.directors > div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.directors > div > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.directors > div > div > a {
+    display: flex;
+    justify-content: center;
+}
+
+.directors a {
+    margin: 5px;
+}
+
+a > .logo-sup {
+    width: 10rem;
+}
+
+a > .logo-skilled {
     width: 15rem;
 }
 
+a > .logo-sp {
+    width: 17rem;
+}
+
+a > .logo-proac {
+    width: 15rem;
+}
+
+a > .logo-if {
+    width: 17rem;
+}
+
+a > .logo-sant {
+    width: 15rem;
+}
+
+a > .logo-dna {
+    width: 10rem;
+}
+
+a > .logo-pat {
+    width: 20rem;
+}
+
+a > .logo-rom {
+    width: 25rem;
+}
+
 .social-img {
-    width: 6rem;
+    width: 7rem;
     padding: 0 25px;
 }
 
-@media (max-width: 600px) {
-    .footer > h3 {
-        font-size: 1.2rem;
+@media (max-width: 900px) {
+    .footer > h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .directors {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .directors > div {
+        margin: 1rem;
+    }
+
+    a > .logo-proac {
+        width: 17rem;
+    }
+
+    a > .logo-sup {
+        width: 13rem;
+    }
+
+    a > .logo-rom {
+        width: 20rem;
+    }
+
+    .directors > div > div {
+        width: 0;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .footer,
+    .footer > div {
+        padding: 0;
+    }
+
+    .directors > div,
+    .directors a {
+        margin: 0;
+    }
+
+    a > .logo-sp {
+        width: 17rem;
+    }
+
+    a > .logo-proac {
+        width: 13rem;
+    }
+
+    a > .logo-rom,
+    a > .logo-pat {
+        width: 15rem;
     }
 }
