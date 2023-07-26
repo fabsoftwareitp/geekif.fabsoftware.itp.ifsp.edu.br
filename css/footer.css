@@ -88,9 +88,9 @@ a > .logo-rom {
     width: 25rem;
 }
 
-.social-img {
+.social-media > a > svg {
     width: 7rem;
-    padding: 0 25px;
+    padding: 0 20px;
 }
 
 @media (max-width: 900px) {
