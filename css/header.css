@@ -32,7 +32,6 @@
   font-size: 1.5rem;
   display: block;
   padding: 1rem 0rem;
-  border-radius: 0.5rem;
   text-align: center;
   width: 10rem;
 }
@@ -60,6 +59,13 @@
   color: var(--yellow);
 }
 
+.menu > li > svg {
+  width: 2rem;
+  transition: 0.5s;
+  top: 13px;
+  position: absolute;
+}
+
 .menu a:hover {
   color: var(--white);
 }
@@ -75,7 +81,7 @@
   position: relative;
   text-align: center;
   top: 0.9rem;
-  width: 10rem;
+  width: 11rem;
   height: 0;
   z-index: 1;
   visibility: hidden;
@@ -96,33 +102,49 @@
 
 /* Sub Menu Oficina */
 #checkbox-workshop:checked ~ .sub-menu {
-  height: 21rem;
+  height: 19rem;
   visibility: visible;
   overflow-y: hidden;
+}
+
+#checkbox-workshop:checked ~ svg {
+  transform: rotate(180deg);
 }
 
 /* Sub Menu Campeonato */
 #checkbox-tournament:checked ~ .sub-menu {
-  height: 14rem;
+  height: 13rem;
   visibility: visible;
   overflow-y: hidden;
+}
+
+#checkbox-tournament:checked ~ svg {
+  transform: rotate(180deg);
 }
 
 /* Sub Menu Show */
 #checkbox-show:checked ~ .sub-menu {
-  height: 12.5rem;
+  height: 11.5rem;
   visibility: visible;
   overflow-y: hidden;
+}
+
+#checkbox-show:checked ~ svg {
+  transform: rotate(180deg);
 }
 
 /* Sub Menu Sala de Jogos */
 #checkbox-games:checked ~ .sub-menu {
-  height: 15.5rem;
+  height: 15rem;
   visibility: visible;
   overflow-y: hidden;
 }
 
-@media (max-width: 900px) {
+#checkbox-games:checked ~ svg {
+  transform: rotate(180deg);
+}
+
+@media (max-width: 950px) {
   .header {
     flex-direction: row;
     height: 5rem;
@@ -133,7 +155,7 @@
   }
 
   .logo {
-    width: 45vw;
+    width: 30vw;
   }
 
   /* Menu Principal */
@@ -158,6 +180,11 @@
     border-top: 0.0625rem;
     border-radius: 0;
     width: 100%;
+  }
+
+  .menu > li > svg {
+    position: relative;
+    top: 10px;
   }
 
   .menu a,
@@ -251,6 +278,12 @@
   }
 }
 
+@media (max-width: 600px){
+  .logo {
+    width: 45vw;
+  }
+}
+
 @media (max-height: 800px) {
   .menu > li {
       padding: 1rem 0rem;
@@ -270,11 +303,15 @@
 
   .menu > li,
   .sub-menu {
-    width: 8rem;
+    width: 8.7rem;
   }
 
   .menu > li {
     padding: 0rem 0.5rem;
+  }
+
+  .menu > li > svg {
+    top: -3px;
   }
 
   .sub-menu {
@@ -286,6 +323,6 @@
   }
 
   .menu > li:last-child {
-    width: 12rem;
+    width: 8rem;
   }
 }
