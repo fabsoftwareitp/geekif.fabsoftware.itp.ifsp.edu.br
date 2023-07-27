@@ -177,6 +177,11 @@
 .ONG-imgs > a > img {
   width: 11rem;
   border-radius: 25px;
+  transition: 0.5s;
+}
+
+.ONG-imgs > a > img:hover {
+  transform:scale(1.1);
 }
 
 @media (max-width: 900px) {
@@ -187,6 +192,10 @@
 
   .ONG-imgs > a > img {
     width: 7rem;
+  }
+
+  .ONG-imgs > a > img:hover {
+    transform: none;
   }
 }
 
