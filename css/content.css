@@ -384,6 +384,10 @@
   padding: 50px;
 }
 
+.back-pink {
+  background: var(--pink);
+}
+
 .back-gradient > h1 {
   font-size: 6rem;
   font-family: "Lilita One", cursive;
@@ -478,10 +482,11 @@
 
 .about-attractions > p {
   line-height: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   font-size: 1.5rem;
   font-family: "Inter", sans-serif;
   color: var(--white);
+  text-shadow: 1px 1px 1px #222;
 } 
 
 @media (max-width: 600px) {
@@ -542,9 +547,6 @@
 }
 
 /* Patrocinadores */
-.sponsor-p > p:last-child {
-  color: var(--black)
-}
 
 .sponsor-p > p > a {
   color: var(--purple);
