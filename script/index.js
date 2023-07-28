@@ -1,17 +1,17 @@
 //Slider Principal
-var imgList = document.getElementById("img-list");
-var caroBtns = document.getElementsByClassName("caro-btn");
+//var imgList = document.getElementById("img-list");
+//var caroBtns = document.getElementsByClassName("caro-btn");
 
-var positionUit = -100;
+//var positionUit = -100;
 
-function slideImg(x) {
-  for (i = 0; i < 5; i++) {
-    caroBtns[i].classList.remove("active");
-  }
-  caroBtns[x].classList.add("active");
-  position = x * positionUit;
-  imgList.style.left = position + "%";
-}
+//function slideImg(x) {
+//  for (i = 0; i < 5; i++) {
+//    caroBtns[i].classList.remove("active");
+//  }
+//  caroBtns[x].classList.add("active");
+//  position = x * positionUit;
+//  imgList.style.left = position + "%";
+//}
 
 //Slider Eventos
 var imgListEvent = document.getElementById("img-list-event");
@@ -49,46 +49,6 @@ function working(posiNow) {
     posiNow = 0;
   } else if (posiNow > 4) {
     posiNow = 4;
-  }
-  return posiNow;
-}
-
-//Slider Alimentação
-var imgListOng = document.getElementById("img-list-ong");
-var caroBtnsOng = document.getElementsByClassName("caro-btn-ong");
-
-var positionUit = -100;
-var posiNow = 0;
-
-function slideImgOng(x) {
-  var i;
-  posiNow = x;
-  posiNow = working(posiNow);
-  for (i = 0; i < 8; i++) {
-    caroBtnsOng[i].classList.remove("active");
-  }
-  caroBtnsOng[x].classList.add("active");
-  position = x * positionUit;
-  imgListOng.style.left = position + "%";
-}
-
-function swipperOng(x) {
-  var i;
-  posiNow += x;
-  posiNow = workingOng(posiNow);
-  for (i = 0; i < 8; i++) {
-    caroBtnsOng[i].classList.remove("active");
-  }
-  caroBtnsOng[posiNow].classList.add("active");
-  position = posiNow * positionUit;
-  imgListOng.style.left = position + "%";
-}
-
-function workingOng(posiNow) {
-  if (posiNow < 0) {
-    posiNow = 0;
-  } else if (posiNow > 7) {
-    posiNow = 7;
   }
   return posiNow;
 }
