@@ -466,7 +466,7 @@
 
 /* Páginas Internas*/
 .about-attractions {
-  width: 100%-4px;
+  width: 100%;
   text-align: center;
   padding: 50px 50px 25px 50px;
 }
@@ -489,6 +489,11 @@
   text-shadow: 1px 1px 1px #222;
 } 
 
+.about-attractions > p,
+.about-attractions > a {
+  word-wrap: break-word;
+}
+
 @media (max-width: 600px) {
   .about-attractions {
     padding: 25px 25px 15px 25px;
@@ -496,6 +501,12 @@
   
   .about-attractions > h1 {
     font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 300px) {
+  .about-attractions > h1 {
+    font-size: 1.7rem;
   }
 }
 
