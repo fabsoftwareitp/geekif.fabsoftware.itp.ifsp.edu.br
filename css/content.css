@@ -176,6 +176,7 @@
 
 .ONG-imgs > a > img {
   width: 11rem;
+  height: 11rem;
   border-radius: 25px;
   transition: 0.5s;
 }
@@ -192,6 +193,7 @@
 
   .ONG-imgs > a > img {
     width: 7rem;
+    height: 7rem;
   }
 
   .ONG-imgs > a > img:hover {
@@ -206,6 +208,7 @@
 
   .ONG-imgs > a > img {
     width: 6rem;
+    height: 6rem;
   }
 }
 

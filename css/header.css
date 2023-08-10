@@ -102,7 +102,7 @@
 
 /* Sub Menu Oficina */
 #checkbox-workshop:checked ~ .sub-menu {
-  height: 19rem;
+  height: 25.5rem;
   visibility: visible;
   overflow-y: hidden;
 }
@@ -135,7 +135,7 @@
 
 /* Sub Menu Sala de Jogos */
 #checkbox-games:checked ~ .sub-menu {
-  height: 15rem;
+  height: 18.5rem;
   visibility: visible;
   overflow-y: hidden;
 }
