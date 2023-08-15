@@ -16,8 +16,37 @@
   height: 7.5rem;
 }
 
-.logo {
+/*.logo {
   width: 200px;
+}*/
+
+#two-logo {
+  position: absolute;
+  font-size: 2.3rem;
+  font-family: "Lilita One", cursive;
+  color: var(--yellow);
+  text-shadow: 0.1rem 0.1rem var(--blue), 0.2rem 0.2rem var(--pink);
+  margin-top: -10px;
+  margin-left: -10px;
+}
+
+#logo {
+  font-size: 4rem;
+  font-family: "Lilita One", cursive;
+  color: var(--yellow);
+  text-shadow: 0.2rem 0.2rem var(--blue), 0.4rem 0.4rem var(--pink);
+}
+
+@media (max-width: 900px) {
+  #two-logo {
+    font-size: 1.3rem;
+    margin-top: -5px;
+    margin-left: -5px;
+  }
+
+  #logo {
+    font-size: 3rem;
+  }
 }
 
 /* Menu Principal */
@@ -31,7 +60,7 @@
 .menu > li {
   font-size: 1.5rem;
   display: block;
-  padding: 1rem 0rem;
+  padding: 0.5rem 0rem;
   text-align: center;
   width: 10rem;
 }
@@ -62,7 +91,7 @@
 .menu > li > svg {
   width: 2rem;
   transition: 0.5s;
-  top: 13px;
+  top: 5px;
   position: absolute;
 }
 
@@ -80,7 +109,7 @@
   display: block;
   position: relative;
   text-align: center;
-  top: 0.9rem;
+  top: 0.4rem;
   width: 11rem;
   height: 0;
   z-index: 1;
