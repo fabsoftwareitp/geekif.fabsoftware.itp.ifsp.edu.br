@@ -52,8 +52,15 @@
     margin: 5px;
 }
 
+.support {
+    background-color: white;
+    padding: 10px 0px;
+    border-radius: 20px;
+}
+
 a > .logo-sup {
     width: 10rem;
+    border-radius: 7.5px;
 }
 
 a > .logo-skilled {
@@ -61,7 +68,7 @@ a > .logo-skilled {
 }
 
 a > .logo-sp {
-    width: 17rem;
+    width: 14rem;
 }
 
 a > .logo-proac {
@@ -138,7 +145,7 @@ a > .logo-rom {
     }
 
     a > .logo-sp {
-        width: 17rem;
+        width: 15rem;
     }
 
     a > .logo-proac {

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/main.css">
+    <!-- Logo Página -->
+    <link rel="icon" type="image/x-icon" href="/imgs/favicon.ico">
+    <!-- HTML -->
+    <title>Geek IF</title>
+</head>
+<body>
+    <!-- Cabeçalho/Menu -->
+    <header class="header">
+        <a href="/"><p id="two-logo">2°</p><p id="logo">GEEK-IF</p></a>
+        <nav class="nav">
+           <input type="checkbox" id="checkbox" class="checkbox">
+           <label for="checkbox" class="label-menu">
+               <span class="hamburguer"></span>
+            </label>
+           <ul class="menu">
+                <li><a href="/">Página Inicial</a></li>
+                <li>
+                    <input type="radio" id="checkbox-workshop" class="checkbox limited" name="limited" onclick="oneMenu(0)">
+                    <label for="checkbox-workshop" class="label-sub-menu">Oficinas</label>
+                    <svg viewBox="0 0 512 512" fill="yellow"><path d="M98 190.06l139.78 163.12a24 24 0 0036.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z"/></svg>
+                    <ul class="sub-menu">
+                        <li><a href="/pages/oficinas/desenho.html">Desenho</a></li>
+                        <li><a href="/pages/oficinas/kungfu.html">Kung Fu</a></li>
+                        <li><a href="/pages/oficinas/capoeira.html">Capoeira</a></li>
+                        <li><a href="/pages/oficinas/hapkido.html">Hapkido</a></li>
+                        <li><a href="/pages/oficinas/escritacriativa.html">Escrita Criativa</a></li>
+                        <li><a href="/pages/oficinas/cubomagico.html">Cubo Mágico</a></li>
+                        <li><a href="/pages/oficinas/swordplay.html">Swordplay</a></li>
+                    </ul>
+                </li>
+                <li><input type="radio" id="checkbox-tournament" class="checkbox limited" name="limited" onclick="oneMenu(1)">
+                    <label for="checkbox-tournament" class="label-sub-menu">Campeonatos</label>
+                    <svg viewBox="0 0 512 512" fill="yellow"><path d="M98 190.06l139.78 163.12a24 24 0 0036.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z"/></svg>
+                    <ul class="sub-menu">
+                        <li><a href="/pages/campeonatos/cosplayadulto.html">Cosplay Adulto</a></li>
+                        <li><a href="/pages/campeonatos/cosplayinfantil.html">Cosplay Infantil</a></li>
+                        <li><a href="/pages/campeonatos/justdance.html">Just Dance</a></li>
+                    </ul>
+                </li>
+                <li><input type="radio" id="checkbox-show" class="checkbox limited" name="limited" onclick="oneMenu(2)">
+                    <label for="checkbox-show" class="label-sub-menu">Shows</label>
+                    <svg viewBox="0 0 512 512" fill="yellow"><path d="M98 190.06l139.78 163.12a24 24 0 0036.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z"/></svg>
+                    <ul class="sub-menu">
+                        <li><a href="/pages/shows/doutoresdorock.html">Doutores do Rock</a></li>
+                        <li><a href="/pages/shows/meiaboca.html">Meia Boca</a></li>
+                        <li><a href="/pages/shows/elisios.html">Elísios</a></li>
+                    </ul>
+                </li>
+                <li><input type="radio" id="checkbox-games" class="checkbox limited" name="limited" onclick="oneMenu(3)">
+                    <label for="checkbox-games" class="label-sub-menu">Sala de Jogos</label>
+                    <svg viewBox="0 0 512 512" fill="yellow"><path d="M98 190.06l139.78 163.12a24 24 0 0036.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z"/></svg>
+                    <ul class="sub-menu sub-menu-games">
+                        <li><a href="/pages/salasdejogos/magic.html">Magic The Gathering</a></li>
+                        <li><a href="/pages/salasdejogos/tabuleiro.html">Tabuleiro</a></li>
+                        <li><a href="/pages/salasdejogos/rpg.html">RPG</a></li>
+                        <li><a href="/pages/salasdejogos/pokemon.html">Pokemon</a></li>
+                        <li><a href="/pages/salasdejogos/yugioh.html">Yu Gi Oh</a></li>
+                    </ul>
+                </li>
+                <li><a href="/pages/galery.html">Fotos 2022</a></li>
+                <li><a href="/pages/sponsor.html">Seja um Patrocinador</a></li>
+           </ul>
+       </nav>
+    </header>
+    <div class="header-back"></div>
+    <section class="back-gradient">
+        <!-- Sobre o Evento -->
+        <div class="about-attractions">
+            <h1>Hapkido</h1>
+            <p>Originário da Coréia, esta arte marcial prioriza a defesa pessoal. Caracteriza-se por ter um longo repertório de golpes, com movimentos graciosos e efetivos. Seu  treino regular traz benefícios para a saúde e para a qualidade de vida, além de tonificar os músculos e garantir melhor condicionamento físico e mental aos seus adeptos. E aqui no GEEK-IF você poderá conhecer um pouco mais sobre esta arte coreana e fazer uma aulinha também.</p>
+        </div>
+        <!-- Fotos -->
+        <div class="pages-photos">
+            <div class="photos">
+                <div class="photo-set">
+                    <div class="photo-image">
+                        <img src="/imgs/galery/Geek_karate1.jpg" alt="Cosplay 1" loading="lazy">
+                    </div>
+                    <div class="photo-image">
+                        <img src="/imgs/galery/Geek_karate2.jpg" alt="Cosplay 2" loading="lazy">
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </section>
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="directors">
+            <div>
+                <h1>Realização</h1>
+                <a href="https://itp.ifsp.edu.br/" target="_blank">
+                    <img class="logo-if" src="/imgs/instituto_federal.png" id="logo-if" alt="Instituto Federal Logo">
+                </a>
+            </div>
+            <div>
+              <h1>Apoio</h1>
+              <div class="support">
+                  <a href="https://www.itapetininga.sp.gov.br/" target="_blank">
+                      <img class="logo-sup" src="/imgs/footer/Logo - Prefeitura de Itapetininga .png" alt="Prefeitura de Itapetininga Logo" loading="lazy">
+                  </a>
+                  <a href="" target="_blank">
+                      <img class="logo-sup" src="/imgs/footer/Logo - Secretaria de Cultura e Turismo - PB.png" alt="Secretaria de Cultura e Turismo Logo" loading="lazy">
+                  </a>
+                  <a href="" target="_blank">
+                      <img class="logo-sup" src="/imgs/footer/Logo Fundo de Cultura - PB.png" alt="Fundo de Cultura Logo" loading="lazy">
+                  </a>
+                  <a href="" targe="_blank">
+                      <img class="logo-sup" src="/imgs/footer/Selo - Lei Aldir Blanc - PB.png" alt="Lei Aldir Blanc Selo" loading="lazy">
+                  </a>
+                  <a href="https://www.saopaulo.sp.gov.br/" target="_blank">
+                      <img class="logo-sp" src="/imgs/footer/governo-sp.png" alt="Governo de São Paulo Logo" loading="lazy">
+                  </a>
+                  <a href="https://www.proac.sp.gov.br/" target="_blank">
+                      <img class="logo-proac" src="/imgs/footer/proac.png" alt="Proac Logo" loading="lazy">
+                  </a>
+                  <a href="https://www.skilled.com.br/" target="_blank">
+                      <img class="logo-skilled" src="/imgs/footer/Skilled.png" alt="Skilled Logo" loading="lazy">
+                  </a>
+                  <a href="" target="_blank">
+                      <img class="logo-sup" src="/imgs/footer/Victor Duarte.png" alt="Victor Duarte Logo" loading="lazy">
+                  </a>
+                  <a href="" target="_blank">
+                      <img class="logo-sup" src="/imgs/footer/wolfenrir.jpg" alt="Wolfenrir Logo" loading="lazy">
+                  </a>
+                  <a href="" target="_blank">
+                      <img class="logo-sup" src="/imgs/footer/Sweet Potato.jpeg" alt="Sweet Potato Logo" loading="lazy">
+                  </a>
+                  <a href="" target="_blank">
+                      <img class="logo-sup" src="/imgs/footer/rpg.jpg" alt="RPG Itapetininga Logo" loading="lazy">
+                  </a>
+                  <a href="" target="_blank">
+                      <img class="logo-sup" src="/imgs/footer/PopFrame - Logo sem fundo-1.png" alt="Pop Frame">
+                  </a>
+                  <a href="" target="_blank">
+                      <img class="logo-sup" src="/imgs/footer/logo art camera e ação Fundo branco.png" alt="Art Camera e Ação">
+                  </a>
+                  <a href="" target="_blank">
+                      <img class="logo-sup" src="/imgs/footer/Kawaiirumi.jpeg" alt="Kawaiirumi Logo" loading="lazy">
+                  </a>
+                  <a href="" target="_blank">
+                      <img class="logo-sup" src="/imgs/footer/Cazulo.jpg" alt="Cazulo Logo" loading="lazy">
+                  </a>
+                  <a href="" targe="_blank">
+                      <img class="logo-sup" src="/imgs/footer/animefastore.jpeg" alt="AnimeFã Store Logo" loading="lazy">
+                  </a>
+                  <a href="" target="_blank">
+                      <img class="logo-sup" src="/imgs/footer/artplay.jpg" alt="ArtPlay Logo" loading="lazy">
+                  </a>
+                  <a href="" target="_blank">
+                      <img class="logo-sup" src="/imgs/footer/Bem boa.png" alt="Bem Boa Logo" loading="lazy">
+                  </a>
+                  <a href="" target="_blank">
+                      <img class="logo-sup" src="/imgs/footer/FADECA-1.png" alt="FADECA Logo" loading="lazy">
+                  </a>
+                  <a href="" target="_blank">
+                      <img class="logo-sup" src="/imgs/footer/Fogo na Dungeon.jpeg" alt="Fogo na Dungeon Logo" loading="lazy">
+                  </a>
+                  <a href="" target="_blank">
+                      <img class="logo-sup" src="/imgs/footer/Geekse.jpg" alt="Geek-Se Logo" loading="lazy">
+                  </a>
+                  <a href="" target="_blank">
+                      <img class="logo-sup" src="/imgs/footer/João Vitoroli.jpeg" alt="João Vitoroli Logo" loading="lazy">
+                  </a>
+                  <a href="" target="_blank">
+                      <img class="logo-sup" src="/imgs/footer/Luna Quadros.jpeg" alt="Luna Quadros Logo" loading="lazy">
+                  </a>
+                  <a href="" target="_blank">
+                      <img class="logo-sup" src="/imgs/footer/Três Vassouras.jpeg" alt="Três Vassouras Logo" loading="lazy">
+                  </a>
+              </div>
+          </div>
+            <div>
+                <h1>Patrocínio</h1>
+                <div>
+                    <a href="https://santoandrealimentos.com.br/" target="_blank">
+                        <img class="logo-sant" src="/imgs/footer/Café Santo André.png" alt="Café Santo André Logo" loading="lazy">
+                    </a>
+                    <a href="https://dnaflorestal.com.br/" target="_blank">
+                        <img class="logo-dna" src="/imgs/footer/dna_3_card.png" alt="DNA 3 Card Logo" loading="lazy">
+                    </a>
+                    <a href="https://paulispan.com.br/" target="_blank">
+                        <img class="logo-pat" src="/imgs/footer/logo paulispan contorno branco e sem fundo.png" alt="Paulispan Logo" loading="lazy">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="social-media">
+            <h1>Redes Sociais</h1>
+            <a href="https://www.facebook.com/ifspitape/" target="_blank">
+                <!-- <img class="social-img" src="/imgs/fb_icon_325x325.png" alt="Facebook Logo"> -->
+                <svg class="ionicon" viewBox="0 0 512 512" fill="var(--white)">
+                    <path d="M480 257.35c0-123.7-100.3-224-224-224s-224 100.3-224 224c0 111.8 81.9 204.47 189 221.29V322.12h-56.89v-64.77H221V208c0-56.13 33.45-87.16 84.61-87.16 24.51 0 50.15 4.38 50.15 4.38v55.13H327.5c-27.81 0-36.51 17.26-36.51 35v42h62.12l-9.92 64.77H291v156.54c107.1-16.81 189-109.48 189-221.31z" fill-rule="evenodd"/>
+                    <path d="M480 257.35c0-123.7-100.3-224-224-224s-224 100.3-224 224c0 111.8 81.9 204.47 189 221.29V322.12h-56.89v-64.77H221V208c0-56.13 33.45-87.16 84.61-87.16 24.51 0 50.15 4.38 50.15 4.38v55.13H327.5c-27.81 0-36.51 17.26-36.51 35v42h62.12l-9.92 64.77H291v156.54c107.1-16.81 189-109.48 189-221.31z" fill-rule="evenodd"/>
+                </svg>
+            </a>
+            <a href="https://www.instagram.com/ifspitapetininga/" target="_blank">
+                <!-- <img class="social-img" src="/imgs/Instagram-Icon.png" alt="Instagram Logo"> -->
+                <svg class="ionicon" viewBox="0 0 512 512" fill="var(--white)">
+                    <path d="M349.33 69.33a93.62 93.62 0 0193.34 93.34v186.66a93.62 93.62 0 01-93.34 93.34H162.67a93.62 93.62 0 01-93.34-93.34V162.67a93.62 93.62 0 0193.34-93.34h186.66m0-37.33H162.67C90.8 32 32 90.8 32 162.67v186.66C32 421.2 90.8 480 162.67 480h186.66C421.2 480 480 421.2 480 349.33V162.67C480 90.8 421.2 32 349.33 32z"/>
+                    <path d="M377.33 162.67a28 28 0 1128-28 27.94 27.94 0 01-28 28zM256 181.33A74.67 74.67 0 11181.33 256 74.75 74.75 0 01256 181.33m0-37.33a112 112 0 10112 112 112 112 0 00-112-112z"/>
+                </svg>
+            </a>
+        </div>
+        <h1>Todos os Direitos Reservados © Geek IF</h1>
+    </footer>
+    <!-- JavaScript -->
+    <script>
+        var radio = document.getElementsByClassName("limited");
+        let checkBefore = 4;
+      
+        function oneMenu(x) {
+          if (checkBefore == x) {
+            radio[x].checked = false;
+            checkBefore = 4;
+          } else {
+            radio[x].checked = true;
+            checkBefore = x;
+          }
+        }
+      </script>
+</body>
+</html>
