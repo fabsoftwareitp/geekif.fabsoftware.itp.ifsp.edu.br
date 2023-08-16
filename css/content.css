@@ -281,12 +281,18 @@
 
 .contact > form > input,
 .contact > form > textarea {
-  width: 60vw;
+  max-width: 60vw;
+  min-width: 60vw;
   border: 1px solid var(--light-pink);
   border-radius: 5px;
   margin: 10px;
   padding: 5px;
   background-color: var(--light-pink);
+}
+
+.contact > form > textarea {
+  max-height: 25vh;
+  min-height: 25vh;
 }
 
 .contact > form > input::placeholder,
