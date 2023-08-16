@@ -699,3 +699,7 @@
   width: 8.33%;
   margin-bottom: -3px;
 }
+
+.no-click {
+  cursor: default;
+}
