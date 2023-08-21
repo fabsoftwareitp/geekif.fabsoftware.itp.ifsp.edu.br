@@ -22,7 +22,7 @@
 
 #two-logo {
   position: absolute;
-  font-size: 2.3rem;
+  font-size: 1.8rem;
   font-family: "Lilita One", cursive;
   color: var(--yellow);
   text-shadow: 0.1rem 0.1rem var(--blue), 0.2rem 0.2rem var(--pink);
@@ -31,9 +31,10 @@
 }
 
 #logo {
-  font-size: 4rem;
+  font-size: 3.6rem;
   font-family: "Lilita One", cursive;
   color: var(--yellow);
+  padding-bottom: 0.3rem;
   text-shadow: 0.2rem 0.2rem var(--blue), 0.4rem 0.4rem var(--pink);
 }
 
@@ -310,12 +311,6 @@
 @media (max-width: 600px){
   .logo {
     width: 45vw;
-  }
-}
-
-@media (max-height: 800px) {
-  .menu > li {
-      padding: 1rem 0rem;
   }
 }
 
