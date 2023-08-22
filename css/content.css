@@ -335,7 +335,14 @@
   color: var(--white);
 }
 
-@media (max-width: 900px) {
+@media (max-width: 925px) {
+  .contact-background {
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .contact-geo {
     transform: skew(7deg);
   }
@@ -406,6 +413,27 @@
   width: 100%;
 }
 
+/* Mapa do Evento */
+.map-event {
+  width: 100%-4px;
+  text-align: center;
+  padding: 50px;
+  background: var(--dark-pink);
+}
+
+.map-event > h1 {
+  font-size: 3rem;
+  font-family: "Lilita One", cursive;
+  color: var(--yellow);
+  text-shadow: 3px 3px var(--purple);
+  text-transform: uppercase;
+}
+
+.map-event > img {
+  width: 70vw;
+  margin: 10px;
+}
+
 /* Em Breve */
 .back-gradient {
   width: 100%;
@@ -431,26 +459,41 @@
   text-align: center;
   margin-bottom: 15px;
 }
+.back-gradient > h2 {
+  font-size: 5rem;
+  font-family: "Lilita One", cursive;
+  color: var(--yellow);
+  text-shadow: 0.2rem 0.2rem var(--blue), 0.4rem 0.4rem var(--pink);
+  text-align: center;
+  margin: 25px 0px;
+}
 
 .back-gradient > p {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-family: "Inter", sans-serif;
   color: var(--white);
   text-align: center;
+  margin: 10px;
+  text-shadow: 1px 1px 1px #222;
 }
 
 @media (max-width: 600px) {
   .back-gradient > h1 {
     font-size: 3rem;
-    margin-bottom: 15px;
+  }
+
+  .back-gradient > h2 {
+    font-size: 2.5rem;
+    margin: 15px 0px;
+  }
+
+  .back-gradient > p {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
   }
 
   .back-gradient {
     padding: 25px;
-  }
-
-  .back-gradient > p {
-    font-size: 2rem;
   }
 }
 
@@ -529,6 +572,10 @@
   word-wrap: break-word;
 }
 
+.about-attractions > .info-p {
+  color: var(--purple);
+}
+
 @media (max-width: 600px) {
   .about-attractions {
     padding: 25px 25px 15px 25px;
@@ -566,7 +613,8 @@
     flex-wrap: wrap;
 }
 
-.photo-image > img{
+.photo-image > img,
+.photo-image > video{
   max-height:75vh;
   max-width:30vw;
   border:10px solid var(--white);
@@ -587,7 +635,8 @@
     padding: 25px;
   }
 
-  .photo-image > img{
+  .photo-image > img,
+  .photo-image > video {
     max-width: 70vw;
   }
 }
