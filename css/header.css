@@ -143,7 +143,7 @@
 
 /* Sub Menu Campeonato */
 #checkbox-tournament:checked ~ .sub-menu {
-  height: 13rem;
+  height: 16.5rem;
   visibility: visible;
   overflow-y: hidden;
 }
@@ -278,7 +278,7 @@
 
   /* Sub Menu Campeonato */
   #checkbox-tournament:checked ~ .sub-menu {
-    height: 10.5rem;
+    height: 14.5rem;
   } 
   /* Sub Menu Show */
   #checkbox-show:checked ~ .sub-menu {
