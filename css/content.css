@@ -576,6 +576,42 @@
   color: var(--purple);
 }
 
+.order-tournament > li {
+  list-style: decimal;
+}
+
+.order-tournament > .order-tournament > li {
+  list-style: upper-roman inside;
+  margin-left: 1rem;
+}
+
+.unorder-tournament > li {
+  list-style-type: disc;
+  margin-left: 8rem;
+}
+
+.order-tournament > p {
+  margin-left: 1rem;
+}
+
+.order-tournament > li,
+.unorder-tournament > li,
+.order-tournament > .order-tournament > li,
+.order-tournament > p {
+  text-align: justify;
+  font-size: 1.5rem;
+  font-family: "Inter", sans-serif;
+  color: var(--white);
+  text-shadow: 1px 1px 1px #222;
+  padding: 10px;
+}
+
+.about-attractions > .title-tournament {
+  text-transform: uppercase;
+  font-size: 2.3rem;
+  margin: 20px;
+}
+
 @media (max-width: 600px) {
   .about-attractions {
     padding: 25px 25px 15px 25px;
@@ -584,11 +620,51 @@
   .about-attractions > h1 {
     font-size: 2.2rem;
   }
+  
+  .order-tournament > .order-tournament > li {
+    margin-left: 0.5rem;
+  }
+  
+  .unorder-tournament > li {
+    margin-left: 4rem;
+  }
+  
+  .order-tournament > p {
+    margin-left: 0.5rem;
+  }
+  
+  .order-tournament > li,
+  .unorder-tournament > li,
+  .order-tournament > .order-tournament > li,
+  .order-tournament > p {
+    font-size: 1.3rem;
+    padding: 7px;
+  }
+  
+  .about-attractions > .title-tournament {
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin: 15px;
+  }
 }
 
 @media (max-width: 300px) {
   .about-attractions > h1 {
     font-size: 1.7rem;
+  }
+  
+  .order-tournament > li,
+  .unorder-tournament > li,
+  .order-tournament > .order-tournament > li,
+  .order-tournament > p {
+    font-size: 1rem;
+    padding: 5px;
+  }
+  
+  .about-attractions > .title-tournament {
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    margin: 10px;
   }
 }
 
@@ -614,7 +690,7 @@
 }
 
 .photo-image > img,
-.photo-image > video{
+.photo-image > iframe{
   max-height:75vh;
   max-width:30vw;
   border:10px solid var(--white);
@@ -636,13 +712,12 @@
   }
 
   .photo-image > img,
-  .photo-image > video {
+  .photo-image > iframe {
     max-width: 70vw;
   }
 }
 
 /* Patrocinadores */
-
 .sponsor-p > p > a {
   color: var(--purple);
 }
