@@ -273,7 +273,7 @@
 
   /* Sub Menu Oficina */
   #checkbox-workshop:checked ~ .sub-menu {
-    height: 18rem;
+    height: 30rem;
   }
 
   /* Sub Menu Campeonato */
@@ -287,7 +287,7 @@
 
   /* Sub Menu Sala de Jogos */
   #checkbox-games:checked ~ .sub-menu {
-    height: 15rem;
+    height: 22rem;
   }
 
   /* Sub Menu */
