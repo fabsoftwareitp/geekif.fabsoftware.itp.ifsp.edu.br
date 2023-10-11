@@ -18,9 +18,13 @@ O projeto apresenta diversos slides e a aplicação de uma mapa interativo para 
 
 # Instruções de Uso
 Para observar a página do GEEK IF, deve ser feito o clonamento deste repositório.
+
 1. `git clone`
+   
 Após isso, rodar o código com o comando:
+
 2. `go live`
+
 da extensão "live server".
 
 # Acesso ao Projeto (Link do Projeto)
