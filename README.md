@@ -5,7 +5,7 @@
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
 # Descrição do Projeto
-![Landing Page Geek IF](./LandingPagepng)
+![Landing Page Geek IF](./LandingPage.png)
 
 
 O GEEK IF é um projeto que foi demandado um site para divulgar o evento conhecido como "GEEK IF" do câmpus de Itapetininga do Instituo Federal de São Paulo, construindo diversas páginas para o site como: Página Incial, Páginas das Atrações, Página de Galeria e diversas outras. Utilizando-se das tecnologias de AJAX e de uma API disponibilizada pelo Google Maps, o site é construído com HTML, CSS e JavaScript.
