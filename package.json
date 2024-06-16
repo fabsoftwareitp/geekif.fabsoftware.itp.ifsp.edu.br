@@ -1,5 +1,15 @@
 {
   "dependencies": {
+    "@squoosh/cli": "^0.7.3",
     "fslightbox": "^3.4.1"
+  },
+  "scripts": {
+    "compress-imgs": "squoosh-cli --webp auto ./imgs",
+    "compress-ongs": "squoosh-cli --webp auto ./imgs/ONGs",
+    "compress-gallery": "squoosh-cli --webp auto ./imgs/galery",
+    "compress-footer": "squoosh-cli --webp auto ./imgs/footer",
+    "compress": "npm run compress-imgs && npm run compress-ongs && npm run compress-gallery && npm run compress-footer",
+    "handle": "node ./script/squoosh",
+    "squoosh": "npm run compress && npm run handle"
   }
 }
