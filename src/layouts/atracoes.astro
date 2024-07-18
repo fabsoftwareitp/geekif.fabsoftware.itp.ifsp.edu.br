@@ -1,0 +1,30 @@
+---
+import MetaDados from "../components/header.astro";
+import Cabecalho from "../components/head.astro";
+import Rodape from "../components/footer.astro";
+import Slider from "../components/slider.astro";
+const { frontmatter } = Astro.props;
+---
+<MetaDados titulo={frontmatter.tituloPagina}></MetaDados>
+<Cabecalho />
+<body>
+    <section class="thumbnail-attractions" id={frontmatter.tipo}>
+        <p class="text-font">{frontmatter.tipo}</p>
+    </section>
+    <main class="attractions-main"> 
+        <p class="text-font path" id={frontmatter.tipo}><a href={frontmatter.linkAnterior}>{frontmatter.tipo}</a> → <a>{frontmatter.titulo}</a></p>
+        <section class="attractions-content">
+            <img src={frontmatter.img} />
+            <div class="attractions-content-text">
+                <p class="text-font">{frontmatter.titulo}</p>
+                <p class="text-font">Horário: {frontmatter.horario}</p>
+                <slot />
+            </div>
+        </section>
+    </main>
+    <section class="others-attractions">
+        <p class="text-font">{frontmatter.outros}</p>
+        <Slider titulo={frontmatter.titulo} />
+    </section>
+</body>
+<Rodape />

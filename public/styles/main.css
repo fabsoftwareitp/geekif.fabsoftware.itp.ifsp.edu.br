@@ -1,0 +1,19 @@
+@import url("./header.css");
+@import url("./footer.css");
+@import url("./reset.css");
+@import url("./content.css");
+@import url("./slider.css");
+@import url("./attractions.css");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;700;800&family=Lilita+One&display=swap");
+@import url("https://fonts.cdnfonts.com/css/lemonmilk");
+
+:root {
+    --black: #000;
+    --dark-grey: #272727;
+    --grey: #d2d2d2;
+    --pink: #fc18b1;
+    --blue: #3596f4;
+    --purple: #d31cf2;
+    --yellow:#fae317;
+    --white: #fff;
+}

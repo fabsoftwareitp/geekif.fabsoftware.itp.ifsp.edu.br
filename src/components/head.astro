@@ -1,0 +1,102 @@
+<header class="header">
+	<nav class="nav">
+		<a class="logo" href="/"><p id="logo-sub-title">3°</p><p id="logo-title">GEEK-IF</p></a>
+		<button class="hamburguer"></button>
+		<ul class="nav-list">
+			<li><a href="/geek" class="header-link text-font">GEEK-IF</a></li>
+			<li>
+				<button id="button-workshop" class="header-link text-font">OFICINAS v</button>
+				<div class="dropdown-workshop">
+					<a class="header-link text-font" href="/breve">EM BREVE</a>
+					<a class="header-link text-font" href="/breve">EM BREVE</a>
+					<a class="header-link text-font" href="/breve">EM BREVE</a>
+					<a class="header-link text-font" href="/breve">EM BREVE</a>
+					<a class="header-link text-font" href="/breve">EM BREVE</a>
+					<a class="header-link text-font" href="/breve">EM BREVE</a>
+					<a class="header-link text-font" href="/breve">EM BREVE</a>
+					<a class="header-link text-font" href="/breve">EM BREVE</a>
+				</div>
+			</li>
+			<li>
+				<button id="button-tournament" class="header-link text-font">CAMPEONATOS v</button>
+				<div class="dropdown-tournament">
+					<a class="header-link text-font" href="/breve">EM BREVE</a>
+					<a class="header-link text-font" href="/breve">EM BREVE</a>
+					<a class="header-link text-font" href="/breve">EM BREVE</a>
+					<a class="header-link text-font" href="/breve">EM BREVE</a>
+					<a class="header-link text-font" href="/breve">EM BREVE</a>
+				</div>
+			</li>
+			<li>
+				<button id="button-show" class="header-link text-font">SHOWS v</button>
+				<div class="dropdown-show">
+					<a class="header-link text-font" href="/breve">EM BREVE</a>
+					<a class="header-link text-font" href="/breve">EM BREVE</a>
+					<a class="header-link text-font" href="/breve">EM BREVE</a>
+				</div>
+			</li>
+			<li>
+				<button id="button-games" class="header-link text-font">SALAS v</button>
+				<div class="dropdown-games">
+					<a class="header-link text-font" href="/breve">EM BREVE</a>
+					<a class="header-link text-font" href="/breve">EM BREVE</a>
+					<a class="header-link text-font" href="/breve">EM BREVE</a>
+					<a class="header-link text-font" href="/breve">EM BREVE</a>
+					<a class="header-link text-font" href="/breve">EM BREVE</a>
+					<a class="header-link text-font" href="/breve">EM BREVE</a>
+				</div>
+			</li>
+			<li><a href="/retrospectiva" class="header-link text-font">RETROSPECTIVA</a></li>
+			<li><a href="/breve" class="header-link text-font">CRONOGRAMA</a></li>
+			<li><a href="/patrocinio" class="header-link text-font">NOS APOIE</a></li>
+		</ul>
+	</nav>
+</header>
+<script is:inline>
+	//Menu Hamburguer
+	const hamburguer = document.querySelector("button.hamburguer");
+	const nav = document.querySelector("nav.nav");
+
+	hamburguer?.addEventListener("click", () => {
+		nav?.classList.toggle("active");
+	});
+
+	//Sub Menus
+	const buttonWorkshop = document.querySelector("button#button-workshop");
+	const menuWorkshop = document.querySelector("div.dropdown-workshop");
+
+	const buttonTournament = document.querySelector("button#button-tournament");
+	const menuTournament = document.querySelector("div.dropdown-tournament");
+
+	const buttonShow = document.querySelector("button#button-show");
+	const menuShow = document.querySelector("div.dropdown-show");
+
+	const buttonGames = document.querySelector("button#button-games");
+	const menuGames = document.querySelector("div.dropdown-games");
+
+	buttonWorkshop?.addEventListener("click", () => {
+		menuWorkshop?.classList.toggle("active");
+		menuTournament?.classList.remove("active");
+		menuShow?.classList.remove("active");
+		menuGames?.classList.remove("active");
+	})
+	buttonTournament?.addEventListener("click", () => {
+		menuTournament?.classList.toggle("active");
+		menuWorkshop?.classList.remove("active");
+		menuShow?.classList.remove("active");
+		menuGames?.classList.remove("active");
+	})
+	buttonShow?.addEventListener("click", () => {
+		menuShow?.classList.toggle("active");
+		menuTournament?.classList.remove("active");
+		menuWorkshop?.classList.remove("active");
+		menuGames?.classList.remove("active");
+	})
+	buttonGames?.addEventListener("click", () => {
+		menuGames?.classList.toggle("active");
+		menuTournament?.classList.remove("active");
+		menuShow?.classList.remove("active");
+		menuWorkshop?.classList.remove("active");
+	})
+</script>
+
