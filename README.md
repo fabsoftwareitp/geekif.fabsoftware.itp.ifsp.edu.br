@@ -22,15 +22,34 @@ Para observar a página do GEEK IF, deve ser feito o clonamento deste repositór
 
 1. `git clone`
    
-Após isso, rodar o código com o comando:
+Após isso, rodar o código com o comando para:
 
-2. `go live`
+2. `npm intall`
 
-da extensão "live server".
+Para baixar as dependências.
+
+3. `npm run dev`
+
+Para iniciar o server local.
+
+# Comandos
+
+Todos os comandos são executados a partir da raiz do projeto, por meio de um terminal:
+
+| Comando                   | Ação                                             |
+| :------------------------ | :----------------------------------------------- |
+| `npm install`             | Instala dependências                             |
+| `npm run dev`             | Inicia servidor local dev em `localhost:4321`    |
+| `npm run build`           | Faz build do seu projeto e escreve em `./dist/`  |
+| `npm run preview`         | Pré-visualiza sua build localmente.              |
+| `npm run astro ...`       | Roda comandos CLI como `astro add`, `astro check`|
+| `npm run astro -- --help` | Mostra uma mensagem de ajuda usando o Astro CLI  |
+
+E basta acessar a hospedagem local.
 
 # Acesso ao Projeto (Link do Projeto)
 [GEEK IF](https://geekif.com.br/)
 
 # Contribuição/Autores
-| [<img loading="lazy" src="https://avatars.githubusercontent.com/u/126813410?v=4" width=115><br><sub>Vitor Gabriel Cavalheiro</sub>](https://github.com/Vitor-G-Cavalheiro) | [<img loading="lazy" src="https://avatars.githubusercontent.com/u/103156444?v=4" width=115><br><sub>Gabriel Machado</sub>](https://github.com/gabs1m) |
-| :---: | :---: |
+| [<img loading="lazy" src="https://avatars.githubusercontent.com/u/126813410?v=4" width=115><br><sub>Vitor Gabriel Cavalheiro</sub>](https://github.com/Vitor-G-Cavalheiro) | [<img loading="lazy" src="https://avatars.githubusercontent.com/u/127048383?v=4" width=115><br><sub>Leonardo Henrique de Oliveira Cesar</sub>](https://github.com/Leo2828) |
+| :---: | :---: | :---: |
