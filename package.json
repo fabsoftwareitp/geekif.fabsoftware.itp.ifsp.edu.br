@@ -11,8 +11,5 @@
   },
   "dependencies": {
     "astro": "^4.10.0"
-  },
-  "devDependencies": {
-    "tailwindcss": "^3.4.4"
   }
 }

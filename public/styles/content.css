@@ -54,16 +54,16 @@ html {
     justify-content: center;
     flex-direction: column;
     margin-block: 3rem;
-    margin-top: 5rem;
+    margin-top: 3rem;
     position: relative;
 }
 
 .about-shape {
     background: var(--grey);
-    height: 100vh;
+    height: 75vh;
     width: 100vw;
     position: absolute;
-    top: 50px;
+    top: 40px;
     transform: skew(0deg, 5deg);
     z-index: -1;
 }
@@ -75,14 +75,14 @@ html {
 .question-text,
 .questions-texts  {
     color: var(--pink);
-    font-size: 2.3rem;
+    font-size: 2.5rem;
     font-weight: 600;
-    margin: 2rem;
+    margin: 0.8rem;
     text-align: center;
 }
 
 .about-img {
-    width: 90vw;
+    width: 65vw;
     outline: 0px solid var(--white);
     transition: 0.5s;
 }
@@ -95,17 +95,22 @@ html {
 .about-line {
     padding: 5px;
     border-bottom: 5px solid var(--pink);
-    width: 90vw;
+    width: 65vw;
 }
 
 @media (max-width: 1280px) {
     .about-shape {
-        height: 85vh;
+        height: 65vh;
         width: 100vw;
     }
 }
 
 @media (max-width: 999px) {
+    .about {
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+    }
+
     .about-shape {
         height: 35vh;
         width: 100vw;
@@ -121,8 +126,13 @@ html {
         margin: 0.8rem;
     }
 
+    .about-img {
+        width: 85vw;
+    }
+
     .about-line {
         border-bottom: 3px solid var(--pink);
+        width: 85vw;
     }
 }
 
@@ -133,8 +143,7 @@ html {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-block: 3rem;
-    margin-top: 5rem;
+    margin-block: 1rem;
 }
 
 .attractions-text,
@@ -148,14 +157,13 @@ html {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-block: 3rem;
-    margin-top: 4rem;
+    margin-block: 2rem;
     position: relative;
 }
 
 .retro-shape {
     background: var(--pink);
-    height: 127vh;
+    height: 90vh;
     width: 100vw;
     position: absolute;
     top: 0;
@@ -165,22 +173,22 @@ html {
 
 .retro-text {
     color: var(--white);
-    font-size: 1rem;
+    font-size: 1.8rem;
 }
 
 .retro-logo{
     color: var(--yellow);
-    text-shadow: 0.1rem 0.1rem var(--blue), 0.2rem 0.2rem var(--pink);
+    text-shadow: 0.2rem 0.2rem var(--blue), 0.3rem 0.3rem var(--pink);
     font-family: 'Lilita One', cursive;
     margin-bottom: 25px;
 }
 
 .retro-title {
-    font-size: 7rem;
+    font-size: 5.5rem;
 }
 
 .retro-sub-title {
-    font-size: 3rem;
+    font-size: 2.5rem;
     position: absolute;
     margin-top: -5px;
     margin-left: -5px;
@@ -188,7 +196,7 @@ html {
 
 @media (max-width: 1280px) {
     .retro-shape {
-        height: 110vh;
+        height: 75vh;
         width: 100vw;
     }
 }
@@ -198,8 +206,13 @@ html {
         margin-bottom: 5px;
     }
 
+    .retro-text {
+        font-size: 1.3rem;
+        margin: 0.5rem;
+    }
+
     .retro-shape {
-        height: 38vh;
+        height: 30vh;
         width: 100vw;
     }
 
@@ -208,21 +221,22 @@ html {
     }
     
     .retro-sub-title {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         margin-top: -5px;
         margin-left: -5px;
+        text-shadow: 0.1rem 0.1rem var(--blue), 0.2rem 0.2rem var(--pink);
     }
 }
 
 /* Dúvidas Frequentes */
 .questions {
-    margin-top: 5rem;
+    margin-top: 1rem;
 }
 
 .question-block {
     border: 5px solid var(--black);
-    width: 90vw;
-    margin-block: 1rem;
+    width: 85vw;
+    margin-block: 0.8rem;
 }
 
 .question-text,
@@ -232,10 +246,10 @@ html {
 
 .questions-texts {
     font-weight: 300;
-    margin: 1rem;
+    margin: 0.8rem;
     text-align: start;
     cursor: pointer;
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 .questions-sub-text {
@@ -290,7 +304,8 @@ html {
 }
 
 #map-block.active {
-    height: 30rem;
+    height: 4rem;
+    /*height: 30rem;*/
 }
 
 .map-img {
@@ -312,7 +327,7 @@ html {
 @media (max-width: 999px) {
     .questions-texts {
         margin: 0.5rem;
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .question-block {
@@ -344,7 +359,8 @@ html {
     }
 
     #map-block.active {
-        height: 22rem;
+        height: 5rem;
+        /*height: 22rem;*/
     }
     
     .map-img {
