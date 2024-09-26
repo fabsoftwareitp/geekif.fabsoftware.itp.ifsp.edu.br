@@ -8,7 +8,7 @@ html {
 /* Banner Principal */
 .banner-principal {
     background-image: url("/banner_principal.png");
-    height: 60vh;
+    height: 69vh;
     background-size: cover;
     background-position: center;
 }
@@ -24,7 +24,7 @@ html {
     align-items: center;
     justify-content: center;
     position: relative;
-    top: 57vh;
+    top: 66.5vh;
     left: 28vw;
     cursor: default;
     font-size: 1rem;

@@ -38,6 +38,7 @@
 
 .slider-img {
     width: calc(76vw/4);
+    height: 500px;
 }
 
 .move-attractions-1 {
@@ -87,7 +88,7 @@
     
     .slider-img {
         width: calc(78vw/3);
-        height: 100%;
+        height: 250px;
     }
 
     .move-attractions-1 {
