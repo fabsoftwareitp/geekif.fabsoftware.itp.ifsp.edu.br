@@ -1,0 +1,317 @@
+/* Slider Atrações*/
+.slider-attractions {
+    width: 80vw;
+    overflow-x: hidden;
+    position: relative;
+    height: 55vh;
+}
+
+.slider-attractions > i {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    line-height: 50px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--white);
+    opacity: 0.7;
+    z-index: 1;
+}
+
+.slider-attractions > i:last-child {
+    right: 0;
+}
+
+.slider-attractions > i:hover {
+    opacity: 0.9;
+}
+
+.carousel-attractions {
+    position: absolute;
+    display: flex;
+    width: calc(100%/4);
+    gap: 1.4vw;
+    transition: 0.5s;
+}
+
+.slider-img {
+    width: calc(76vw/4);
+    height: 500px;
+}
+
+.move-attractions-1 {
+    left: 0vw;
+}
+
+.move-attractions-2 {
+    left: -20.5vw;
+}
+
+.move-attractions-3 {
+    left: -41vw;
+}
+
+.move-attractions-4 {
+    left: -61.5vw;
+}
+
+.move-attractions-5 {
+    left: -82vw;
+}
+
+.move-attractions-6 {
+    left: -102.5vw;
+}
+
+.move-attractions-7 {
+    left: -123vw;
+}
+
+@media (max-width: 1280px) {
+    .slider-attractions {
+        height: 57vh;
+        width: 81vw;
+    }
+
+    .carousel-attractions {
+        width: calc(100%/3);
+        gap: 2vw;
+    }
+
+    .slider-attractions > i {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+    }
+    
+    .slider-img {
+        width: calc(78vw/3);
+        height: 250px;
+    }
+
+    .move-attractions-1 {
+        left: 0vw;
+    }
+    
+    .move-attractions-2 {
+        left: -27vw;
+    }
+    
+    .move-attractions-3 {
+        left: -55vw;
+    }
+    
+    .move-attractions-4 {
+        left: -83vw;
+    }
+    
+    .move-attractions-5 {
+        left: -111vw;
+    }
+
+    .move-attractions-6 {
+        left: -139vw;
+    }
+
+    .move-attractions-7 {
+        left: -167vw;
+    }
+}
+
+@media (max-width: 999px) {
+    .slider-attractions {
+        height: 30vh;
+        width: 80vw;
+    }
+
+    .carousel-attractions {
+        width: calc(100%/2);
+        gap: 2vw;
+    }
+    
+    .slider-img {
+        width: calc(78vw/2);
+    }
+
+    .move-attractions-1 {
+        left: 0vw;
+    }
+    
+    .move-attractions-2 {
+        left: -40vw;
+    }
+    
+    .move-attractions-3 {
+        left: -81vw;
+    }
+    
+    .move-attractions-4 {
+        left: -122vw;
+    }
+    
+    .move-attractions-5 {
+        left: -163vw;
+    }
+
+    .move-attractions-6 {
+        left: -204vw;
+    }
+
+    .move-attractions-7 {
+        left: -245vw;
+    }
+}
+
+/* Slider Games */
+.slider-games {
+    width: 80vw;
+    overflow-x: hidden;
+    position: relative;
+    height: 60vh;
+}
+
+.slider-games > i {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    line-height: 50px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--white);
+    opacity: 0.7;
+    z-index: 1;
+}
+
+.slider-games > i:last-child {
+    right: 0;
+}
+
+.slider-games > i:hover {
+    opacity: 0.9;
+}
+
+.carousel-games {
+    position: absolute;
+    display: flex;
+    width: calc(100%/4);
+    gap: 1.4vw;
+    transition: 0.5s;
+}
+
+.move-games-1 {
+    left: 0vw;
+}
+
+.move-games-2 {
+    left: -20.5vw;
+}
+
+.move-games-3 {
+    left: -41vw;
+}
+
+.move-games-4 {
+    left: -61.5vw;
+}
+
+.move-games-5 {
+    left: -82vw;
+}
+
+.move-games-6 {
+    left: -102.5vw;
+}
+
+.move-games-7 {
+    left: -123vw;
+}
+
+@media (max-width: 1280px) {
+    .slider-games {
+        height: 57vh;
+        width: 81vw;
+    }
+
+    .carousel-games {
+        width: calc(100%/3);
+        gap: 1vw;
+    }
+
+    .slider-games > i {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+    }
+
+    .move-games-1 {
+        left: 0vw;
+    }
+    
+    .move-games-2 {
+        left: -27vw;
+    }
+    
+    .move-games-3 {
+        left: -55vw;
+    }
+    
+    .move-games-4 {
+        left: -83vw;
+    }
+    
+    .move-games-5 {
+        left: -111vw;
+    }
+
+    .move-games-6 {
+        left: -139vw;
+    }
+
+    .move-games-7 {
+        left: -167vw;
+    }
+}
+
+@media (max-width: 999px) {
+    .slider-games {
+        height: 30vh;
+        width: 80vw;
+    }
+
+    .carousel-games {
+        width: calc(100%/2);
+        gap: 2vw;
+    }
+
+    .move-games-1 {
+        left: 0vw;
+    }
+    
+    .move-games-2 {
+        left: -40vw;
+    }
+    
+    .move-games-3 {
+        left: -81vw;
+    }
+    
+    .move-games-4 {
+        left: -122vw;
+    }
+    
+    .move-games-5 {
+        left: -163vw;
+    }
+
+    .move-games-6 {
+        left: -204vw;
+    }
+
+    .move-games-7 {
+        left: -246vw;
+    }
+}

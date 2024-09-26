@@ -1,0 +1,654 @@
+html {
+    overflow-x: hidden;
+}
+.text-font {
+    font-family: 'Lemon Milk', sans-serif;
+}
+
+/* Banner Principal */
+.banner-principal {
+    background-image: url("/banner_principal.png");
+    height: 69vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner-entrance {
+    color: var(--black);
+    background-color: var(--pink);
+    border: 3px solid var(--black);
+    padding: 10px;
+    font-weight: 600;
+    width: 45vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 66.5vh;
+    left: 28vw;
+    cursor: default;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 999px) {
+    .banner-principal {
+        height: 25vh;
+    }
+
+    .banner-entrance {
+        border: 2px solid var(--black);
+        padding: 10px;
+        width: 90vw;
+        top: 23vh;
+        left: 5vw;
+        font-size: 0.6rem;
+    }
+}
+
+/*Sobre o Evento */
+.about,
+.questions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-block: 3rem;
+    margin-top: 3rem;
+    position: relative;
+}
+
+.about-shape {
+    background: var(--grey);
+    height: 75vh;
+    width: 100vw;
+    position: absolute;
+    top: 40px;
+    transform: skew(0deg, 5deg);
+    z-index: -1;
+}
+
+.about-text,
+.attractions-text,
+.games-text,
+.retro-text,
+.question-text,
+.questions-texts  {
+    color: var(--pink);
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 0.8rem;
+    text-align: center;
+}
+
+.about-img {
+    width: 65vw;
+    outline: 0px solid var(--white);
+    transition: 0.5s;
+}
+
+.about-img:hover {
+    outline: 3px solid var(--white);
+    outline-offset: -30px;
+}
+
+.about-line {
+    padding: 5px;
+    border-bottom: 5px solid var(--pink);
+    width: 65vw;
+}
+
+@media (max-width: 1280px) {
+    .about-shape {
+        height: 65vh;
+        width: 100vw;
+    }
+}
+
+@media (max-width: 999px) {
+    .about {
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    .about-shape {
+        height: 35vh;
+        width: 100vw;
+        top: 0;
+    }
+
+    .about-text,
+    .attractions-text,
+    .games-text,
+    .retro-text,
+    .question-text {
+        font-size: 1.7rem;
+        margin: 0.8rem;
+    }
+
+    .about-img {
+        width: 85vw;
+    }
+
+    .about-line {
+        border-bottom: 3px solid var(--pink);
+        width: 85vw;
+    }
+}
+
+/* Atrações - Salas e Oficinas */
+.attractions,
+.games {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-block: 1rem;
+}
+
+.attractions-text,
+.games-text {
+    color: var(--blue);
+}
+
+/* Relembre - Retrospectiva */
+.retro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-block: 2rem;
+    position: relative;
+}
+
+.retro-shape {
+    background: var(--pink);
+    height: 90vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    transform: skew(0deg, 5deg);
+    z-index: -1;
+}
+
+.retro-text {
+    color: var(--white);
+    font-size: 1.8rem;
+}
+
+.retro-logo{
+    color: var(--yellow);
+    text-shadow: 0.2rem 0.2rem var(--blue), 0.3rem 0.3rem var(--pink);
+    font-family: 'Lilita One', cursive;
+    margin-bottom: 25px;
+}
+
+.retro-title {
+    font-size: 5.5rem;
+}
+
+.retro-sub-title {
+    font-size: 2.5rem;
+    position: absolute;
+    margin-top: -5px;
+    margin-left: -5px;
+}
+
+@media (max-width: 1280px) {
+    .retro-shape {
+        height: 75vh;
+        width: 100vw;
+    }
+}
+
+@media (max-width: 999px) {
+    .retro-logo {
+        margin-bottom: 5px;
+    }
+
+    .retro-text {
+        font-size: 1.3rem;
+        margin: 0.5rem;
+    }
+
+    .retro-shape {
+        height: 30vh;
+        width: 100vw;
+    }
+
+    .retro-title {
+        font-size: 2.5rem;
+    }
+    
+    .retro-sub-title {
+        font-size: 1.2rem;
+        margin-top: -5px;
+        margin-left: -5px;
+        text-shadow: 0.1rem 0.1rem var(--blue), 0.2rem 0.2rem var(--pink);
+    }
+}
+
+/* Dúvidas Frequentes */
+.questions {
+    margin-top: 1rem;
+}
+
+.question-block {
+    border: 5px solid var(--black);
+    width: 85vw;
+    margin-block: 0.8rem;
+}
+
+.question-text,
+.questions-texts {
+    color: var(--black);
+}
+
+.questions-texts {
+    font-weight: 300;
+    margin: 0.8rem;
+    text-align: start;
+    cursor: pointer;
+    font-size: 1.8rem;
+}
+
+.questions-sub-text {
+    font-weight: 300;
+    font-size: 1.8rem;
+    margin: 1rem;
+}
+
+.answer-block {
+    visibility: hidden;
+    transition: 0.5s;
+    height: 0;
+    overflow-y: hidden;
+}
+
+.answer-block.active {
+    display: flex;
+    visibility: visible;    
+    height: 25rem;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+}
+
+#form {
+    width: 100%;
+    text-align: left;
+}
+
+#form input,
+#form textarea {
+    border-bottom: 2px solid var(--black);
+    font-size: 1.5rem;
+    background-color: var;
+}
+
+#message {
+    width: 98%;
+}
+
+#form button {
+    background-color: var(--grey);
+    padding: 0.6rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.map {
+    width: 95%;
+}
+
+#map-block.active {
+    height: 4rem;
+    /*height: 30rem;*/
+}
+
+.map-img {
+    height: 85%;
+}
+
+#stand-block.active {
+    height: 5rem;
+}
+
+.questions-sub-text > a {
+    color: var(--pink);
+}
+
+.questions-sub-text > a:hover {
+    color: var(--blue);
+}
+
+@media (max-width: 999px) {
+    .questions-texts {
+        margin: 0.5rem;
+        font-size: 1rem;
+    }
+
+    .question-block {
+        margin: 0.5rem;
+    }
+
+    .questions-sub-text {
+        font-size: 1.2rem;
+        margin: 0.5rem;
+    }
+    
+    .answer-block.active {
+        padding: 0.5rem;
+    }
+    
+    #form input,
+    #form textarea {
+        font-size: 1.2rem;
+    }
+
+    #message {
+        width: 95%;
+    }
+    
+    .map {
+        width: 95%;
+        height: 80%;
+        margin-block: 0.5rem;
+    }
+
+    #map-block.active {
+        height: 5rem;
+        /*height: 22rem;*/
+    }
+    
+    .map-img {
+        height: auto;
+        width: 90%;
+    }
+}
+
+/* Em Breve */
+.later-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    min-height: 60vh;
+    background-image: url("/estrelas_back.png");
+    background-size: cover;
+}
+
+.later-main > .attractions-content {
+    width: 90vw;
+    background-color: var(--white);
+}
+
+.later-main > .attractions-content > p {
+    font-size: 3rem;
+    padding: 2rem;
+    font-weight: 600;
+}
+
+@media (max-width: 999px) {
+    .later-main > .attractions-content {
+        width: 95vw;
+    }
+}
+
+/* Patrocinio */
+.partner-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    width: 90vw;
+    margin-inline: auto;
+    padding-top: 1rem;
+}
+
+.partner-main .retro-title,
+.partner-main .retro-sub-title {
+  text-shadow: 0.2rem 0.2rem var(--blue), 0.4rem 0.4rem var(--pink);
+}
+
+.back-partner {
+    background-image: url("/estrelas_back.png");
+    background-size: cover;
+}
+
+.partner-main > .attractions-content {
+    display: flex;
+    flex-direction: column;
+    border: 4px solid var(--grey);
+    box-shadow: 15px 10px var(--grey);
+    padding: 2rem;
+    gap: 2rem;
+    background-color: var(--white);
+}
+
+.partner-main > .attractions-content > p:first-child{
+    font-size: 3rem;
+    text-align: center;
+    color: var(--pink);
+    font-weight: 600;
+}
+
+.partner-main > .attractions-content > p,
+.partner-list > li,
+.partner-list > a {
+    font-size: 1.5rem;
+    font-family: 'Lemon Milk', sans-serif;
+    line-height: 1.7rem;
+    text-align: justify;
+}
+
+.partner-list > a {
+    color: var(--purple);
+}
+
+.partner-list {
+    width: 80%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    text-align: justify;
+    gap: 5px;
+    list-style: inside;
+}
+
+@media (max-width: 999px) {
+    .partner-main {
+        width: 95vw;
+        padding-top: 0.5rem;
+    }
+    
+    .partner-main .retro-title,
+    .partner-main .retro-sub-title {
+      text-shadow: 0.1rem 0.1rem var(--blue), 0.2rem 0.2rem var(--pink);
+    }
+
+    .partner-main > .attractions-content {
+        padding: 0.8rem;
+        gap: 0.8rem;
+        word-break: break-all;
+    }
+    
+    .partner-main > .attractions-content > p:first-child{
+        font-size: 1.9rem;
+    }
+    
+    .partner-main > .attractions-content > p{
+        font-size: 1rem;
+        line-height: 1.3rem;
+    }
+}
+
+/* Cronograma */
+.timeline-main {
+    background-image: url("/estrelas_back.png");
+    background-size: cover;
+}
+
+.timeline-main > p {
+    font-size: 4rem;
+    color: var(--blue);
+    margin-inline: auto;
+    width: 90vw;
+    text-align: center;
+    padding: 1rem;
+    font-weight: 600;
+}
+
+.div-cronograma {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    gap: 1.5rem;
+    margin-inline: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-cronograma > .attractions-div {
+    background-color: var(--white);
+}
+
+.div-cronograma > .attractions-div,
+.div-cronograma > .attractions-div > ul > li {
+    width: 45vw;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.div-cronograma > .attractions-div > ul > li {
+    padding: 0.7rem;
+}
+
+.timeline-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border-bottom: 4px solid var(--dark-grey);
+    background-size: contain;
+}
+
+#timeline-workshop {
+    background-image: url("/oficinas_back.png");
+}
+
+#timeline-tournament {
+    background-image: url("/campeonatos_back.png");
+}
+
+#timeline-show {
+    background-image: url("/shows_back.png");
+}
+
+#timeline-game {
+    background-image: url("/salas_back.png");
+}
+
+.timeline-div > p {
+    font-weight: 600;
+    color: var(--white);
+    font-size: 2rem;
+    text-shadow: 0.2rem 0.2rem var(--dark-grey);
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+@media (max-width: 999px) {
+    .timeline-main > p {
+        width: 95vw;
+        font-size: 3rem;
+    }
+
+    .div-cronograma > .attractions-div,
+    .div-cronograma > .attractions-div > ul > li {
+        width: 85vw;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+}
+
+/* Retrospectiva */
+.retro-banner {
+    background-image: url("/retro_back.png");
+}
+
+.retro-main {
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-inline: auto;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.retro-card > iframe {
+    width: 40vw;
+    height: 35vh;
+    border-radius: 20px;
+}
+
+.retro-sub-card {
+    display: flex;
+    justify-content: space-between;
+    margin-inline: 1rem;
+    margin-block: 0.5rem;
+    font-weight: 600;
+}
+
+.retro-sub-card > p {
+    margin-top: 5px;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.retro-sub-card > a {
+    background-color: var(--grey);
+    padding: 10px;
+    border-radius: 15px;
+    color: var(--black);
+}
+
+.retro-sub-card > a:hover {
+    background-color: var(--dark-grey);
+    color: var(--white);
+}
+
+@media (max-width: 999px) {    
+    .retro-banner {
+        background-size: contain;
+    }
+    
+    .retro-main {
+        width: 95vw;
+    }
+    
+    .retro-card > iframe {
+        width: 75vw;
+        height: 19vh;
+        border-radius: 15px;
+    }
+    
+    .retro-sub-card {
+        margin-inline: 0.2rem;
+        margin-block: 0.4rem;
+    }
+
+    .retro-sub-card > p {
+        font-size: 0.9rem;
+    }
+}

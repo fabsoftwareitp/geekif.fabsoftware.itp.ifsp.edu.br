@@ -1,0 +1,277 @@
+.header {
+  background-color: var(--dark-grey);  
+  height: 70px;
+}
+
+#logo-title,
+#logo-sub-title {
+  color: var(--yellow);
+  text-shadow: 0.1rem 0.1rem var(--blue), 0.2rem 0.2rem var(--pink);
+  font-family: 'Lilita One', cursive;
+}
+
+#logo-sub-title {
+  position: absolute;
+  font-size: 1.5rem;
+  top: 0.4rem;
+  left: 0.4rem;
+}
+
+#logo-title {
+  font-size: 2.7rem;
+}
+
+.nav {
+  height: 70px;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  padding: 15px;
+  background-color: var(--dark-grey);
+}
+
+.nav-list {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-list > li > .header-link:hover {
+  color: var(--black);
+}
+
+.header-link {
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.hamburguer {
+  background: none;
+  border-top: 3px solid var(--white);
+  cursor: pointer;
+  display: none;
+  transition: 0.5s;
+}
+
+.hamburguer::after,
+.hamburguer::before {
+  content: " ";
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: var(--white);
+  margin-top: 5px;
+  transition: 0.5s;
+}
+
+.dropdown-workshop,
+.dropdown-tournament,
+.dropdown-show,
+.dropdown-games {
+  display: none;
+}
+
+.dropdown-workshop.active,
+.dropdown-tournament.active,
+.dropdown-show.active,
+.dropdown-games.active {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: var(--dark-grey);
+  top: 70px;
+}
+
+.dropdown-workshop {
+  margin-left: -3vw;
+}
+
+.dropdown-tournament {
+  margin-left: -0.5vw;
+}
+
+.dropdown-show,
+.dropdown-games {
+  margin-left: -3.5vw;
+}
+
+.dropdown-workshop > a,
+.dropdown-tournament > a,
+.dropdown-show > a,
+.dropdown-games > a {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  width: 12vw;
+  font-size: 0.8rem;
+}
+
+.dropdown-workshop > a:hover,
+.dropdown-tournament > a:hover,
+.dropdown-show > a:hover,
+.dropdown-games > a:hover {
+  background-color: var(--grey);
+  color: var(--black);
+}
+
+@media (max-width: 1280px){
+  #logo-sub-title {
+    font-size: 1.2rem;
+    top: 0.6rem;
+    left: 0.4rem;
+  }
+  
+  #logo-title {
+    font-size: 2.3rem;
+  }
+
+  .header-link {
+    color: var(--white);
+    font-size: 0.8rem;
+    padding: 0;
+    letter-spacing: 0px;
+  }
+}
+
+@media (max-width: 999px) {
+  .nav {
+    padding-inline: 20px;
+  }
+
+  #logo-sub-title {
+    font-size: 1.4rem;
+    top: 0.4rem;
+    left: 0.8rem;
+  }
+  
+  #logo-title {
+    font-size: 2.7rem;
+  }
+
+  .hamburguer {
+    display: block;
+    z-index: 1;
+  }
+
+  .nav.active > .hamburguer {
+    border-top-color: transparent;
+  }
+  
+  .nav.active > .hamburguer::before {
+    transform: rotate(135deg);
+  }
+  
+  .nav.active > .hamburguer::after {
+    transform: rotate(-135deg);
+    top: -0.5375rem;
+    margin-top: -2px;
+  }
+
+  .nav-list {
+    position: fixed;
+    top: 69px;
+    left: 0;
+    width: 100vw;
+    height: auto;
+    background-color: var(--dark-grey);
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0;
+    pointer-events: none;
+    visibility: hidden;
+    overflow-y: hidden;
+    transition: 0.5s;
+    height: 0;
+  }
+
+  .nav-list > li {
+    padding-block: 20px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .nav.active > .nav-list {
+    visibility: visible;
+    pointer-events: all;
+    overflow-y: auto;
+    height: 65vh;
+  }
+
+  .header-link {
+    font-size: 1.1rem;
+  }
+
+  .dropdown-workshop,
+  .dropdown-tournament,
+  .dropdown-show,
+  .dropdown-games {
+    transition: 0.5s;
+    height: 0;
+    display: none;
+    visibility: hidden;
+  }
+
+  .dropdown-workshop.active,
+  .dropdown-tournament.active,
+  .dropdown-show.active,
+  .dropdown-games.active {
+    position: inherit;
+    visibility: visible;
+    width: 100%;
+  }
+
+  .dropdown-workshop.active {
+    height: 23rem;
+  }
+
+  .dropdown-tournament.active {
+    height: 15rem;
+  }
+
+  .dropdown-show.active {
+    height: 9rem;
+  }
+
+  .dropdown-games.active {
+    height: 17rem;
+  }
+
+  .dropdown-workshop,
+  .dropdown-tournamen,
+  .dropdown-show,
+  .dropdown-games {
+    margin-left: 0vw;
+  }
+
+  .dropdown-workshop > a,
+  .dropdown-tournament > a,
+  .dropdown-show > a,
+  .dropdown-games > a {
+    width: 100%;
+    padding: 15px;
+    font-size: 0.9rem;
+  }
+
+  .dropdown-workshop > a:hover,
+  .dropdown-tournament > a:hover,
+  .dropdown-show > a:hover,
+  .dropdown-games > a:hover {
+    background-color: var(--dark-grey);
+    color: var(--white);
+  }
+}

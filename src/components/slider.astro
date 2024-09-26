@@ -1,0 +1,121 @@
+---
+const atracoes = await Astro.glob('../pages/atracoes/*.md');
+const { titulo } = Astro.props;
+
+function shuffle(vetor) {
+  let posicaoAtual = vetor.length;
+
+  // Enquanto estiver elementos para aleatorizar
+  while (posicaoAtual != 0) {
+
+    // Pega um elemento sobrando
+    let posicaoAleatória = Math.floor(Math.random() * posicaoAtual);
+    posicaoAtual--;
+
+    // E troca ele com o elemento atual
+    [vetor[posicaoAtual], vetor[posicaoAleatória]] = [
+      vetor[posicaoAleatória], vetor[posicaoAtual]];
+  }
+}
+
+shuffle(atracoes)
+---
+<!-- Slider Atrações -->
+<div class="slider-attractions">
+    <i class="fa-solid fa-angle-left arrow-left-attractions"></i>
+    <div class="carousel-attractions move-attractions-1">	
+		{atracoes.filter(postagem => postagem.frontmatter.titulo != titulo).slice(0, 8).map(postagem =>  
+		<div>
+			<a href={postagem.frontmatter.link}><img class="slider-img" src={postagem.frontmatter.imgSlider}></a>
+		</div>)}
+    </div>
+    <i class="fa-solid fa-angle-right arrow-right-attractions"></i>
+</div>
+
+<script is:inline>
+    //Slider Atrações
+			let threeSlides = screenThreeTest();
+			let twoSlides = screenTwoTest();
+
+			const arrowLeftAttractions = document.querySelector(".arrow-left-attractions");
+			const arrowRightAttractions = document.querySelector(".arrow-right-attractions");
+			const carouselAttractions = document.querySelector(".carousel-attractions");
+			let moveAttractions = 0;
+			
+
+			function screenThreeTest(){
+				if(window.innerWidth < 1281 && window.innerWidth > 999){
+					return true;
+				} else {
+					return false;
+				}
+			}
+
+			function screenTwoTest(){
+				if(window.innerWidth < 999){
+					return true;
+				} else {
+					return false;
+				}
+			}
+
+			arrowLeftAttractions?.addEventListener("click", () => {
+				cleanAttractions();
+				if(moveAttractions == 1){
+					moveAttractions = 0;
+					carouselAttractions?.classList.add("move-attractions-1");
+				} else if(moveAttractions == 2){
+					moveAttractions = 1;
+					carouselAttractions?.classList.add("move-attractions-2");
+				} else if(moveAttractions == 3){
+					moveAttractions = 2;
+					carouselAttractions?.classList.add("move-attractions-3");
+				} else if(moveAttractions == 4){
+					moveAttractions = 3;
+					carouselAttractions?.classList.add("move-attractions-4");
+				} else if(twoSlides && moveAttractions == 5 || threeSlides && moveAttractions == 5){
+					moveAttractions = 4;
+					carouselAttractions?.classList.add("move-attractions-5");
+				} else if(moveAttractions == 6){
+					moveAttractions = 5;
+					carouselAttractions?.classList.add("move-attractions-6");
+				} else {
+					carouselAttractions?.classList.add("move-attractions-1");
+				}
+			});
+
+			arrowRightAttractions?.addEventListener("click", () => {
+				cleanAttractions();
+				if(moveAttractions == 0){
+					moveAttractions = 1;
+					carouselAttractions?.classList.add("move-attractions-2");
+				} else if(moveAttractions == 1){
+					moveAttractions = 2;
+					carouselAttractions?.classList.add("move-attractions-3");
+				} else if(moveAttractions == 2){
+					moveAttractions = 3;
+					carouselAttractions?.classList.add("move-attractions-4");
+				} else if(moveAttractions == 3){
+					moveAttractions = 4;
+					carouselAttractions?.classList.add("move-attractions-5");
+				} else if(threeSlides || twoSlides && moveAttractions == 4){
+					moveAttractions = 5;
+					carouselAttractions?.classList.add("move-attractions-6");
+				} else if(twoSlides && moveAttractions == 5 || moveAttractions == 6){
+					moveAttractions = 6;
+					carouselAttractions?.classList.add("move-attractions-7");
+				} else {
+					carouselAttractions?.classList.add("move-attractions-5");
+				}
+			});
+
+			function cleanAttractions() {
+				carouselAttractions?.classList.remove("move-attractions-1");
+				carouselAttractions?.classList.remove("move-attractions-2");
+				carouselAttractions?.classList.remove("move-attractions-3");
+				carouselAttractions?.classList.remove("move-attractions-4");
+				carouselAttractions?.classList.remove("move-attractions-5");
+				carouselAttractions?.classList.remove("move-attractions-6");
+				carouselAttractions?.classList.remove("move-attractions-7");
+			}
+</script>

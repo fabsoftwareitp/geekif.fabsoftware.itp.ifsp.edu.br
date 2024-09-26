@@ -1,0 +1,319 @@
+.attractions-principal {
+    display:flex; 
+    align-items:center; 
+    justify-content:center; 
+    flex-direction: column; 
+    width:100%; 
+    padding-block: 1rem;
+    background-image: url("/attractions_back.png");
+    height: 60vh;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 1rem;
+}
+
+.attractions-principal > p {
+    margin: 1rem;
+    font-size: 4rem;
+}
+
+.banners-attractions {
+   width: 100%;
+}
+
+.attractions-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    margin-block: 1rem;
+}
+
+.attractions-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    border: 4px solid var(--dark-grey);
+    background-size: contain;
+}
+
+.attractions-div > p {
+    font-weight: 600;
+    color: var(--white);
+    font-size: 1.8rem;
+    text-shadow: 0.2rem 0.2rem var(--dark-grey);
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.attractions-div > img {
+    border-top: 4px solid var(--dark-grey);
+    width: 100%;
+    height: 500px;
+}
+
+.container-workshop > .attractions-div {
+    background-image: url("/oficinas_back.png");
+}
+.container-tournament > .attractions-div {
+    background-image: url("/campeonatos_back.png");
+}
+
+.container-show > .attractions-div {
+    background-image: url("/shows_back.png");
+}
+
+.container-game > .attractions-div {
+    background-image: url("/salas_back.png");
+}
+
+@media (max-width: 999px) {
+    .attractions-principal {
+        padding-block: 0.5rem;
+        height: 25vh;
+        margin-bottom: 1rem;
+    }
+    
+    .attractions-principal > p {
+        margin: 0.5rem;
+        font-size: 1.7rem;
+    }
+    
+    .attractions-container {
+        padding: 0.5rem;
+        gap: 1rem;
+        margin-block: 0.5rem;
+    }
+    
+    .attractions-div {
+        width: 42%;
+        border: 2px solid var(--dark-grey);
+    }
+    
+    .attractions-div > p {
+        font-size: 1rem;
+        text-shadow: 0.15rem 0.15rem var(--dark-grey);
+        height: 3rem;
+    }
+
+    .attractions-div > img {
+        border-top: 4px solid var(--dark-grey);
+        width: 100%;
+        height: 250px;
+    }
+}
+
+/* Página de Atrações */
+.attractions-main {
+    width: 90vw;
+    margin-block: 1rem;
+    margin-inline: auto;
+}
+
+.thumbnail-attractions {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+    height: 10rem;
+}
+
+.thumbnail-attractions#OFICINAS {
+    background-image: url("/oficinas_back.png");
+}
+
+.thumbnail-attractions#CAMPEONATOS {
+    background-image: url("/campeonatos_back.png");
+}
+
+.thumbnail-attractions#SALAS {
+    background-image: url("/salas_back.png");
+}
+
+.thumbnail-attractions#SHOWS {
+    background-image: url("/shows_back.png");
+}
+
+.thumbnail-attractions > p {
+    font-size: 7rem;
+    color: var(--white);
+    text-shadow: 0.3rem 0.3rem var(--dark-grey), 0.5rem 0.5rem var(--dark-grey);
+}
+
+.path,
+.path > a {
+    font-weight: 600;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.path#OFICINAS,
+.path#OFICINAS > a {
+    color: var(--pink);
+}
+
+.path#CAMPEONATOS,
+.path#CAMPEONATOS > a {
+    color: var(--blue);
+}
+
+.path#SHOWS,
+.path#SHOWS > a {
+    color: var(--yellow);
+}
+
+.path#SALAS,
+.path#SALAS > a {
+    color: var(--purple);
+}
+
+.attractions-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    border: 5px solid var(--grey);
+    padding: 1rem;
+    gap: 1rem;
+    box-shadow: 1rem 1rem var(--grey);
+    margin-bottom: 3rem;
+}
+
+.attractions-content > img {
+    width: 30vw;
+    height: 30vw;
+}
+
+.attractions-content-text {
+    display: flex;
+    flex-direction: column;
+    align-self: start;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.attractions-content-text > p:first-child {
+    font-size: 4rem;
+}
+
+.attractions-content-text > p {
+    font-weight: 600;
+}
+
+.attractions-content-text > p:last-child {
+    font-weight: 300;
+    font-family: 'Lemon Milk', sans-serif;
+    line-height: 1.2rem;
+    text-align: justify;
+}
+
+.others-attractions { 
+    width: 90vw;
+    margin-inline: auto;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-block: 1rem;
+}
+
+.others-attractions > .slider-attractions {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    margin-inline: auto;
+}
+
+.attractions-title {
+    font-size: 5rem;
+    color: var(--white);
+    text-shadow: 0.4rem 0.4rem var(--dark-grey);
+    text-align: center;
+    padding: 1rem;
+    cursor: default;
+    user-select: none;
+    font-weight: 600;
+}
+
+.title-workshop {
+    background-image: url("/oficinas_back.png");
+}
+
+.title-tournament {
+    background-image: url("/campeonatos_back.png");
+}
+
+.title-show {
+    background-image: url("/shows_back.png");
+}
+
+.title-game {
+    background-image: url("/salas_back.png");
+}
+
+@media (max-width: 999px) {
+    .attractions-main {
+        width: 95vw;
+        margin-block: 0.5rem;
+    }
+    
+    .thumbnail-attractions > p {
+        font-size: 2.8rem;
+    }
+
+    .path,
+    .path > a {
+        margin-bottom: 0.5rem;
+    }
+    
+    
+    .attractions-content {
+        flex-direction: column;
+        border: 5px solid var(--grey);
+        padding: 0.8rem;
+        gap: 0.5rem;
+        box-shadow: 0.3rem 0.3rem var(--grey);
+        margin-bottom: 2rem;
+    }
+    
+    .attractions-content > img {
+        width: 60vw;
+        height: 60vw;
+        margin-block: 0.5rem;
+    }
+    
+    .attractions-content-text {
+        gap: 1rem;
+    }
+    
+    .attractions-content-text > p:first-child {
+        font-size: 3.5rem;
+    }
+    
+    .others-attractions { 
+        width: 95vw;
+        font-size: 1.3rem;
+    }
+
+    .others-attractions > .slider-attractions {
+        margin-top: 1.5rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .attractions-title {
+        font-size: 2.6rem;
+        text-shadow: 0.2rem 0.2rem var(--dark-grey);
+        padding: 0.8rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .attractions-title {
+        font-size: 2rem;
+    }
+}

@@ -1,0 +1,387 @@
+---
+import MetaDados from "../components/header.astro";
+import Cabecalho from "../components/head.astro";
+import Rodape from "../components/footer.astro";
+---
+
+<html lang="pt-br">
+	<MetaDados titulo="Página Inicial | "></MetaDados>
+	<body>
+		<Cabecalho></Cabecalho>
+		<main>
+			<!-- Banner Principal -->
+			<section class="banner-principal">
+				<div class="banner-entrance text-font">ENTRADA: 1L DE LEITE CAXINHA OU 1 PACOTE DE DOCES</div>
+			</section>
+			<section class="about">
+				<div class="about-shape"></div>
+				<a class="text-font about-text">SOBRE O EVENTO</a>
+				<a href="/geek">
+					<img class="about-img" src="./Experiencia_geek.jpeg" alt="Imagem do Evento">
+				</a>
+				<div class="about-line"></div>
+			</section>
+			<!-- Atrações Slider -->
+			<section class="attractions">
+				<a class="text-font attractions-text">ATRAÇÕES</a>
+				<div class="slider-attractions">
+					<i class="fa-solid fa-angle-left arrow-left-attractions"></i>
+					<div class="carousel-attractions move-attractions-1">
+						<div>
+							<a href="/atracoes/just_dance"><img class="slider-img" src="./campeonatos/just-dance.jpg" alt=""></a>
+						</div>
+						<div>
+							<a href="/atracoes/cubo_magico"><img class="slider-img" src="./campeonatos/cubo2.webp" alt=""></a>
+						</div>
+						<div>
+							<a href="/atracoes/cosplay"><img class="slider-img" src="./campeonatos/cosplay.jpg" alt=""></a>
+						</div>
+						<div>
+							<a href="/atracoes/cospobre"><img class="slider-img" src="./campeonatos/Cospobre.JPG" alt=""></a>
+						</div>
+						<div>
+							<a href="/atracoes/cospet"><img class="slider-img" src="./campeonatos/cospet.webp" alt=""></a>
+						</div>
+						<div>
+							<a href=""><img class="slider-img" src="./convidado2.png" alt=""></a>
+						</div>
+						<div>
+							<a href=""><img class="slider-img" src="./convidado1.png" alt=""></a>
+						</div>
+						<div>
+							<a href=""><img class="slider-img" src="./convidado2.png" alt=""></a>
+						</div>
+					</div>
+					<i class="fa-solid fa-angle-right arrow-right-attractions"></i>
+				</div>
+			</section>
+			<!-- Salas Slider -->
+			<section class="games">
+				<a class="text-font games-text">SALAS E OFICINAS</a>
+				<div class="slider-games">
+					<i class="fa-solid fa-angle-left arrow-left-games"></i>
+					<div class="carousel-games move-games-1">
+						<div>
+							<a href="/atracoes/escrita_criativa"><img class="slider-img" src="./oficinas/jose-augusto.jpg" alt=""></a>
+						</div>
+						<div>
+							<a href="/atracoes/lightsaber"><img class="slider-img" src="../oficinas/Eddie-dojo de criatividade.jpeg" alt=""></a>
+						</div>
+						<div>
+							<a href="/atracoes/desenho"><img class="slider-img" src="./oficinas/victorduarte.jpg" alt=""></a>
+						</div>
+						<div>
+							<a href=""><img class="slider-img" src="./sala.jpg" alt=""></a>
+						</div>
+						<div>
+							<a href=""><img class="slider-img" src="./sala.jpg" alt=""></a>
+						</div>
+						<div>
+							<a href=""><img class="slider-img" src="./sala.jpg" alt=""></a>
+						</div>
+						<div>
+							<a href=""><img class="slider-img" src="./sala.jpg" alt=""></a>
+						</div>
+						<div>
+							<a href=""><img class="slider-img" src="./sala.jpg" alt=""></a>
+						</div>
+					</div>
+					<i class="fa-solid fa-angle-right arrow-right-games"></i>
+				</div>
+			</section>
+			<!-- Relembre -->
+			<section class="retro">
+				<div class="retro-shape"></div>
+				<a class="text-font retro-text">RELEMBRE!!!</a>
+				<a class="retro-logo"><p class="retro-sub-title">2°</p><p class="retro-title">GEEK-IF</p></a>
+				<a href="/retrospectiva">
+					<img class="about-img" src="./retro_index.png" alt="Imagem do Evento">
+				</a>
+			</section>
+			<!-- Dúvidas Frequentes -->
+			<section class="questions">
+				<p class="text-font question-text">DÚVIDAS FREQUENTES</p>
+				<div class="question-block">
+					<p class="text-font questions-texts" id="contact-question">COMO ENTRAR EM CONTATO?</p>
+					<div class="answer-block" id="contact-block">
+						<form action="/" method="post" id="form">
+							<div>
+								<label class="text-font questions-sub-text" for="name">Seu Nome:</label>
+								<input class="text-font questions-sub-text" type="text" name="name" id="name" placeholder="seu nome aqui" required>
+							</div>
+							<div>
+								<label class="text-font questions-sub-text" for="email">Seu Email:</label>
+								<input class="text-font questions-sub-text" type="email" name="email" id="email" placeholder="seu email aqui" required>
+							</div>
+							<label class="text-font questions-sub-text" for="message">Sua Mensagem:</label>
+							<textarea cols="175" rows="6" id="message" name="message" placeholder="sua mensagem aqui" class="text-font questions-sub-text"></textarea>
+							<button class="text-font questions-sub-text" type="submit">Enviar</button>
+						</form>
+					</div>
+				</div>
+			<div class="question-block">
+				<p class="text-font questions-texts" id="location-question">COMO CHEGAR?</p>
+				<div class="answer-block" id="location-block">
+					<p class="text-font questions-sub-text">Endereço: Av. João Olímpio de Oliveira, 1561 - Vila Asem, Itapetininga - SP, 18202-000</p>
+					<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.293147190238!2d-48.02073778502155!3d-23.593817384666814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c5cbf41ebfcf31%3A0xa65e4fb6d75446bf!2sInstituto%20Federal%20de%20Educa%C3%A7%C3%A3o%2C%20Ci%C3%AAncia%20e%20Tecnologia%20de%20S%C3%A3o%20Paulo%2C%20Campus%20Itapetininga!5e0!3m2!1spt-BR!2sbr!4v1686163888450!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+			</div>
+			<div class="question-block">
+				<p class="text-font questions-texts" id="map-question">COMO ME LOCALIZO NO EVENTO?</p>
+				<div class="answer-block" id="map-block">
+					<p class="text-font questions-sub-text">Para facilitar a localização disponibilizamos um mapa do evento</p>
+				</div>
+			</div>
+			<div class="question-block">
+				<p class="text-font questions-texts" id="stand-question">COMO TENHO UM STAND NO EVENTO?</p>
+				<div class="answer-block" id="stand-block">
+					<p class="text-font questions-sub-text">Para entrar em contato para montar um stand no evento e mais detalhes acesse <a href="/patrocinio">Nos Apoie</a></p>
+				</div>
+			</div>
+			</section>
+		</main>
+		<Rodape></Rodape>
+		<script is:inline>
+			//Slider Atrações
+			let threeSlides = screenThreeTest();
+			let twoSlides = screenTwoTest();
+
+			const arrowLeftAttractions = document.querySelector(".arrow-left-attractions");
+			const arrowRightAttractions = document.querySelector(".arrow-right-attractions");
+			const carouselAttractions = document.querySelector(".carousel-attractions");
+			let moveAttractions = 0;
+			
+
+			function screenThreeTest(){
+				if(window.innerWidth < 1281 && window.innerWidth > 999){
+					return true;
+				} else {
+					return false;
+				}
+			}
+
+			function screenTwoTest(){
+				if(window.innerWidth < 999){
+					return true;
+				} else {
+					return false;
+				}
+			}
+
+			arrowLeftAttractions?.addEventListener("click", () => {
+				cleanAttractions();
+				if(moveAttractions == 1){
+					moveAttractions = 0;
+					carouselAttractions?.classList.add("move-attractions-1");
+				} else if(moveAttractions == 2){
+					moveAttractions = 1;
+					carouselAttractions?.classList.add("move-attractions-2");
+				} else if(moveAttractions == 3){
+					moveAttractions = 2;
+					carouselAttractions?.classList.add("move-attractions-3");
+				} else if(moveAttractions == 4){
+					moveAttractions = 3;
+					carouselAttractions?.classList.add("move-attractions-4");
+				} else if(twoSlides && moveAttractions == 5 || threeSlides && moveAttractions == 5){
+					moveAttractions = 4;
+					carouselAttractions?.classList.add("move-attractions-5");
+				} else if(moveAttractions == 6){
+					moveAttractions = 5;
+					carouselAttractions?.classList.add("move-attractions-6");
+				} else {
+					carouselAttractions?.classList.add("move-attractions-1");
+				}
+			});
+
+			arrowRightAttractions?.addEventListener("click", () => {
+				cleanAttractions();
+				if(moveAttractions == 0){
+					moveAttractions = 1;
+					carouselAttractions?.classList.add("move-attractions-2");
+				} else if(moveAttractions == 1){
+					moveAttractions = 2;
+					carouselAttractions?.classList.add("move-attractions-3");
+				} else if(moveAttractions == 2){
+					moveAttractions = 3;
+					carouselAttractions?.classList.add("move-attractions-4");
+				} else if(moveAttractions == 3){
+					moveAttractions = 4;
+					carouselAttractions?.classList.add("move-attractions-5");
+				} else if(threeSlides || twoSlides && moveAttractions == 4){
+					moveAttractions = 5;
+					carouselAttractions?.classList.add("move-attractions-6");
+				} else if(twoSlides && moveAttractions == 5 || moveAttractions == 6){
+					moveAttractions = 6;
+					carouselAttractions?.classList.add("move-attractions-7");
+				} else {
+					carouselAttractions?.classList.add("move-attractions-5");
+				}
+			});
+
+			function cleanAttractions() {
+				carouselAttractions?.classList.remove("move-attractions-1");
+				carouselAttractions?.classList.remove("move-attractions-2");
+				carouselAttractions?.classList.remove("move-attractions-3");
+				carouselAttractions?.classList.remove("move-attractions-4");
+				carouselAttractions?.classList.remove("move-attractions-5");
+				carouselAttractions?.classList.remove("move-attractions-6");
+				carouselAttractions?.classList.remove("move-attractions-7");
+			}
+
+			//Slider Salas
+			const arrowLeftGames = document.querySelector(".arrow-left-games");
+			const arrowRightGames = document.querySelector(".arrow-right-games");
+			const carouselGames = document.querySelector(".carousel-games");
+			let moveGames = 0;
+
+			arrowLeftGames?.addEventListener("click", () => {
+				cleanGames();
+				if(moveGames == 1){
+					moveGames = 0;
+					carouselGames?.classList.add("move-games-1");
+				} else if(moveGames == 2){
+					moveGames = 1;
+					carouselGames?.classList.add("move-games-2");
+				} else if(moveGames == 3){
+					moveGames = 2;
+					carouselGames?.classList.add("move-games-3");
+				} else if(moveGames == 4){
+					moveGames = 3;
+					carouselGames?.classList.add("move-games-4");
+				} else if(twoSlides && moveGames == 5 || threeSlides && moveGames == 5){
+					moveGames = 4;
+					carouselGames?.classList.add("move-games-5");
+				} else if(moveGames == 6){
+					moveGames = 5;
+					carouselGames?.classList.add("move-games-6");
+				} else {
+					carouselGames?.classList.add("move-games-1");
+				}
+			});
+
+			arrowRightGames?.addEventListener("click", () => {
+				cleanGames();
+				if(moveGames == 0){
+					moveGames = 1;
+					carouselGames?.classList.add("move-games-2");
+				} else if(moveGames == 1){
+					moveGames = 2;
+					carouselGames?.classList.add("move-games-3");
+				} else if(moveGames == 2){
+					moveGames = 3;
+					carouselGames?.classList.add("move-games-4");
+				} else if(moveGames == 3){
+					moveGames = 4;
+					carouselGames?.classList.add("move-games-5");
+				} else if(threeSlides || twoSlides && moveGames == 4){
+					moveGames = 5;
+					carouselGames?.classList.add("move-games-6");
+				} else if(twoSlides && moveGames == 5 || moveGames == 6){
+					moveGames = 6;
+					carouselGames?.classList.add("move-games-7");
+				} else {
+					carouselGames?.classList.add("move-games-5");
+				}
+			});
+
+			function cleanGames() {
+				carouselGames?.classList.remove("move-games-1");
+				carouselGames?.classList.remove("move-games-2");
+				carouselGames?.classList.remove("move-games-3");
+				carouselGames?.classList.remove("move-games-4");
+				carouselGames?.classList.remove("move-games-5");
+				carouselGames?.classList.remove("move-games-6");
+				carouselGames?.classList.remove("move-games-7");
+			}
+
+			//Contato
+			const contactQuestion = document.querySelector("#contact-question");
+			const contactBlock = document.querySelector("#contact-block")
+
+			contactQuestion?.addEventListener("click", () => {
+				contactBlock?.classList.toggle("active");
+			})
+
+			//Local
+			const locationQuestion = document.querySelector("#location-question");
+			const locationBlock = document.querySelector("#location-block")
+
+			locationQuestion?.addEventListener("click", () => {
+				locationBlock?.classList.toggle("active");
+			})
+
+			//Mapa do Evento
+			const mapQuestion = document.querySelector("#map-question");
+			const mapBlock = document.querySelector("#map-block")
+
+			mapQuestion?.addEventListener("click", () => {
+				mapBlock?.classList.toggle("active");
+			})
+
+			//Stands
+			const standQuestion = document.querySelector("#stand-question");
+			const standBlock = document.querySelector("#stand-block")
+
+			standQuestion?.addEventListener("click", () => {
+				standBlock?.classList.toggle("active");
+			})
+			//Enviar Email
+			const form = document.getElementById("form");
+
+			async function submitForm(event) {
+			event.preventDefault();
+
+			const name = document.getElementById("name").value;
+			const email = document.getElementById("email").value;
+			const message = document.getElementById("message").value;
+
+			await sendEmail(name, email, message);
+			}
+
+			async function sendEmail(name, email, message) {
+			try {
+				const connection1 = await fetch(
+				//"https://formsubmit.co/ajax/vitorgabriel2005outlook.com@gmail.com",
+				//"https://formsubmit.co/ajax/elinewelter@ifsp.edu.br",
+				"https://formsubmit.co/ajax/geekif@ifsp.edu.br",
+				{
+					method: "POST",
+					headers: {
+					"Content-Type": "application/json",
+					Accept: "application/json",
+					},
+					body: JSON.stringify({
+					name: name,
+					email: email,
+					message: message,
+					}),
+				}
+				);
+				/*const connection2 = await fetch(
+				"https://formsubmit.co/ajax/gabriela.moura@ifsp.edu.br",
+				{
+					method: "POST",
+					headers: {
+					"Content-Type": "application/json",
+					Accept: "application/json",
+					},
+					body: JSON.stringify({
+					name: name,
+					email: email,
+					message: message,
+					}),
+				}
+				)*/
+
+				const convertedConnection1 = await connection1.json();
+				//const convertedConnection2 = await connection2.json();
+				alert("Email enviado com sucesso");
+			} catch (e) {
+				alert("ERROR: Email não foi enviado");
+			}
+		}
+
+		form?.addEventListener("submit", (event) => submitForm(event));
+		</script>
+	</body>
+</html>

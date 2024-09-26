@@ -1,0 +1,44 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--dark-grey);
+    align-items: center;
+    padding: 0.8rem;
+}
+
+.footer > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-content,
+.footer-address,
+.footer-logo {
+    color: var(--white);
+    letter-spacing: 1px;
+    font-weight: 600;
+    padding-block: 0.4rem;
+    padding-inline: 0.4rem;
+    cursor: default;
+    text-align: center;
+}
+
+.footer-address{
+    font-weight: 300;
+    cursor: text;
+}
+
+.footer-logo {
+    font-family: 'Lilita One', cursive;
+    font-size: 2.7rem;
+}
+
+.footer-img {
+    height: 50px;
+    margin: 10px;
+}
+
+.footer-img-logo {
+    height: 75px;
+}
