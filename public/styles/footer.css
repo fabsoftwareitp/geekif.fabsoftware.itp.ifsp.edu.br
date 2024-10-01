@@ -24,6 +24,13 @@
     text-align: center;
 }
 
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    gap: 10px;
+}
+
 .footer-address{
     font-weight: 300;
     cursor: text;
@@ -42,3 +49,4 @@
 .footer-img-logo {
     height: 75px;
 }
+

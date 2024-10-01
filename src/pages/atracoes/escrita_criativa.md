@@ -9,7 +9,7 @@ banner: "/oficinas_back.png"
 linkAnterior: "/geek#oficinas"
 outros: "OUTRAS OFICINAS"
 link: "/atracoes/escrita_criativa"
-imgSlider : "/convidado1.jpg"
+imgSlider : "/oficinas/jose-augusto.jpg"
 ---
 
 José Augusto é escritor, ghoustwriter e roteirista. Recebedor de prêmios literários estaduais e nacionais, membro Imortal da Academia Independente das Letras. Autor do livro Obscurus - as faces do Sol, roteirista de HQs como Blind, casa de repouso Magistral, Núcleon e Ministrante de aulas de redação, roteiros e escrita criativa.

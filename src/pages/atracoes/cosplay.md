@@ -9,7 +9,7 @@ banner: "/campeonatos_back.png"
 linkAnterior: "/geek#campeonatos"
 outros: "OUTROS CAMPEONATOS"
 link: "/atracoes/cosplay"
-imgSlider : "/convidado1.jpg"
+imgSlider : "/campeonatos/cosplay.jpg"
 ---
 
 Cosplay é uma atividade que consiste em fantasiar de forma correta, com

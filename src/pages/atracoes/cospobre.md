@@ -9,7 +9,7 @@ banner: "/campeonatos_back.png"
 linkAnterior: "/geek#campeonatos"
 outros: "OUTROS CAMPEONATOS"
 link: "/atracoes/cospobre"
-imgSlider : "/convidado1.jpg"
+imgSlider : "/campeonatos/Cospobre.JPG"
 ---
 
 Primo pobre do Cosplay, o Cospobre é a versão barata, criativa e
@@ -18,26 +18,27 @@ aqui, o que está valendo é utilizar soluções caseiras como papelão, papel
 alumínio, sacolas plásticas, garrafas pet, mas que traga semelhança com os
 personagens.
 
-As inscrições serão realizadas apenas presencialmente no dia do evento. Na
+- As inscrições serão realizadas apenas presencialmente no dia do evento. Na
 sala destinada ao Cosplay a partir das 12:00h até às 14:00h (horário de
 Brasília).
-2. O início da competição se dará às 14:40h (horário de Brasília) no palco.
 
-3. As inscrições estão limitadas a 30 candidatos por ordem de inscrição. Caso
+- O início da competição se dará às 14:40h (horário de Brasília) no palco.
+
+- As inscrições estão limitadas a 30 candidatos por ordem de inscrição. Caso
 as inscrições se esgotem, os demais interessados ficarão em uma lista de
 espera;
 
-4. A inscrição na categoria Cospobre Individual estará disponível para
+- A inscrição na categoria Cospobre Individual estará disponível para
 candidatos a partir de 12 anos (todos os menores de 18 anos deverão estar
 acompanhados de um responsável maior no momento da inscrição).
 
-5. Os participantes devem apresentar uma imagem impressa ou arquivo com
+- Os participantes devem apresentar uma imagem impressa ou arquivo com
 imagem digital do personagem que faça referência a mesma roupa do
 cospobre, contendo o nome do candidato e o nome do personagem, no
 momento da inscrição. A não apresentação da imagem de referência
 acarretará na perda de 1.0 ponto ao candidato.
 
-6. Os participantes devem se reunir 10 (dez) minutos antes do concurso, ao lado
+- Os participantes devem se reunir 10 (dez) minutos antes do concurso, ao lado
 do palco. Os participantes organizados em fila deverão manter-se nela até o
 momento de sua apresentação.
 

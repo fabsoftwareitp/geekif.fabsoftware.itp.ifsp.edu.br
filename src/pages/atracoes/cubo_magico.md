@@ -9,7 +9,7 @@ banner: "/campeonatos_back.png"
 linkAnterior: "/geek#campeonatos"
 outros: "OUTROS CAMPEONATOS"
 link: "/atracoes/cubo_magico"
-imgSlider : "/convidado1.jpg"
+imgSlider : "/campeonatos/cubo2.webp"
 ---
 
 O cubo mágico, também conhecido como cubo de Rubik, em 1980 tornou-se um dos brinquedos mais vendidos da história. Nos anos seguintes surgem variações do cubo como o 2x2 e 4x4, e também técnicas mais avançadas.
@@ -23,3 +23,5 @@ Max Park é o atual recordista mundial de resolução de cubo com  3,13 segundos
 - Duração: 01h.
 - Inscrições: 15 minutos antes do início da oficina.
 - Vagas: 20 vagas distribuídas na fila por ordem de chegada
+
+[Regras cubo mágico](https://drive.google.com/file/d/10hWWrlODvn4_igMW7KNhowsxp4kPI5_G/view?usp=sharing)

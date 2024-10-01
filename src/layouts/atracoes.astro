@@ -18,13 +18,13 @@ const { frontmatter } = Astro.props;
             <div class="attractions-content-text">
                 <p class="text-font">{frontmatter.titulo}</p>
                 <!-- <p class="text-font">Horário: {frontmatter.horario}</p>-->
-                <slot  />
+                 <div class="text-content"><slot/></div>
             </div>
         </section>
     </main>
-    <!-- <section class="others-attractions">
-        <p class="text-font">{frontmatter.outros}</p>
+     <section class="others-attractions">
+        <p class="text-font">Outros eventos</p>
         <Slider titulo={frontmatter.titulo} />
-    </section> -->
+    </section>
 </body>
 <Rodape />

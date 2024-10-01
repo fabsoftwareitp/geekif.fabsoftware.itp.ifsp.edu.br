@@ -9,7 +9,7 @@ banner: "/oficinas_back.png"
 linkAnterior: "/geek#oficinas"
 outros: "OUTRAS OFICINAS"
 link: "/atracoes/desenho"
-imgSlider : "/victorduarte.jpg"
+imgSlider : "/oficinas/victorduarte.jpg"
 ---
 
 Victor Duarte é um Character Designer Especialista em desenho e Ilustração tradicional de anatomia humana e animal, faz trabalhos por encomenda e ministra aulas de criação de personagem e desenho tradicional para para iniciantes e profissionais do ramo.

@@ -9,7 +9,7 @@ banner: "/oficinas_back.png"
 linkAnterior: "/geek#oficinas"
 outros: "OUTRAS OFICINAS"
 link: "/atracoes/lightsaber"
-imgSlider : "/convidado1.jpg"
+imgSlider : "/oficinas/Eddie-dojo de criatividade.jpeg"
 ---
 
 Venha para o lado criativo da Força!
