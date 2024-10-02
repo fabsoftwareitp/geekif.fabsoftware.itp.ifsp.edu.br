@@ -3,7 +3,7 @@
     width: 80vw;
     overflow-x: hidden;
     position: relative;
-    height: 55vh;
+    height: 60vh;
 }
 
 .slider-attractions > i {
@@ -88,11 +88,6 @@
         height: 40px;
         line-height: 40px;
     }
-    
-    .slider-img {
-        width: calc(78vw/3);
-        height: 250px;
-    }
 
     .move-attractions-1 {
         left: 0vw;
@@ -164,6 +159,36 @@
 
     .move-attractions-7 {
         left: -245vw;
+    }
+    .attractions-div {
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        background-image: url("/template_atracoes.jpeg");
+        background-size: contain;
+        border: 4px solid var(--dark-grey);
+        width: 350px;
+        height: 350px;
+    }
+    
+    .attractions-div > figure > figcaption {
+        padding: 18px;
+        font-weight: 600;
+        color: var(--white);
+        font-size: 1rem;
+        text-shadow: 0.2rem 0.2rem var(--dark-grey);
+        height: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .attractions-div > figure > img {
+        padding: 3px;
+        width: 274px;
+        height: 287px;
+        border-radius: 6%;
     }
 }
 
