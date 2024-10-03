@@ -9,7 +9,7 @@ banner: "/oficinas_back.png"
 linkAnterior: "/geek#oficinas"
 outros: "OUTRAS OFICINAS"
 link: "/atracoes/escrita_criativa"
-imgSlider : "/convidado1.jpg"
+imgSlider : "/oficinas/jose-augusto.jpg"
 ---
 
 José Augusto é escritor, ghoustwriter e roteirista. Recebedor de prêmios literários estaduais e nacionais, membro Imortal da Academia Independente das Letras. Autor do livro Obscurus - as faces do Sol, roteirista de HQs como Blind, casa de repouso Magistral, Núcleon e Ministrante de aulas de redação, roteiros e escrita criativa.
@@ -23,6 +23,6 @@ Redes sociais: Instagram @joseaugusto_writer
 - Idade: a partir de 14 anos
 - Quantidade: 20 pessoas
 - Duração 01h20m.
-- Horário: em breve
-- Local: em breve
+- Horário: 13:00
+- Local: Sala A322
 - Inscrições: 15 minutos antes do início da oficina

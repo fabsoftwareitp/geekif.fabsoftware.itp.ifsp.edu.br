@@ -11,6 +11,7 @@ import Rodape from "../components/footer.astro";
 		<main>
 			<!-- Banner Principal -->
 			<section class="banner-principal">
+				<img src="Woody.png" id="woody"/>
 				<div class="banner-entrance text-font">ENTRADA: 1L DE LEITE CAXINHA OU 1 PACOTE DE DOCES</div>
 			</section>
 			<section class="about">
@@ -23,70 +24,68 @@ import Rodape from "../components/footer.astro";
 			</section>
 			<!-- Atrações Slider -->
 			<section class="attractions">
-				<a class="text-font attractions-text">ATRAÇÕES</a>
-				<div class="slider-attractions">
+				<a class="text-font attractions-text">CAMPEONATOS</a>
+				<!-- <div class="slider-attractions">
 					<i class="fa-solid fa-angle-left arrow-left-attractions"></i>
-					<div class="carousel-attractions move-attractions-1">
-						<div>
-							<a href="/atracoes/just_dance"><img class="slider-img" src="./campeonatos/just-dance.jpg" alt=""></a>
-						</div>
-						<div>
-							<a href="/atracoes/cubo_magico"><img class="slider-img" src="./campeonatos/cubo2.webp" alt=""></a>
-						</div>
-						<div>
-							<a href="/atracoes/cosplay"><img class="slider-img" src="./campeonatos/cosplay.jpg" alt=""></a>
-						</div>
-						<div>
-							<a href="/atracoes/cospobre"><img class="slider-img" src="./campeonatos/Cospobre.JPG" alt=""></a>
-						</div>
-						<div>
-							<a href="/atracoes/cospet"><img class="slider-img" src="./campeonatos/cospet.webp" alt=""></a>
-						</div>
-						<div>
-							<a href=""><img class="slider-img" src="./convidado2.png" alt=""></a>
-						</div>
-						<div>
-							<a href=""><img class="slider-img" src="./convidado1.png" alt=""></a>
-						</div>
-						<div>
-							<a href=""><img class="slider-img" src="./convidado2.png" alt=""></a>
-						</div>
+					<div class="carousel-attractions move-attractions-1">-->
+					<div class="attractions-container">
+						<a class="slider-div" href="/atracoes/just_dance">
+							<figure>
+								<figcaption>Just Dance</figcaption>
+								<img src="./campeonatos/just-dance.jpg" alt="">
+							</figure>
+						</a>
+						<a class="slider-div" href="/atracoes/cubo_magico_campeonato">
+							<figure>
+								<figcaption>Cubo mágico</figcaption>
+								<img src="./campeonatos/cubo_magico_campeonato.jpg" alt="">
+							</figure>
+						</a>
+						<a class="slider-div" href="/atracoes/cosplay">
+							<figure>
+								<figcaption>Cosplay</figcaption>
+								<img src="./campeonatos/cosplay.jpg" alt="">
+							</figure>
+						</a>
 					</div>
-					<i class="fa-solid fa-angle-right arrow-right-attractions"></i>
+					<a href="/geek">
+						<button class="events-button">VEJA TODOS CAMPEONATOS</button>
+					</a>
+					<!-- </div>
+					<i class="fa-solid fa-angle-right arrow-right-attractions"></i>-->
 				</div>
 			</section>
 			<!-- Salas Slider -->
 			<section class="games">
-				<a class="text-font games-text">SALAS E OFICINAS</a>
-				<div class="slider-games">
+				<a class="text-font games-text">SHOWS E ATRAÇÕES</a>
+				<!-- <div class="slider-games">
 					<i class="fa-solid fa-angle-left arrow-left-games"></i>
-					<div class="carousel-games move-games-1">
-						<div>
-							<a href="/atracoes/escrita_criativa"><img class="slider-img" src="./oficinas/jose-augusto.jpg" alt=""></a>
-						</div>
-						<div>
-							<a href="/atracoes/lightsaber"><img class="slider-img" src="../oficinas/Eddie-dojo de criatividade.jpeg" alt=""></a>
-						</div>
-						<div>
-							<a href="/atracoes/desenho"><img class="slider-img" src="./oficinas/victorduarte.jpg" alt=""></a>
-						</div>
-						<div>
-							<a href=""><img class="slider-img" src="./sala.jpg" alt=""></a>
-						</div>
-						<div>
-							<a href=""><img class="slider-img" src="./sala.jpg" alt=""></a>
-						</div>
-						<div>
-							<a href=""><img class="slider-img" src="./sala.jpg" alt=""></a>
-						</div>
-						<div>
-							<a href=""><img class="slider-img" src="./sala.jpg" alt=""></a>
-						</div>
-						<div>
-							<a href=""><img class="slider-img" src="./sala.jpg" alt=""></a>
-						</div>
+					<div class="carousel-games move-games-1">-->
+					<div class="attractions-container">
+						<a class="slider-div" href="./atracoes/lucas_amorim">
+							<figure>
+								<figcaption>Batepapo com Lucas Amorim</figcaption>
+								<img src="./shows/lucas-amorim.webp" alt="">
+							</figure>
+						</a>
+						<a class="slider-div" href="https://www.instagram.com/lunna_quadros/">
+							<figure>
+								<figcaption>Chapéu seletor - Harry Potter</figcaption>
+								<img src="./shows/Chapeu_Harry-potter.jpg" alt="">
+							</figure>
+						</a>
+						<a class="slider-div" href="https://www.instagram.com/wolfenrir.swordplay/">
+							<figure>
+								<figcaption>Swordplay Wolfenrir</figcaption>
+								<img src="./shows/Swordplay-Wolfenrir.jpg" alt="">
+							</figure>
+						</a>
 					</div>
-					<i class="fa-solid fa-angle-right arrow-right-games"></i>
+					<a href="/geek">
+						<button class="events-button">VEJA TODOS SHOWS E ATRAÇÕES</button>
+					</a>
+					<!-- </div>
+					<i class="fa-solid fa-angle-right arrow-right-games"></i>-->
 				</div>
 			</section>
 			<!-- Relembre -->
@@ -130,6 +129,7 @@ import Rodape from "../components/footer.astro";
 				<p class="text-font questions-texts" id="map-question">COMO ME LOCALIZO NO EVENTO?</p>
 				<div class="answer-block" id="map-block">
 					<p class="text-font questions-sub-text">Para facilitar a localização disponibilizamos um mapa do evento</p>
+					<img src="./Mapa.jpg" class="map"/>
 				</div>
 			</div>
 			<div class="question-block">

@@ -24,6 +24,13 @@
     text-align: center;
 }
 
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    gap: 10px;
+}
+
 .footer-address{
     font-weight: 300;
     cursor: text;
@@ -42,3 +49,116 @@
 .footer-img-logo {
     height: 75px;
 }
+
+@-webkit-keyframes scroll {
+    0% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(calc(-260px * 15));
+      transform: translateX(calc(-260px * 15));
+    }
+}
+
+@keyframes scroll {
+    0% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(calc(-260px * 15));
+      transform: translateX(calc(-260px * 15));
+    }
+}
+
+.slider {
+    background: pr;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+    height: 100px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 1000px;
+}
+
+@media (max-width: 1280px) {
+    .slider {
+        background: pr;
+        box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+        height: 100px;
+        margin: auto;
+        overflow: hidden;
+        position: relative;
+        width: 800px;
+    }
+}
+
+@media (max-width: 999px) {
+    .slider {
+        background: pr;
+        box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+        height: 100px;
+        margin: auto;
+        overflow: hidden;
+        position: relative;
+        width: 600px;
+    }
+}
+
+@media (max-width: 600px) {
+    .slider {
+        background: pr;
+        box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+        height: 100px;
+        margin: auto;
+        overflow: hidden;
+        position: relative;
+        width: 400px;
+    }
+}
+
+@media (max-width: 400px) {
+    .slider {
+        background: pr;
+        box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+        height: 100px;
+        margin: auto;
+        overflow: hidden;
+        position: relative;
+        width: 270px;
+    }
+}
+
+.slider::before,
+.slider::after {
+    content: "";
+    height: 100px;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+}
+
+.slider::after {
+    right: 0;
+    top: 0;
+    -webkit-transform: rotateZ(180deg);
+    transform: rotateZ(180deg);
+}
+
+.slider::before {
+    left: 0;
+    top: 0;
+}
+
+.slider .slide-track {
+    -webkit-animation: scroll 40s linear infinite;
+    animation: scroll 40s linear infinite;
+    display: flex;
+    width: calc(250px * 40);
+}
+
+.slider .slide {
+    padding: 3PX;
+}
+  

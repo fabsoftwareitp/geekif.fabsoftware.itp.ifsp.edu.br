@@ -9,7 +9,7 @@ banner: "/campeonatos_back.png"
 linkAnterior: "/geek#campeonatos"
 outros: "OUTROS CAMPEONATOS"
 link: "/atracoes/cospet"
-imgSlider : "/convidado1.jpg"
+imgSlider : "/campeonatos/cospet.webp"
 ---
 
 Cospet é uma atividade que consiste em fantasiar animais, com acessórios e outros artigos, representando um determinado personagem. Normalmente os pets se fantasiam de personagens de super heróis, mangás e de videogames. Essa atividade permite que os animais de estimação se divirtam. 
