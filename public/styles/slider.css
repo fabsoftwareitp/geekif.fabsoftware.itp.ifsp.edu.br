@@ -20,6 +20,52 @@
     z-index: 1;
 }
 
+.slider-div {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    background-image: url("/template_atracoes.jpeg");
+    background-size: contain;
+    border: 4px solid var(--dark-grey);
+    width: 450px;
+    height: 450px;
+}
+
+.slider-div > figure > figcaption {
+    padding: 18px;
+    font-weight: 600;
+    color: var(--white);
+    font-size: 1.5rem;
+    text-shadow: 0.2rem 0.2rem var(--dark-grey);
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.slider-div > figure > img {
+    padding: 3px;
+    width: 350px;
+    height: 375px;
+    border-radius: 6%;
+}
+
+.events-button {
+    cursor: pointer;
+    width: 140px;
+    height: 55px;
+    border-radius: 10px;
+    background-color: var(--purple);
+    border: 2px solid var(--dark-grey);
+    font-family: 'Lemon Milk', sans-serif;
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0.8rem;
+    text-align: center;
+}
+
 .slider-attractions > i:last-child {
     right: 0;
 }
@@ -116,11 +162,12 @@
     .move-attractions-7 {
         left: -167vw;
     }
+    
 }
 
 @media (max-width: 999px) {
     .slider-attractions {
-        height: 30vh;
+        height: 55vh;
         width: 80vw;
     }
 
@@ -128,39 +175,8 @@
         width: calc(100%/2);
         gap: 2vw;
     }
-    
-    .slider-img {
-        width: calc(78vw/2);
-    }
 
-    .move-attractions-1 {
-        left: 0vw;
-    }
-    
-    .move-attractions-2 {
-        left: -40vw;
-    }
-    
-    .move-attractions-3 {
-        left: -81vw;
-    }
-    
-    .move-attractions-4 {
-        left: -122vw;
-    }
-    
-    .move-attractions-5 {
-        left: -163vw;
-    }
-
-    .move-attractions-6 {
-        left: -204vw;
-    }
-
-    .move-attractions-7 {
-        left: -245vw;
-    }
-    .attractions-div {
+    .slider-div {
         display: flex;
         justify-content: center;
         align-items: end;
@@ -171,25 +187,42 @@
         height: 350px;
     }
     
-    .attractions-div > figure > figcaption {
+    .slider-div > figure > figcaption {
         padding: 18px;
         font-weight: 600;
         color: var(--white);
-        font-size: 1rem;
+        font-size: 1.2rem;
         text-shadow: 0.2rem 0.2rem var(--dark-grey);
-        height: 4rem;
+        height: 3rem;
         display: flex;
         align-items: center;
         justify-content: center;
         text-align: center;
     }
     
-    .attractions-div > figure > img {
-        padding: 3px;
-        width: 274px;
-        height: 287px;
+    .slider-div > figure > img {
+        padding: 2px;
+        width: 280px;
+        height: 290px;
         border-radius: 6%;
     }
+
+    .move-attractions-1 {
+        left: 200vw;
+    }
+    
+    .move-attractions-2 {
+        left: 120vw;
+    }
+    
+    .move-attractions-3 {
+        left: 50vw;
+    }
+    
+    .move-attractions-4 {
+        left: -30vw;
+    }
+
 }
 
 /* Slider Games */

@@ -28,6 +28,6 @@ Tiktok: @dojodecriatividade
 - Idade: a partir dos 12, mas idealmente jovens de 15 a 105 anos
 - Quantidade: mínimo 4, máximo 25 pessoas
 - Duração: entre 40 minutos a 1 hora
-- Horário: em breve
-- Local: em breve
+- Horário: 11:00 horas
+- Local: Sala A322
 - Inscrições: 15 minutos antes do início da oficina

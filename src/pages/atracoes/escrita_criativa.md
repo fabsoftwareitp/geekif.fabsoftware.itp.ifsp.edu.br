@@ -23,6 +23,6 @@ Redes sociais: Instagram @joseaugusto_writer
 - Idade: a partir de 14 anos
 - Quantidade: 20 pessoas
 - Duração 01h20m.
-- Horário: em breve
-- Local: em breve
+- Horário: 13:00
+- Local: Sala A322
 - Inscrições: 15 minutos antes do início da oficina

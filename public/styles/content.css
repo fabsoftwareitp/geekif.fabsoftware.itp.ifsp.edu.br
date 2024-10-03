@@ -13,6 +13,11 @@ html {
     background-position: center;
 }
 
+#woody {
+    width: 500px;
+    height: 600px;
+}
+
 .banner-entrance {
     color: var(--black);
     background-color: var(--pink);
@@ -353,13 +358,12 @@ html {
     }
     
     .map {
-        width: 95%;
-        height: 80%;
+        max-width: 100%;
         margin-block: 0.5rem;
     }
 
     #map-block.active {
-        height: 5rem;
+        max-width: 100%;
         /*height: 22rem;*/
     }
     

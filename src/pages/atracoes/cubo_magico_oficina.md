@@ -12,14 +12,13 @@ link: "/atracoes/cubo_magico_oficina"
 imgSlider : "/oficinas/cubo_magico_oficina.webp"
 ---
 
-O cubo mágico, também conhecido como cubo de Rubik, em 1980 tornou-se um dos brinquedos mais vendidos da história. Nos anos seguintes surgem variações do cubo como o 2x2 e 4x4, e também técnicas mais avançadas.
-Os campeonatos começaram em 1982 em Budapeste, com a intenção de  resolver cubos mágicos no menor tempo possível, lá já se iniciou o trabalho para regulamentar a competição, mas somente em 2004 a WCA(World Cube Association) foi fundada e padronizou as regras. 
-Max Park é o atual recordista mundial de resolução de cubo com  3,13 segundos, é um campeonato de cubo mágico é uma competição onde participantes resolvem cubos mágicos no menor tempo possível, em várias categorias.
+Você já se encantou com o cubo mágico e gostaria de aprender a resolver esse desafio? Se sim, esta oficina é perfeita para você!
+Em uma hora intensa e divertida, você terá a oportunidade de conhecer os princípios básicos do cubo mágico. Vamos abordar a estrutura do cubo, a notação fundamental e algumas estratégias iniciais para que você comece a solucionar o quebra-cabeça.
+Público-alvo: Esta oficina é voltada para iniciantes! Não é necessário ter experiência prévia - traga sua curiosidade e disposição para aprender.
 
-- Atenção: Os 20  primeiros inscritos ganharão um cubo mágico.
-- Informações: manter as que já estão no site
-- Sala: Em breve;
-- Horário: das 11:00h às 12:00h
-- Duração: 01h.
-- Inscrições: 15 minutos antes do início da oficina.
-- Vagas: 20 vagas distribuídas na fila por ordem de chegada
+Idade: a partir de 6 anos
+Duração 1 hora
+Horário: 11:00
+Local: Laboratório A
+Vagas: 20
+Inscrições: 15 minutos antes do início da oficina
