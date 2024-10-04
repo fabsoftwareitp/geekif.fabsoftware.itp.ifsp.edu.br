@@ -21,4 +21,8 @@ personagens, permitindo que as crianças se divirtam e expressem sua criatividad
 Além de ser uma maneira divertida de brincar, o cosplay também promove a
 imaginação, a socialização e a auto expressão entre as crianças.
 
-[Regras Cosplay](https://drive.google.com/file/d/1Ap3YEKT9XeQjWsIRTQKhQPIovQewTV4q/view?usp=sharing)
+- Inscrições: 12:00 às 13:45
+- Horário de inicio: 14:10 
+- Vagas: 20
+
+Confira as regras: [Regras Cosplay Infantil](https://drive.google.com/file/d/1Y4ZGSDz7Z0B62idykGFtRUGO74C7lVZV/view?usp=sharing)

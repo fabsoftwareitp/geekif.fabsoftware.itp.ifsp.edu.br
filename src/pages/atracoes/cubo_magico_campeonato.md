@@ -14,4 +14,8 @@ imgSlider : "/campeonatos/cubo_magico_campeonato.jpg"
 
 Campeonato de cubo mágico. Para mais informações acesse as regras.
 
-[Regras cubo mágico](https://drive.google.com/file/d/10hWWrlODvn4_igMW7KNhowsxp4kPI5_G/view?usp=sharing)
+- Inscrições: 13:00 às 13:45
+- Horário de inicio: 14:00 
+- Vagas: 12
+
+Confira as regras: [Regras cubo mágico](https://drive.google.com/file/d/16FETNAkZoD8VkyR5s9Kme4xznhsfmIp1/view?usp=sharing)

@@ -18,4 +18,8 @@ aqui, o que está valendo é utilizar soluções caseiras como papelão, papel
 alumínio, sacolas plásticas, garrafas pet, mas que traga semelhança com os
 personagens.
 
-[Regras Cospobre](https://drive.google.com/file/d/1JLQPGaLh0Ogz7q7pC021geA5tJ6h3RrY/view?usp=sharing)
+- Inscrições: 12:00 às 14:00
+- Horário de inicio: 14:50 
+- Vagas: 30
+
+Confira as regras: [Regras Cospobre](https://drive.google.com/file/d/1JLQPGaLh0Ogz7q7pC021geA5tJ6h3RrY/view?usp=sharing)

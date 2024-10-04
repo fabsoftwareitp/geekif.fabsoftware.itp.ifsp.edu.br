@@ -23,4 +23,8 @@ contidos em animes, mangás e videogames, produzindo sua própria fantasia
 atividade permite que adultos, adolescentes e crianças participem juntas
 deste processo, criando vínculos entre diferentes idades.
 
-[Regras Cosplay](https://drive.google.com/file/d/1Ap3YEKT9XeQjWsIRTQKhQPIovQewTV4q/view?usp=sharing)
+- Inscrições: 12:00 às 14:00
+- Horário de inicio: 14:30 
+- Vagas: 30
+
+Confira as regras: [Regras Cosplay](https://drive.google.com/file/d/1Ap3YEKT9XeQjWsIRTQKhQPIovQewTV4q/view?usp=sharing)
