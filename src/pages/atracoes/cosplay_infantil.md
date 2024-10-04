@@ -21,22 +21,8 @@ personagens, permitindo que as crianças se divirtam e expressem sua criatividad
 Além de ser uma maneira divertida de brincar, o cosplay também promove a
 imaginação, a socialização e a auto expressão entre as crianças.
 
-REGULAMENTO
+- Inscrições: 12:00 às 13:45
+- Horário de inicio: 14:10 
+- Vagas: 20
 
-1. As inscrições serão realizadas apenas presencialmente no dia do evento.
-Na sala destinada ao Cosplay do IFSP a partir das 12:00h até às 13:45h
-(horário de Brasília).
-2. O início da competição se dará às 14:00h (horário de Brasília) no palco.
-3. As inscrições estão limitadas a 20 candidatos por ordem de inscrição. Caso
-as inscrições se esgotem, os demais interessados ficarão em uma lista de
-espera.
-4. A inscrição na categoria Cosplay Infantil estará disponível para candidatos
-sem idade mínima até 11 anos de idade.
-5. Os participantes devem se reunir 10 (dez) minutos antes do concurso, ao
-lado do palco. Os participantes organizados em fila deverão manter-se nela
-até o momento de sua apresentação.
-6. Desfile sem julgamento de juízes.
-Premiação.
-7. Medalha para todos os participantes
-
-[Regras Cosplay](https://drive.google.com/file/d/1Ap3YEKT9XeQjWsIRTQKhQPIovQewTV4q/view?usp=sharing)
+Confira as regras: [Regras Cosplay Infantil](https://drive.google.com/file/d/1Y4ZGSDz7Z0B62idykGFtRUGO74C7lVZV/view?usp=sharing)

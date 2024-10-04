@@ -31,10 +31,9 @@ Adulto:
 Público-alvo: A oficina é direcionada aos maiores de 13 anos. Venha disposto a explorar sua criatividade e expressar seu amor pelo estilo Burtoniano!
 Redes sociais: @victorduartestudio.
 
-Idade: a partir de 13 anos
-Vagas: 20
-Duração 40 minutos
-Horário: 13:00
-Local: Laboratório A
-Inscrições: 15 minutos antes do início da oficina
-
+- Idade: a partir de 13 anos
+- Vagas: 20
+- Duração 40 minutos
+- Horário: 13:00
+- Local: Laboratório A
+- Inscrições: 15 minutos antes do início da oficina
