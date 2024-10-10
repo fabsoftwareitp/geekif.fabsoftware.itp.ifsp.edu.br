@@ -515,7 +515,7 @@ html {
     gap: 1.5rem;
     margin-inline: auto;
     justify-content: center;
-    align-items: center;
+    align-content: stretch;
 }
 
 .div-cronograma > .attractions-timeline-div {
