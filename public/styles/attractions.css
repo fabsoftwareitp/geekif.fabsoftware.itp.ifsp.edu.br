@@ -67,9 +67,9 @@
     flex-direction: column;
     align-items: center;
     width: 20%;
-    height: 550px;
     border: 4px solid var(--dark-grey);
     background-size: contain;
+    background-color: var(--white);
 }
 
 .attractions-timeline-div > p {
