@@ -23,7 +23,7 @@ Redes sociais: @victorduartestudio.
 - Idade: a partir de 8 até 12 anos
 - Vagas: 20
 - Duração 40 minutos
-- Horário: 11:00
+- Horário: 10:00
 - Local: Laboratório A
 - Inscrições: 15 minutos antes do início da oficina
 

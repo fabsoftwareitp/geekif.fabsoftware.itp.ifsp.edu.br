@@ -17,5 +17,6 @@ Campeonato de cubo mágico. Para mais informações acesse as regras.
 - Inscrições: 13:00 às 13:45
 - Horário de inicio: 14:00 
 - Vagas: 12
+- Local: Sala IV - Bloco Azul
 
 Confira as regras: [Regras cubo mágico](https://drive.google.com/file/d/16FETNAkZoD8VkyR5s9Kme4xznhsfmIp1/view?usp=sharing)

@@ -17,5 +17,6 @@ Cospet é uma atividade que consiste em fantasiar animais, com acessórios e out
 - Inscrições: 12:00 às 13:45
 - Horário de inicio: 14:00 
 - Vagas: 20
+- Local: Palco
 
 Confira as regras: [Regras Cospet](https://drive.google.com/file/d/1nhiZdCGtSYmhIbhE_I4ybVWOfPfZ4Jx-/view?usp=sharing)

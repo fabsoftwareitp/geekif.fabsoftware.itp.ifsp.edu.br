@@ -26,5 +26,6 @@ deste processo, criando vínculos entre diferentes idades.
 - Inscrições: 12:00 às 14:00
 - Horário de inicio: 14:30 
 - Vagas: 30
+- Local: Palco
 
 Confira as regras: [Regras Cosplay](https://drive.google.com/file/d/1Ap3YEKT9XeQjWsIRTQKhQPIovQewTV4q/view?usp=sharing)

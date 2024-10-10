@@ -16,7 +16,7 @@ const { frontmatter } = Astro.props;
         <section class="attractions-content">
             <img src={frontmatter.img} />
             <div class="attractions-content-text">
-                <p class="text-font">{frontmatter.titulo}</p>
+                <p class="text-content">{frontmatter.titulo}</p>
                 <!-- <p class="text-font">Horário: {frontmatter.horario}</p>-->
                  <div class="text-content"><slot/></div>
             </div>

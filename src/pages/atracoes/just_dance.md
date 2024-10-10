@@ -17,6 +17,7 @@ Depois de selecionar uma música, um dançarino ou dançarina é apresentado na 
 
 - Inscrições: 12:00 às 12:30
 - Horário de inicio: 13:00 
+- Local: Sala A321 
 - Vagas: 16
 
 Confira as regras: [Regras Just Dance](https://drive.google.com/file/d/1BTOuUA5ttAtIH6b3vxn9gZNLkYv5gCkc/view?usp=sharing)
