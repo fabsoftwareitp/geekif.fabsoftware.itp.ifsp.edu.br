@@ -19,7 +19,8 @@ alumínio, sacolas plásticas, garrafas pet, mas que traga semelhança com os
 personagens.
 
 - Inscrições: 12:00 às 14:00
-- Horário de inicio: 14:50 
+- Horário de inicio: 14:45 
 - Vagas: 30
+- Local: Palco
 
 Confira as regras: [Regras Cospobre](https://drive.google.com/file/d/1JLQPGaLh0Ogz7q7pC021geA5tJ6h3RrY/view?usp=sharing)

@@ -7,7 +7,7 @@ html {
 
 /* Banner Principal */
 .banner-principal {
-    background-image: url("/banner_principal.png");
+    background-image: url("/banner_principal.jpg");
     height: 69vh;
     background-size: cover;
     background-position: center;
@@ -518,18 +518,18 @@ html {
     align-items: center;
 }
 
-.div-cronograma > .attractions-div {
+.div-cronograma > .attractions-timeline-div {
     background-color: var(--white);
 }
 
-.div-cronograma > .attractions-div,
-.div-cronograma > .attractions-div > ul > li {
-    width: 45vw;
+.div-cronograma > .attractions-timeline-div,
+.div-cronograma > .attractions-timeline-div > ul > li {
+    width: 28vw;
     font-size: 1.5rem;
-    text-align: center;
+    text-align: start;
 }
 
-.div-cronograma > .attractions-div > ul > li {
+.div-cronograma > .attractions-timeline-div > ul > li {
     padding: 0.7rem;
 }
 
@@ -576,8 +576,8 @@ html {
         font-size: 3rem;
     }
 
-    .div-cronograma > .attractions-div,
-    .div-cronograma > .attractions-div > ul > li {
+    .div-cronograma > .attractions-timeline-div,
+    .div-cronograma > .attractions-timeline-div > ul > li {
         width: 85vw;
         font-size: 1.5rem;
         text-align: center;
@@ -654,5 +654,18 @@ html {
 
     .retro-sub-card > p {
         font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 600px){
+    .div-cronograma > .attractions-timeline-div,
+    .div-cronograma > .attractions-timeline-div > ul > li {
+        
+        font-size: 1.3rem;
+        text-align: start;
+    }
+
+    .div-cronograma > .attractions-timeline-div {
+        height: auto;
     }
 }
